@@ -1,0 +1,46 @@
+// 
+    // Visibility
+    // @package kom_v1
+
+.o-hidden
+    overflow:           hidden
+.o-x-hidden
+    overflow-x:         hidden
+.o-x-auto
+    overflow-x:         auto
+.o-y-auto
+    overflow-y:         auto
+
+.visible-sm-up
+    display:            none
+    +mq(sm)
+        display:        inherit
+.visible-md-up
+    display:            none
+    +mq(md)
+        display:        inherit
+.visible-tb-up
+    display:            none
+    +mq(tb)
+        display:        inherit
+.hidden-md-up
+    display:            block
+    +mq(md)
+        display:        none
+.hidden-xl-up
+    display:            block
+    +mq(xl)
+        display:        none
+
+// Screen Reader Text
+    // The .sr class ensure element is available in the DOM but only to screen readers. The whitespace: nowrap rule ensures accessible texts aren't smushed off screen.
+    // @link https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+.sr:not(:focus):not(:active)
+    position:           absolute
+    +wh(1px)
+    padding:            0
+    margin:             -1px
+    border:             0
+    clip-path:          inset(100%)
+    overflow:           hidden
+    white-space:        nowrap

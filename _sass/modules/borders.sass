@@ -1,0 +1,45 @@
+// 
+    // Just Borders
+    // @package kom_v1
+
+.bt-rr
+    border-top-right-radius:        $halfradius
+.bb-lr
+    border-bottom-left-radius:      $halfradius
+.branded-br
+    border-top-right-radius:        $halfradius
+    border-bottom-left-radius:      $halfradius
+.normal-br
+    border-radius:          $halfbit
+.bordered-list
+    border:                 $borderline
+
+.drag-and-drop-border
+    border:                 1px dashed palette(primary)!important
+
+.border
+    border:                 $borderline
+    &.dashed
+        border-style:       dashed
+        border-width:       1.5px
+.y-border
+    border-top:             $borderline
+    border-bottom:          $borderline
+.t-border
+    border-top:             $borderline
+.r-border
+    border-right:           $borderline
+.b-border
+    border-bottom:          $borderline
+
+.b-shadow--minimal
+    box-shadow:             $card-shadow
+
+.mid-col-border-play
+    border-top:             $borderline
+    border-bottom:          $borderline
+    &.switch\@m
+        +mq(tb)
+            border:         0
+            border-right:   $borderline
+            border-left:    $borderline

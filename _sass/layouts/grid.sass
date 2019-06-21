@@ -1,0 +1,20 @@
+// 
+    // Grid
+    // @package kom_v1
+
+.grid
+    display:                    grid
+    grid-template-columns:      repeat(12, 1fr)
+    grid-gap:                   $space-sm
+    &.no-gap
+        grid-gap:               0
+    &.is-multi-col.mostly-2
+        grid-template-columns:  repeat(auto-fill, minmax(360px, 1fr))
+    &.is-multi-col.mostly-3
+        grid-template-columns:  repeat(auto-fill, minmax(280px, 1fr))
+    &.is-multi-col.mostly-4
+        grid-template-columns:  repeat(auto-fill, minmax(192px, 1fr))
+.grid__centering--vh
+    display:                    grid
+    > *
+        margin:                 auto

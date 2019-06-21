@@ -1,0 +1,57 @@
+// 
+    // Base
+    // @package kom_v1
+
+html
+    font-size:          $base
+    // background-color:   palette(primary)
+
+*, *::before, *::after
+    box-sizing:         border-box
+
+\:focus
+    outline-width:      5px
+
+body
+    margin:             0
+    font-family:        $bodyfont
+    line-height:        $defaultlh
+    &.nav-is-open
+        overflow:       hidden
+main
+    position:           relative
+    background-color:   #fff
+
+p
+    margin:             0
+    margin-bottom:      $gap
+    color:              palette(black)
+    font-size:          rem(17px)
+    strong
+        color:          palette(primary)
+
+a
+    color:              $accentcolor
+    text-decoration:    none
+
+img
+    +wh(100%, auto)
+    object-fit:         cover
+
+svg
+    vertical-align:     middle
+    pointer-events:     none
+    fill:               currentColor
+
+ul
+    padding-left:       $space-md
+    &.none
+        padding-left:   0
+        list-style:     none
+ul, ol, ul ul, ol ul
+    margin:             $gap 0 $gap
+
+fieldset
+    padding:            0
+    margin:             0
+    border:             0

@@ -1,0 +1,61 @@
+// 
+    // Notifications (Header, Archive, Single)
+    // @package kom_v1
+
+.notifications-dropdown
+    width:                      320px
+    max-width:                  320px
+
+.notifications-alert
+    .icon-notifications-outline
+        +wh(24px)
+    .unread-notifications-dot
+        position:           relative
+        color:              rgba($black, 100%)
+        &::after
+            +pos($top: calc(#{$space} - 2px), $right: calc(#{$space} - 2px))
+            +wh(8px)
+            content:        ''
+            background:     palette(primary)
+            border-radius:  50%
+    .unread
+        @extend .co-black
+
+.is-messages
+    .messages-list li
+        .message-link
+            @extend .alt-link
+            display:        block
+            padding:        $space 0
+            border-bottom:  $borderline
+        .message-link.unread
+            @extend .black-link
+        &:first-child a
+            padding-top:    0
+
+.new-order-notification
+    +pos(fixed, $top: 0, $left: 0)
+    +flex($jc: center, $al: flex-start)
+    width:                  100%
+    z-index:                10
+    pointer-events:         none
+    &__content
+        +wh(100%, $coord-md)
+        position:           relative
+        @extend %brandradius
+        background:         palette(primary)
+        box-shadow:         $card-shadow
+        color:              #fff
+        min-width:          $breakpoint-xs
+        max-width:          $breakpoint-xs
+        z-index:            11
+        opacity:            0
+        .dialog--open &, .dialog--close &
+            @extend %animated
+        .dialog--open &
+            animation-name:         slide-in-down
+            pointer-events:         auto
+        .dialog--close &
+            animation-name:         slide-out-up
+        .icon-bell-ringing
+            +wh(24px)

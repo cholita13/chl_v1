@@ -1,0 +1,64 @@
+// 
+    // Flex Patterns
+    // @package kom_v1
+
+.sticky-footer
+    +flex()
+    flex-direction:     column
+    height:             100vh
+    overflow:           hidden
+    &--main
+        flex:           1
+        overflow-y:     auto
+
+.d-blk
+    display:            block
+.d-ibl
+    display:            inline-block
+.d-ifx
+    display:            inline-flex
+.d-flx
+    display:            flex
+
+.al-i-c
+    align-items:        center
+.al-i-fs
+    align-items:        flex-start
+.al-i-fe
+    align-items:        flex-end
+
+.j-c-c
+    justify-content:    center
+.j-c-sb
+    justify-content:    space-between
+.j-c-fe
+    justify-content:    flex-end
+.j-s-fe
+    justify-self:       flex-end
+    
+.flx-dir-col
+    flex-direction:     column
+.flx-1
+    flex:               1
+.flx-wrap
+    flex-wrap:          wrap
+
+.flex
+    &__2
+        @extend %grid
+        .flex-item
+            flex:       1 perline(2)
+    &__1-2--md
+        @extend %grid
+        .flex-item
+            +mq(md)
+                flex:   1 perline(2)
+    &__1-3--tb
+        @extend %grid
+        .flex-item
+            +mq(tb)
+                flex:   1 perline(3)
+
+.flex-item
+    margin:             $gap / 2
+    width:              100%

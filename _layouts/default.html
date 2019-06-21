@@ -1,0 +1,18 @@
+<!doctype html>
+{%- assign class = nil -%}
+{%- if page.layout -%}
+    {%- assign class = class | append: page.layout -%}
+{%- endif -%}
+<html lang="en" class="is-{{ class }}">
+    {%- include shell/head.html -%}
+    <body class="toast-is-visible">
+        <a class="sr" href="#main">Skip to content</a>
+        <h1 class="sr">{{ page.title }}</h1>
+        {%- include shell/header.html -%}
+        <main id="main">
+            {{ content }}
+        </main>
+        {%- include shell/footer.html -%}
+        {%- include shell/foot.html -%}
+    </body>
+</html>

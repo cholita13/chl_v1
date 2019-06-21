@@ -1,0 +1,12 @@
+<head>
+    <title>{{ page.title | flatify }} | {{ site.title }}</title>
+    <meta charset="{{ site.charset }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="stylesheet" href="{{ site.font_url }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css"/>
+
+    <link rel="stylesheet" href="{{ site.url }}/main.css">
+    {%- seo title=false -%}
+</head>

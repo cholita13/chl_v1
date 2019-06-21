@@ -1,0 +1,17 @@
+<ul class="none m-0 d-flx al-i-c">
+    {%- for item in site.data.navs.mainnav -%}
+    {%- assign class = nil -%}
+    {%- assign url = page.url | remove: 'index.html' -%}
+    {%- assign name = item.name | slugify -%}
+    {%- if url contains name -%}
+    {%- assign class = class | append: 'active' -%}
+    {% elsif name == 'home' and url == '/' %}
+    {% assign class = class | append: 'active' %}
+    {%- endif -%}
+    <li>
+        <a class="{{ class }}" href="{{ item.slug | prepend: site.url }}">
+            {{ item.name | capitalize }}
+        </a>
+    </li>
+    {%- endfor -%}
+</ul>

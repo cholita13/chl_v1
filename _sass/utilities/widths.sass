@@ -1,0 +1,74 @@
+// 
+    // Utility Width & Height Dropins
+    // @package kom_v1
+
+.w-sm
+    width:          $coord-sm
+.w-md
+    width:          $coord-md
+.w-lg
+    width:          $coord-lg
+.w-xxl
+    width:          $coord-xxl
+.w-xxxl
+    width:          $coord-xxxl
+.w-100, .w-100-pc
+    width:          100%
+.w-form-block
+    width:          100%
+    max-width:      464px
+.w-unset
+    width:          unset
+
+.minwidth-0
+    min-width:      0
+
+.maxwidth
+    &-xs, &-sm, &-md, &-tb, &-lg, &-xl
+        @extend %maxwidth
+    &-xs
+        max-width:  $breakpoint-xs
+    &-sm
+        max-width:  $breakpoint-sm
+    &-md
+        max-width:  $breakpoint-md
+    &-tb
+        max-width:  $breakpoint-tb
+    &-lg
+        max-width:  $breakpoint-lg
+    &-xl
+        max-width:  $breakpoint-xl
+.maxwidth-fluid
+    max-width:      100%
+    +mq(sm)
+        max-width:  $breakpoint-sm
+    +mq(md)
+        max-width:  $breakpoint-md
+    +mq(lg)
+        max-width:  $breakpoint-lg
+
+.h-xs
+    height:         $coord-xs
+.h-xxxl
+    height:         $coord-xxxl
+.h-100-pc
+    height:         100%
+
+
+// Grids from UIKit
+.uk-grid
+    margin-left:            -$space
+    > *
+        padding-left:       $space
+* + .uk-grid-margin, .uk-grid+.uk-grid, .uk-grid > .uk-grid-margin
+    margin-top:             0
+
+.uk-width-1-3\@m
+    +mq(tb)
+        width:              calc(100% * 1 / 3.001)
+.uk-width-2-3\@m
+    +mq(tb)
+        width:              calc(100% * 2 / 3.001)
+.uk-width-1-3\@l
+    +mq(lg)
+        width:              calc(100% * 1 / 3.001)

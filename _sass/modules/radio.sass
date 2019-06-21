@@ -1,0 +1,53 @@
+// 
+    // Radio Buttons
+    // @package kom_v1
+
+.radio-list, .checkbox-list
+    input[type="radio"], input[type="checkbox"]
+        @extend %sr
+        + label
+            +flex($al: center)
+            cursor:                 pointer
+            &::before
+                position:           relative
+                content:            ''
+                display:            inline-block
+                margin-right:       $bit
+                background-color:   rgba($black, 1%)
+                background-position:    center
+                background-repeat:      no-repeat
+                box-shadow:         inset 0 1px 3px hsla(0, 0%, 0%, 0.1)
+                border:             $borderline
+                border-color:       rgba($black, 20%)
+                transition:         $tr-default
+    input[type="radio"] + label::before
+        +wh(20px)
+        background-size:            24px
+        border-radius:              50%
+    input[type="checkbox"] + label::before
+        +wh(20px, 19px)
+        border-radius:              2px
+        background-size:            12px
+    input[type="radio"]:checked + label::before,
+    input[type="checkbox"]:checked + label::before
+        background-color:           palette(primary)
+        border-color:               palette(primary)
+        box-shadow:                 none
+    input[type="radio"]:active + label::before,
+    input[type="checkbox"]:active + label::before
+        transform:                  scale(0.8)
+    input[type="radio"]:checked:active + label::before,
+    input[type="checkbox"]:checked:active + label::before
+        transform:                  none
+        transition:                 none
+    input[type="radio"]:checked + label::before
+        background-image:           url('/images/icons/dot.svg')
+    input[type="radio"]:checked:active + label::before,
+    input[type="checkbox"]:checked:active + label::before,
+    input[type="radio"]:focus + label::before,
+    input[type="checkbox"]:focus + label::before
+        border-color:               palette(primary)
+        box-shadow:                 0 0 0 3px lighten(palette(primary), 40%)
+    input[type="checkbox"]:checked + label::before
+        background-image:           url('/images/icons/tick.svg')
+        box-shadow:                 none

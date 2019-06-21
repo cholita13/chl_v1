@@ -1,0 +1,26 @@
+// 
+    // Functions
+    // @package kom_v1
+
+// Calculate rem() values from passed-in px
+@function rem($target, $context: $base) {
+    @return ($target / $context) * 1rem;
+}
+
+// Convert Pixel to Percentage
+@function px2pc($target, $context: rem($breakpoint-xl)) {
+    @return ($target / $context) * 100%;
+}
+
+// Distribute Flex Columns Per Line
+@function perline($items) {
+    $gutter:        px2pc($gap) * 2;
+    $gutter-total:  $items * $gutter;
+
+    @return (100% / $items) - $gutter-total;
+}
+
+// Palette Function
+@function palette($palette, $shade: 'base') {
+    @return map-get(map-get($palettes, $palette), $shade);
+}

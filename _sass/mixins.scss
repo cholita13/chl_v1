@@ -1,0 +1,123 @@
+// 
+    // Mixins
+    // @package kom_v1
+
+// To apply width and height dimensions
+@mixin wh($width, $height: $width) {
+    width:  $width;
+    height: $height;
+}
+
+// Generating Background Colors
+@mixin bg-colors($map) {
+    @each $theme, $color in $map {
+        &-#{$theme} {
+            background-color: $color
+        }
+    }
+}
+
+// Generate States (Colors & Backgrounds)
+@mixin states($map) {
+    @each $state, $color in $map {
+        &-#{$state} {
+            color:      $color;
+        }
+    }
+}
+@mixin bg-brands($map) {
+    @each $state, $color in $map {
+        &-#{$state} {
+            background: $color;
+        }
+    }
+}
+
+// Generating Opacities
+@mixin op($map) {
+    @each $num, $opacity in $map {
+        &-#{$num} {
+            opacity: $opacity
+        }
+    }
+}
+
+// Generating Text Colors
+@mixin co-colors($map) {
+    @each $theme, $color in $map {
+        &-#{$theme} {
+            color: $color
+        }
+    }
+}
+
+// Positionings
+@mixin pos($pos: absolute, $top: null, $right: null, $bottom: null, $left: null) {
+    position:   $pos;
+    top:        $top;
+    right:      $right;
+    bottom:     $bottom;
+    left:       $left;
+}
+
+@mixin absolute-middle() {
+    position:   absolute;
+    top:        50%;
+    left:       50%;
+    transform:  translate(-50%, -50%);
+}
+
+// Displays
+@mixin flex($disp: flex, $al: null, $jc: null) {
+    display:            $disp;
+    align-items:        $al;
+    justify-content:    $jc;
+}
+
+
+// Border Radius
+@mixin bradius($pos: all, $val: 15px) {
+    @if $pos == 'top' {
+        border-top-right-radius:    $val;
+        border-top-left-radius:     $val;
+    } @else {
+        border-radius:              $val;
+    }
+}
+
+// Generating Media Query Rule Blocks
+@mixin mq($break) {
+    @if $break == "xs" {
+        @media (min-width: $breakpoint-xxs) and (max-width: $breakpoint-xs) {
+            @content;
+        }
+    }
+    @else if $break == "sm" {
+        @media (min-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+    @else if $break == "md" {
+        @media (min-width: $breakpoint-md) {
+            @content;
+        }
+    }
+    @else if $break == "tb" {
+        @media (min-width: $breakpoint-tb) {
+            @content;
+        }
+    }
+    @else if $break == "lg" {
+        @media (min-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+    @else if $break == "xl" {
+        @media (min-width: $breakpoint-xl) {
+            @content;
+        }
+    }
+    @else {
+        @error "Whoops! No value could be retrieved for `#{$break}`. "
+    }
+}

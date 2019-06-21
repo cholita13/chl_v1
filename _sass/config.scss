@@ -1,0 +1,152 @@
+// 
+    // Variables & Configurations
+    // @package kom_v1
+
+// Typography
+$base:              15.999px;
+$pico:              0.695rem;
+$nano:              0.895rem;
+$micro:             1.005rem;
+$small:             1.195rem;
+$md:                1.325rem;
+$large:             1.475rem;
+$xlarge:            1.895rem;
+
+$defaultlh:         1.6555;
+$headinglh:         1.2775;
+$headingls:         0.57px;
+
+$headingfont:       'cabin', sans-serif;
+$bodyfont:          'cabin', sans-serif;
+$bold:              700;
+$medium:            500;
+$normal:            400;
+
+
+// Color Names & Values
+$snow:              #fafafa;
+$platinum:          #f1f1f1;
+$firebrick:         #de3d32;
+$smoke:             #090909;
+$white:             #ffffff;
+
+// Color Assignments
+$primarycolor:      $smoke;
+$accentcolor:       $firebrick;
+$black:             $smoke;
+
+// Color Mapping
+$colors: (
+    'default':          $primarycolor,
+    'white':            #fff,
+    'black':            $black,
+    'gray--thin':       rgba($black, 80%),
+    'gray--thinner':    rgba($black, 60%),
+    'gray--thinnest':   rgba($black, 47%),
+    'brand--thinner':   lighten($primarycolor, 43%),
+    'brand--thinnest':  lighten($primarycolor, 47%)
+);
+
+// Color Palette Modifiers
+$palettes: (
+    accent: (
+        xx-light:   lighten($accentcolor, 48%),
+        base:       $accentcolor,
+    ),
+    black: (
+        xxxx-light: rgba($black, 2.5%),
+        xxx-light:  rgba($black, 5%),
+        xx-light:   rgba($black, 12%),
+        x-light:    rgba($black, 25%),
+        light:      rgba($black, 60%),
+        base:       $black
+    ),
+	primary: (
+		light:      lighten($primarycolor, 4%),
+		base:       $primarycolor,
+		dark:       darken($primarycolor, 8%)
+	)
+);
+
+
+// Brand Themes/Colors
+$states: (
+    'delivered':    #119822,
+    'done':         #119822,
+    'in-progress':  #004385,
+    'canceled':     grey, 
+    'failed':       #e3170a ,
+    'delivered--thinnest':    rgba(#119822, 0.1),
+    'done--thinnest':         rgba(#119822, 0.1),
+    'in-progress--thinnest':  rgba(#004385, 0.1),
+    'canceled--thinnest':     rgba(grey, 0.1), 
+    'failed--thinnest':       rgba(#e3170a, 0.1), 
+);
+
+
+// Opacities
+$opacities: (
+    '05':           0.5,
+    '06':           0.6,
+    '07':           0.7,
+    '08':           0.8,
+    '09':           0.9,
+    '10':           1.0
+);
+
+
+// Media
+$borderline:        1px solid rgba($black, 0.075);
+$bline-primary:     1px solid lighten($primarycolor, 40%);
+$card-shadow:       0 1px 3px 0 rgba($black, 0.2), 0 1px 1px 0 rgba($black, 0.14), 0 2px 1px -1px rgba($black, 0.12);
+$outlandish-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+$radius:            36px;
+$halfradius:        $radius / 2;
+
+
+// Behaviors
+$tr-default:        all 0.32s ease;
+$bezier:            0.32s cubic-bezier(0, 0, 0.2, 1);
+
+
+// Measures & Widths
+$select-width:      224px;
+
+
+// Numbers
+$halfbit:           4px;
+$bit:               8px;
+$height-md-down:    616px;
+$height-md-up:      728px;
+$navwidth:          312px;
+$headerheight:      64px;
+$top-offset:        24px;
+$coord-xxs:         15px;
+$coord-xs:          35px;
+$coord-sm:          45px;
+$coord-md:          65px;
+$coord-lg:          80px;
+$coord-xl:          92px;
+$coord-xxl:         112px;
+$coord-xxxl:        156px;
+
+$space-xxxs:        0.25rem;
+$space-xxs:         0.42rem;
+$space-xs:          0.88rem;
+$space-sm:          1.72rem;
+$space-md:          3.08rem;
+$space-lg:          3.72rem;
+$space-xl:          4.96rem;
+$space-xxl:         5.08rem;
+$space:             1.08rem;
+$gap:               $space * 2;
+
+
+// Breakpoints
+$breakpoint-xxs:    320px;
+$breakpoint-xs:     375px;
+$breakpoint-sm:     576px;
+$breakpoint-md:     768px;
+$breakpoint-tb:     768px;
+$breakpoint-lg:     992px;
+$breakpoint-xl:     1200px;

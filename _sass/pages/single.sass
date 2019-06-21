@@ -1,0 +1,73 @@
+// 
+    // Single + Page
+    // @package kom_v1
+
+// Order Single
+.order-status
+    min-width:                  192px
+    position:                   relative
+
+.order-item, .order-total-item
+    padding:                    0.35rem 0 !important
+    border-bottom:              $borderline
+    &:last-child
+        margin-bottom:          0
+    &--details
+        color:                  palette(black)
+        font-weight:            $medium
+    .options-list
+        padding-left:           calc(#{$space} + 5px)
+        font-weight:            $normal
+        line-height:            1
+        li
+            @extend .fs-na
+            @extend .co-gray--thinner
+            padding:            0
+            display:            inline-block
+            font-style:         italic
+            &::after
+                content:        ', '
+            &:last-child::after
+                content:        ''
+    &--amount
+        @extend .fs-mi
+        @extend .co-gray--thin
+        font-weight:            $medium
+.order-totals
+    max-width:                  $breakpoint-xxs
+    margin:                     $space 0 0 auto
+    .order-total-item
+        .charge-name, .charge-amount
+            @extend .fs-na
+            @extend .co-gray--thin
+        &.grand-total
+            .charge-name, .charge-amount
+                @extend .fs-mi
+                @extend .fw-medium
+                margin-top:     $space
+
+.diner-rating
+    svg.icon.icon-ios-star
+        +wh(16px)
+        fill:               palette(primary)
+        transform:          translateY(-1px)
+    &--rating
+        margin-right:       $halfbit
+
+
+// Restaurants Single
+.cover-image
+    position:               relative
+    &__image
+        height:             328px
+        object-position:    center top
+    &__logo
+        +pos(relative, $left: $space)
+        +wh($coord-xxl)
+        +flex($al: center, $jc: center)
+        margin-top:         -($coord-xxl / 2)
+        background:         #fff
+        border:             3px solid #fff
+        border-radius:      100%
+    &__logo__logo
+        +wh(calc(#{$coord-xl} + #{$bit}))

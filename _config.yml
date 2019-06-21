@@ -1,0 +1,60 @@
+# Site info
+title: Cholita Linda
+description: |-
+  Cholita Linda is a chain of street-food restaurants serving fresh foods from exotic ingredients with vibrant colors and the unforgettable taste of Latin America.
+cloudinary:
+  cloud_name: cholita
+  verbose: false
+  origin_url: 'https://res.cloudinary.com/cholita/image/upload/'
+  presets:
+    default:
+      min_width: 480
+      max_width: 1920
+      fallback_max_width: 768
+      steps: 4
+image: /images/logo.png
+url: ''
+phone: '(802) 307-7749'
+email: 'info@komponents.ng'
+
+# Data in
+font_url: 'https://fonts.googleapis.com/css?family=Cabin:400,500,700'
+
+# Build settings
+markdown: kramdown
+kramdown:
+  entity_output: as_char
+
+# Handling Reading
+charset: "utf-8"
+
+# Collections
+collections:
+  images:
+    title:  Images
+    output: false
+  services:
+    title: Our Services
+    output: false
+
+# Defaults
+defaults:
+
+# Extraneous folders to include
+include: 
+  - _pages
+
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Files to exclude on build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - '.gitignore'

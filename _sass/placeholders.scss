@@ -1,0 +1,95 @@
+// 
+    // Placeholders
+    // @package kom_v1
+
+%h {
+    margin-top:         $space-sm;
+    margin-bottom:      $space-xs;
+    line-height:        $headinglh;
+    font-family:        $headingfont;
+    color:              inherit;
+}
+
+%cta {
+    font-family:    $headingfont;
+    font-size:      rem(17px);
+    svg {
+        @include wh(17px);
+    }
+    &:focus, &:hover, &:active {
+        color:      unset;
+    }
+}
+
+%fix {
+    position:       fixed;
+    width:          100%;
+    background:     #fff;
+}
+
+%grid {
+    display:        flex;
+    flex-wrap:      wrap;
+    margin:         -$gap / 2;
+}
+
+%brandradius {
+    border-top-right-radius:        $halfradius;
+    border-bottom-left-radius:      $halfradius;
+}
+%brandradius-x2 {
+    border-top-right-radius:        $radius;
+    border-bottom-left-radius:      $radius;
+}
+
+%btn {
+    @extend %brandradius;
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    padding:            $space-xxxs $space;
+    cursor:             pointer;
+    min-width:          $coord-xl;
+}
+
+%maxwidth {
+    width:          100%;
+}
+
+%avatar {
+    object-fit:     cover;
+    border-radius:  100%;
+}
+
+%caps {
+    text-transform:     uppercase;
+    letter-spacing:     0.99px;
+}
+
+%badge {
+    font-size:          rem(14px);
+    display:            inline-block;
+    padding:            1px $halfbit;
+    // transform:          translateY(-$halfbit);
+    border-radius:      $halfbit;
+    font-weight:        $normal;
+}
+
+%animated {
+    opacity:                    1;
+    animation-duration:         0.32s;
+    animation-fill-mode:        both;
+    animation-timing-function:  cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+%sr {
+    position:           absolute;
+    width:              1px;
+    height:             1px;
+    padding:            0;
+    margin:             -1px;
+    border:             0;
+    clip-path:          inset(100%);
+    overflow:           hidden;
+    white-space:        nowrap;
+}

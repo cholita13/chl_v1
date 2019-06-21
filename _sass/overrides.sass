@@ -1,0 +1,85 @@
+// 
+    // Override Library Styles
+    // @package kom_v1
+
+html
+    color:                  rgba(palette(black), 0.75)
+
+body
+    font-size:              inherit
+
+// Accordions
+.uk-accordion
+    .icon-chevron-down
+        +wh(20px)
+        transition:         transform 0.25s ease-in
+    .uk-open .icon-chevron-down
+        transform:          rotate(180deg)
+.uk-accordion-title
+    font-size:              inherit!important
+    &::before
+        content:            none
+.uk-accordion>:nth-child(n+2), .uk-accordion-content
+    margin-top:             0!important
+.uk-link:hover, a:hover
+    color:                  unset
+    text-decoration:        none
+
+// Dropdown
+.uk-dropdown:not(.slimmer-dropdown):not(.notifications-dropdown):not(.custom-width)
+    width:                  $select-width
+    max-width:              $select-width
+.uk-dropdown
+    @extend %brandradius
+    margin:                 0!important
+    padding:                calc(#{$space-sm} - #{$bit})
+    box-shadow:             $card-shadow
+    &.slimmer-dropdown
+        min-width:          176px
+        max-width:          176px
+
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6
+    font-weight:            $bold
+
+
+// Tabs
+.uk-tab 
+    > *
+        padding-left:       0
+
+
+// Images
+svg
+    max-width:              unset
+
+
+// Alerts
+.uk-alert-success
+    background:             #fff
+    @extend .co-delivered
+.uk-alert-close
+    transition:             $tr-default
+    &:focus, &:hover
+        opacity:            1
+
+// DateRangePicker
+.daterangepicker
+    margin-right:           -8px
+    font-family:            inherit
+    width:                  100%
+    line-height:            inherit
+    +mq(sm)
+        width:              unset
+    .drp-calendar
+        max-width:          100%
+    &.show-calendar .ranges
+        margin-top:         0
+        font-size:          13.5px
+    .ranges li.active, td.active, td.active:hover
+        background:         palette(primary)
+    .calendar-table th, .calendar-table td
+        +wh(15px)
+        line-height:        1
+        min-width:          15px
+        padding:            10px

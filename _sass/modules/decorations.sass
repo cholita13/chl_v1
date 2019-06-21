@@ -1,0 +1,87 @@
+// 
+    // Decorations on Elements
+    // @package kom_v1
+
+.branded-svg-bg
+    color:                  palette(primary)
+    svg
+        +wh(30px)
+        @extend .bg-brand--thinner
+        border:             $bline-primary
+        padding:            $space
+        box-sizing:         content-box
+        border-radius:      50%
+
+.badge
+    @extend %badge
+    &--low-contrast
+        color:                  rgba($black, 0.8)
+        background-color:       rgba($black, 0.09)
+
+.has-superscript
+    position:                   relative
+    white-space:                nowrap
+    .superscript
+        +pos()
+        margin-left:            $halfbit
+
+.counter-ring
+    +wh(35px)
+    position:                   relative
+    &__status, &__ring, &__outer-ring
+        +absolute-middle
+        border-radius:          50%
+    &__status
+        +wh(22px)
+        color:                  #fff
+        z-index:                3
+        .state-in-progress &
+            font-weight:        normal
+            font-size:          rem(18px)
+            top:                57%
+            left:               54.5%
+    &__ring
+        +wh(40px)
+        border:                 2.5px solid #fff
+        z-index:                2
+        .state-in-progress &
+            @extend .bg-in-progress
+        .state-failed &
+            @extend .bg-failed
+        .state-canceled &
+            @extend .bg-canceled
+        .state-delivered &, .state-done &
+            @extend .bg-delivered
+    &__outer-ring
+        +wh(45px)
+        background:             rgba($black, 0.1)
+        z-index:                1
+    .order-status-flow &
+        &::before
+            content:            ''
+            +pos($top: 50%, $right: 0)
+            transform:          translate(0, -50%)
+            width:              96px
+            margin-right:       72px
+    .order-status-flow .state-done &
+        &::before
+            border-top:         1px solid
+    .order-status-flow .state-open &
+        &::before
+            border-top:         1px dashed grey
+    .order-status:first-child &
+        &::before
+            content:            none
+
+.account-for-middle-li-decor
+    > *
+        &:nth-child(2), &:nth-child(3)
+            +mq(tb)
+                padding-left:   0
+        &:nth-child(2).middle-li-decor\@m
+            border-top:         $borderline
+            border-bottom:      $borderline
+            +mq(tb)
+                border:         0
+                border-right:   $borderline
+                border-left:    $borderline

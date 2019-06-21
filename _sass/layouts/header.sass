@@ -1,0 +1,100 @@
+// 
+    // Header
+    // @package kom_v1
+
+.site-header
+    position:               relative
+
+.hero-image, .hero-image__image
+    height:                 456px
+    +mq(sm)
+        height:             592px
+.hero-image
+    &::before
+        +pos($top: 0)
+        +wh(100%, 176px)
+        content:            ''
+        // background-image:   linear-gradient(to top, rgba(0, 0, 0, 0.01) 0, rgba(0, 0, 0, 0.8) 100%)
+        background-image:   linear-gradient(to bottom, hsla(0, 0%, 0%, 0.67) 0%, hsla(0, 0%, 0%, 0.661) 8.1%, hsla(0, 0%, 0%, 0.637) 15.5%, hsla(0, 0%, 0%, 0.6) 22.5%, hsla(0, 0%, 0%, 0.552) 29%, hsla(0, 0%, 0%, 0.496) 35.3%, hsla(0, 0%, 0%, 0.434) 41.2%, hsla(0, 0%, 0%, 0.368) 47.1%, hsla(0, 0%, 0%, 0.302) 52.9%, hsla(0, 0%, 0%, 0.236) 58.8%, hsla(0, 0%, 0%, 0.174) 64.7%, hsla(0, 0%, 0%, 0.118) 71%, hsla(0, 0%, 0%, 0.07) 77.5%, hsla(0, 0%, 0%, 0.033) 84.5%, hsla(0, 0%, 0%, 0.009) 91.9%, hsla(0, 0%, 0%, 0) 100%)
+.hero-image__image
+    object-position:        right
+    
+.topbar
+    &.is-absolute
+        +pos($top: 0, $right: 0, $left: 0)
+        animation:          fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    &__content
+        border-bottom:      1px solid rgba(#fff, 0.2)
+    &.is-fixed
+        +pos(fixed, $top: 0, $right: 0, $left: 0)
+        background:         #fff
+        animation:          slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    &.removing-fixed
+        animation:          slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+
+.logo
+    &__symbol svg
+        width:              40px
+    &__wordmark svg
+        width:              80px
+    .is-absolute &
+        color:              #fff
+    .is-fixed &
+        .logo__symbol
+            color:          $accentcolor
+        .logo__wordmark
+            color:          $primarycolor
+        
+.nav-toggler
+    display:                block
+    padding:                $space
+    cursor:                 pointer
+.hamburger, .hamburger:before, .hamburger:after
+    +wh(20px, 2px)
+    background-color:       currentColor
+    transition:             $tr-default
+.hamburger
+    position:               relative
+    &:before, &:after
+        +pos($left: 0)
+        content:            ''
+    &:before
+        transform:          translateY(-6px)
+    &:after
+        transform:          translateY(6px)
+    .nav-is-open &
+        background-color:   transparent
+        &:before
+            transform:      rotate(-45deg)
+        &:after
+            transform:      rotate(45deg)
+            
+.mainnav
+    li
+        a
+            display:        block
+            padding:        $space $space-sm
+        &:last-child a
+            padding-right:  $space
+    .is-absolute &, .is-fixed &
+        a
+            position:       relative
+            opacity:        .6
+            letter-spacing: .25px
+            transition:     $tr-default
+            &:active, &:focus, &:hover, &.active
+                opacity:    1
+            &.active:after
+                +pos($right: 0, $bottom: -5px, $left: 0)
+                +wh(100%, 2px)
+                content:    ''
+    .is-absolute &
+        a
+            color:          #fff
+            &.active:after
+                background: #fff
+    .is-fixed &
+        a
+            color:          $primarycolor
+            &.active:after
+                background: $accentcolor
