@@ -1,9 +1,9 @@
-// 
+//
     // Header
     // @package chl_v1
 
 .nav-toggler
-    +pos(fixed, $top: $space, $right: $space)
+    +pos(fixed, $top: $space-xxxs, $right: $space-xxxs)
     display:                block
     padding:                $space
     cursor:                 pointer
@@ -33,7 +33,7 @@
     .nav-toggler:active &, .nav-toggler:focus &, .nav-toggler:hover &
         background-color:   $primarycolor
 .nav-toggler
-    &:active, &:focus, &:hover 
+    &:active, &:focus, &:hover
         .hamburger:before, .hamburger:after
             background-color:       $primarycolor
 .uk-offcanvas-page
@@ -41,7 +41,32 @@
         &:active, &:focus, &:hover
             .hamburger
                 background-color:   transparent
-                
+
 .uk-offcanvas-bar
-    background:         url('/images/mesh.png')
-    box-shadow:         inset 2px 0px 5px 0px rgba(0,0,0,0.5)
+    background:             url('/images/mesh.png')
+    box-shadow:             inset 2px 0px 5px 0px rgba(0,0,0,0.5)
+    a
+        color:              unset
+        text-decoration:    none
+        transition:         $tr-default!important
+        &:active, &:focus, &:hover
+            color:          unset
+
+.uk-nav
+    .uk-nav-link
+        @extend .black-link
+        font-size:          $md
+        +mq(sm)
+            font-size:      $large
+        &:active, &:focus, &:hover
+            color:          $primarycolor
+.vcard, .social-links
+    &__link
+        color:              rgba($black, 50%)!important
+        &:active, &:focus, &:hover
+            color:          $primarycolor!important
+.social-links
+    &__link
+        color:              $primarycolor!important
+        &:active, &:focus, &:hover
+            color:          rgba($black, 100%)!important

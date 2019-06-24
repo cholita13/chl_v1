@@ -13,9 +13,19 @@ cloudinary:
       fallback_max_width: 768
       steps: 3
 image: /images/logo.png
-url: ''
-phone: '(802) 307-7749'
-email: 'info@komponents.ng'
+url: 'https://chl.surge.sh'
+vcard:
+  hours: 'Mon–Sun: 11AM–10PM '
+  street: 4923 Telegraph Ave
+  phone: '+1 (510) 594-7610'
+  email: 'info@cholitalinda.com'
+  city: Oakland
+  state: CA
+  country: Nigeria
+social:
+  twitter: 'EatCholitaLinda'
+  facebook: 'Cholita-Linda-147237876153'
+  instagram: 'cholita_linda'
 
 # Data in
 font_url: 'https://fonts.googleapis.com/css?family=Cabin:400,500,700'
@@ -39,13 +49,13 @@ collections:
 
 # Defaults
 defaults:
-  
+
 # Plugins
 plugins:
   - jekyll-menus
 
 # Extraneous folders to include
-include: 
+include:
   - _pages
 
 # Handling Sass

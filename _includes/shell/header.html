@@ -2,17 +2,45 @@
     <button class="nav-toggler ml-auto" aria-label="Toggle Navigation" uk-toggle="target: #offcanvas-reveal">
         <span class="hamburger d-blk"></span>
     </button>
-    <nav class="mobilenav" id="offcanvas-reveal" uk-offcanvas="mode: reveal; flip: true; overlay: true">
+    <nav id="offcanvas-reveal" uk-offcanvas="mode: reveal; flip: true; overlay: true">
         <div class="uk-offcanvas-bar">
-            <ul class="none m-0" uk-scrollspy-nav="closest: li; scroll: true; duration: 250; overflow: true;">
+            <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
                 {% for item in site.menus.header %}
-                    <li>
-                        <a href="{{ item.url }}" title="Go to {{ item.title }}" uk-scroll>
+                    <li class="{% if condition %}uk-active{% endif %}">
+                        <a class="scroll-trigger uk-text-medium uk-nav-link" href="{{ item.url }}" title="Go to {{ item.title }}" uk-scroll>
                             {{ item.title }}
                         </a>
                     </li>
                 {% endfor %}
             </ul>
+            <p class="vcard details-area uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
+                <a class="vcard__link" href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" target="_blank">
+                    <span itemprop="streetAddress">{{ site.vcard.street }}</span><span class="separator">,</span>
+                    <span itemprop="addressLocality">{{ site.vcard.city }}</span>
+                    <meta itemprop="addressRegion" content="CA">
+                    <meta itemprop="postalCode" content="94609">
+                </a>
+                <br>
+                <a class="vcard__link scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
+                    {{ site.vcard.hours }}
+                </a>
+                <br>
+                <a class="vcard__link" href="mailto:{{ site.vcard.email }}" itemprop="email">{{ site.vcard.email }}</a>
+                <br>
+                <a class="vcard__link" href="tel:{{ site.vcard.phone }}" itemprop="telephone">{{ site.vcard.phone }}</a>
+            </p>
+            <p class="social-links uk-padding uk-padding-remove-horizontal uk-margin-remove-bottom">
+                <a class="social-links__link prefix--wider" href="//twitter.com/{{ site.social.twitter }}" target="_blank">
+                    <ion-icon class="small" name="logo-twitter"></ion-icon>
+                </a>
+                <a class="social-links__link prefix--wider" href="//facebook.com/{{ site.social.facebook }}"
+                    target="_blank">
+                    <ion-icon class="small" name="logo-facebook"></ion-icon>
+                </a>
+                <a class="social-links__link" href="//instagram.com/{{ site.social.instagram }}" target="_blank">
+                    <ion-icon class="small" name="logo-instagram"></ion-icon>
+                </a>
+            </p>
         </div>
     </nav>
 </header>

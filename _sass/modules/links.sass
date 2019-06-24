@@ -1,21 +1,6 @@
-// 
+//
     // Links
     // @package chl_v1
-
-[disabled]
-    cursor:                 not-allowed
-    opacity:                0.5
-a[disabled]
-    pointer-events:         none
-
-.c-pointer
-    cursor:                 pointer
-
-.view-all, .view-more
-    font-weight:            $medium
-
-[data-micromodal-trigger]
-    cursor:                 pointer
 
 .primary-link
     color:                  palette(primary)
@@ -29,15 +14,8 @@ a[disabled]
     color:                  rgba($black, 100%)
 .default-link
     color:                  rgba(palette(black), 0.75)
-.primary-link, .alt-link, .grey-link, .gray-link, .default-link
+.primary-link, .alt-link, .grey-link, .gray-link, .default-link, .black-link
     transition:             $tr-default
 .alt-link, .grey-link, .gray-link, .default-link
     &:active, &:focus, &:hover
         color:              rgba($black, 100%)
-
-.stacked-iconic-link
-    +flex(flex, center, center)
-    flex-direction:         column
-    width:                  100%
-    *:first-child
-        margin-bottom:      $bit * 1.5
