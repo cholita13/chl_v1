@@ -4,7 +4,6 @@
 
 html
     font-size:          $base
-    // background-color:   palette(primary)
 
 *, *::before, *::after
     box-sizing:         border-box
@@ -16,11 +15,13 @@ body
     margin:             0
     font-family:        $bodyfont
     line-height:        $defaultlh
-    &.nav-is-open
-        overflow:       hidden
-main
-    position:           relative
-    background-color:   #fff
+    // background:         url('/images/mesh.png')
+    // To enable sticky footer
+    display:            flex
+    flex-direction:     column
+    min-height:         100vh
+    main
+        flex:           1
 
 p
     margin:             0
