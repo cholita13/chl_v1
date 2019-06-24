@@ -4,7 +4,15 @@
     </button>
     <nav class="mobilenav" id="offcanvas-reveal" uk-offcanvas="mode: reveal; flip: true; overlay: true">
         <div class="uk-offcanvas-bar">
-            
+            <ul class="none m-0" uk-scrollspy-nav="closest: li; scroll: true; duration: 250; overflow: true;">
+                {% for item in site.menus.header %}
+                    <li>
+                        <a href="{{ item.url }}" title="Go to {{ item.title }}" uk-scroll>
+                            {{ item.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </nav>
 </header>

@@ -39,6 +39,10 @@ collections:
 
 # Defaults
 defaults:
+  
+# Plugins
+plugins:
+  - jekyll-menus
 
 # Extraneous folders to include
 include: 
