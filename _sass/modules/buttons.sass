@@ -1,54 +1,13 @@
-// 
+//
     // Buttons
     // @package chl_v1
 
 button
-    background:             none
-    border:                 0
-    padding:                0
-    font:                   inherit
-    color:                  inherit
-    cursor:                 pointer
+    background:         none
+    border:             0
+    padding:            0
+    font:               inherit
+    color:              inherit
+    cursor:             pointer
     &:active, &:focus, &:hover
-        border:             0
-
-.btn
-    &--branded, &--select, &--toggler, &--outline, &--upload, &--neutral, &--fluid, &--borderline
-        @extend %btn
-    &--branded
-        background:         palette(primary)
-        color:              #fff
-        box-shadow:         $card-shadow
-        &:active, &:focus, &:hover
-            color:          #fff
-    &--fluid
-        width:              100%
-        padding:            $space-xxs $space
-        justify-content:    center
-    &--outline
-        border:             1.5px solid palette(primary)
-        background:         #fff
-        color:              palette(primary)
-        &:active, &:focus, &:hover
-            border:         1.5px solid palette(primary)
-    &--select, &--toggler, &--borderline
-        border:             $borderline
-        border-radius:      $halfbit
-        padding-right:      $space-xxs
-        padding-left:       $space-xxs
-        &:active, &:focus, &:hover
-            border:         $borderline
-    &--select
-        width:              $select-width
-    &--toggler
-        width:              $select-width / 1.5
-    &--upload
-        @extend .drag-and-drop-border
-        justify-content:    center
-        padding:            $space $space-sm
-        font-weight:        $normal
-        color:              rgba($black, 60%)
-    &--group
-        display:            flex
-        > *:not(:last-child)
-            margin-right:   $space
+        border:         0
