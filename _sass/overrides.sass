@@ -7,9 +7,25 @@
     background:         rgba(#fff, 0.05)
 
 .uk-overlay-primary
-    background:         rgba(#000,.3)
+    background:         rgba(#000,.45)
 
 
-// Height
+// Heights
 .uk-height-viewport
     height:             100vh
+
+
+// Colors
+.uk-light a
+    opacity:            .8
+    &:active, &:focus, &:hover
+        opacity:        1
+
+
+// Buttons
+.uk-button
+    text-transform:     capitalize
+    transition:         $tr-default
+.uk-button-default
+    border:             1.5px solid
+    border-radius:      40px

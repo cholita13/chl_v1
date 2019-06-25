@@ -5,9 +5,25 @@ layout: default
     <div class="uk-height-viewport uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200"
         style="background-image: url('images/chl.jpg');">
         <div class="uk-overlay-primary uk-light uk-position-cover">
-            <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-height-viewport uk-padding-small">
-                <img src="/images/logo.svg" alt="" style="width: 272px;">
-                <div class="hidden-sm-up uk-text-center">
+            <div class="hero-content uk-flex uk-flex-column uk-flex-center uk-height-viewport uk-padding-small">
+                <img class="logo" src="/images/logo.svg" alt="">
+                <div class="visible-sm-up">
+                    <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
+                        {% for item in site.menus.header %}
+                            {%- assign title = item.title | downcase -%}
+                            {%- if title == 'overview' or title == 'mentions' -%}
+                                {%- continue -%}
+                            {%- endif -%}
+                            <li class="{% if condition %}uk-active{% endif %}">
+                                <a class="scroll-trigger uk-text-large fw-medium lh-1hh" href="{{ item.url }}" title="Go to {{ item.title }}"
+                                    uk-scroll>
+                                    {{ title | capitalize_initial_letters }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="">
                     <p class="vcard uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
                         <a class="" href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address"
                             itemscope="" itemtype="http://schema.org/PostalAddress" target="_blank">
@@ -26,14 +42,19 @@ layout: default
                         <a class="" href="tel:{{ site.vcard.phone }}" itemprop="telephone">{{ site.vcard.phone }}</a>
                     </p>
                     <p class="social-links uk-padding uk-padding-remove-horizontal uk-margin-remove-bottom">
-                        <a class="social-links__link prefix--wider" href="//twitter.com/{{ site.social.twitter }}" target="_blank">
-                            <ion-icon class="medium" name="logo-twitter"></ion-icon>
+                        <a class="prefix--wider" href="//twitter.com/{{ site.social.twitter }}" target="_blank">
+                            <ion-icon class="small" name="logo-twitter"></ion-icon>
                         </a>
-                        <a class="social-links__link prefix--wider" href="//facebook.com/{{ site.social.facebook }}" target="_blank">
-                            <ion-icon class="medium" name="logo-facebook"></ion-icon>
+                        <a class="prefix--wider" href="//facebook.com/{{ site.social.facebook }}" target="_blank">
+                            <ion-icon class="small" name="logo-facebook"></ion-icon>
                         </a>
-                        <a class="social-links__link" href="//instagram.com/{{ site.social.instagram }}" target="_blank">
-                            <ion-icon class="medium" name="logo-instagram"></ion-icon>
+                        <a class="" href="//instagram.com/{{ site.social.instagram }}" target="_blank">
+                            <ion-icon class="small" name="logo-instagram"></ion-icon>
+                        </a>
+                    </p>
+                    <p class="uk-margin-top uk-margin-remove-bottom hidden-sm-up">
+                        <a class="uk-button uk-button-default scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
+                            Order Online
                         </a>
                     </p>
                 </div>

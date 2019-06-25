@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,500,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons/ionicons.js"></script>
 
     <link rel="stylesheet" href="https://chl.surge.sh/main.css"><!-- Begin Jekyll SEO tag v2.6.0 -->
 <meta name="generator" content="Jekyll v3.8.5" />
@@ -30,43 +32,43 @@
             <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
                 
                     <li class="">
-                        <a class="scroll-trigger uk-text-medium uk-nav-link" href="/#overview" title="Go to Overview" uk-scroll>
+                        <a class="scroll-trigger fw-medium uk-nav-link" href="/#overview" title="Go to Overview" uk-scroll>
                             Overview
                         </a>
                     </li>
                 
                     <li class="">
-                        <a class="scroll-trigger uk-text-medium uk-nav-link" href="/#menu" title="Go to Our Menu" uk-scroll>
+                        <a class="scroll-trigger fw-medium uk-nav-link" href="/#menu" title="Go to Our Menu" uk-scroll>
                             Our Menu
                         </a>
                     </li>
                 
                     <li class="">
-                        <a class="scroll-trigger uk-text-medium uk-nav-link" href="/#order" title="Go to Order Online" uk-scroll>
+                        <a class="scroll-trigger fw-medium uk-nav-link" href="/#order" title="Go to Order Online" uk-scroll>
                             Order Online
                         </a>
                     </li>
                 
                     <li class="">
-                        <a class="scroll-trigger uk-text-medium uk-nav-link" href="/#about" title="Go to About" uk-scroll>
+                        <a class="scroll-trigger fw-medium uk-nav-link" href="/#about" title="Go to About" uk-scroll>
                             About
                         </a>
                     </li>
                 
                     <li class="">
-                        <a class="scroll-trigger uk-text-medium uk-nav-link" href="/#gallery" title="Go to Gallery" uk-scroll>
+                        <a class="scroll-trigger fw-medium uk-nav-link" href="/#gallery" title="Go to Gallery" uk-scroll>
                             Gallery
                         </a>
                     </li>
                 
                     <li class="">
-                        <a class="scroll-trigger uk-text-medium uk-nav-link" href="/#mentions" title="Go to Mentions" uk-scroll>
+                        <a class="scroll-trigger fw-medium uk-nav-link" href="/#mentions" title="Go to Mentions" uk-scroll>
                             Mentions
                         </a>
                     </li>
                 
                     <li class="">
-                        <a class="scroll-trigger uk-text-medium uk-nav-link" href="/#contacts" title="Go to Come Visit" uk-scroll>
+                        <a class="scroll-trigger fw-medium uk-nav-link" href="/#contacts" title="Go to Come Visit" uk-scroll>
                             Come Visit
                         </a>
                     </li>
@@ -107,9 +109,44 @@
     <div class="uk-height-viewport uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200"
         style="background-image: url('images/chl.jpg');">
         <div class="uk-overlay-primary uk-light uk-position-cover">
-            <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-height-viewport uk-padding-small">
-                <img src="/images/logo.svg" alt="" style="width: 272px;">
-                <div class="hidden-sm-up uk-text-center">
+            <div class="hero-content uk-flex uk-flex-column uk-flex-center uk-height-viewport uk-padding-small">
+                <img class="logo" src="/images/logo.svg" alt="">
+                <div class="visible-sm-up">
+                    <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
+                        <li class="">
+                                <a class="scroll-trigger uk-text-large fw-medium lh-1hh" href="/#menu" title="Go to Our Menu"
+                                    uk-scroll>
+                                    Our Menu
+                                </a>
+                            </li>
+                        <li class="">
+                                <a class="scroll-trigger uk-text-large fw-medium lh-1hh" href="/#order" title="Go to Order Online"
+                                    uk-scroll>
+                                    Order Online
+                                </a>
+                            </li>
+                        <li class="">
+                                <a class="scroll-trigger uk-text-large fw-medium lh-1hh" href="/#about" title="Go to About"
+                                    uk-scroll>
+                                    About
+                                </a>
+                            </li>
+                        <li class="">
+                                <a class="scroll-trigger uk-text-large fw-medium lh-1hh" href="/#gallery" title="Go to Gallery"
+                                    uk-scroll>
+                                    Gallery
+                                </a>
+                            </li>
+                        <li class="">
+                                <a class="scroll-trigger uk-text-large fw-medium lh-1hh" href="/#contacts" title="Go to Come Visit"
+                                    uk-scroll>
+                                    Come Visit
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="">
                     <p class="vcard uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
                         <a class="" href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address"
                             itemscope="" itemtype="http://schema.org/PostalAddress" target="_blank">
@@ -128,14 +165,19 @@
                         <a class="" href="tel:+1 (510) 594-7610" itemprop="telephone">+1 (510) 594-7610</a>
                     </p>
                     <p class="social-links uk-padding uk-padding-remove-horizontal uk-margin-remove-bottom">
-                        <a class="social-links__link prefix--wider" href="//twitter.com/EatCholitaLinda" target="_blank">
-                            <ion-icon class="medium" name="logo-twitter"></ion-icon>
+                        <a class="prefix--wider" href="//twitter.com/EatCholitaLinda" target="_blank">
+                            <ion-icon class="small" name="logo-twitter"></ion-icon>
                         </a>
-                        <a class="social-links__link prefix--wider" href="//facebook.com/Cholita-Linda-147237876153" target="_blank">
-                            <ion-icon class="medium" name="logo-facebook"></ion-icon>
+                        <a class="prefix--wider" href="//facebook.com/Cholita-Linda-147237876153" target="_blank">
+                            <ion-icon class="small" name="logo-facebook"></ion-icon>
                         </a>
-                        <a class="social-links__link" href="//instagram.com/cholita_linda" target="_blank">
-                            <ion-icon class="medium" name="logo-instagram"></ion-icon>
+                        <a class="" href="//instagram.com/cholita_linda" target="_blank">
+                            <ion-icon class="small" name="logo-instagram"></ion-icon>
+                        </a>
+                    </p>
+                    <p class="uk-margin-top uk-margin-remove-bottom hidden-sm-up">
+                        <a class="uk-button uk-button-default scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
+                            Order Online
                         </a>
                     </p>
                 </div>
@@ -161,7 +203,5 @@
 <div style="min-height: 100vh;" id="contacts">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, nobis veritatis maiores dolore quidem incidunt voluptates consequatur laudantium facere deleniti quod quia labore aut minima assumenda veniam fugit illum eius.
 </div>
-        </main><script type="module" src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons/ionicons.js"></script>
-<script src="https://chl.surge.sh/js/main.js"></script></body>
+        </main><script src="https://chl.surge.sh/js/main.js"></script></body>
 </html>

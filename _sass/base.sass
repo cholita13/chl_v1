@@ -1,4 +1,4 @@
-// 
+//
     // Base
     // @package chl_v1
 
@@ -15,25 +15,21 @@ body
     margin:             0
     font-family:        $bodyfont
     line-height:        $defaultlh
-    // background:         url('/images/mesh.png')
-    // To enable sticky footer
-    display:            flex
-    flex-direction:     column
-    min-height:         100vh
-    main
-        flex:           1
 
 p
     margin:             0
     margin-bottom:      $gap
     color:              palette(black)
-    font-size:          rem(17px)
+    font-size:          rem(18px)
     strong
         color:          palette(primary)
 
 a
-    color:              $accentcolor
-    text-decoration:    none
+    color:                  $accentcolor
+    text-decoration:        none
+    transition:             $tr-default
+    &:active, &:focus, &:hover
+        text-decoration:    none!important
 
 img
     +wh(100%, auto)
