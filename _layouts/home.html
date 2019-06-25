@@ -1,9 +1,46 @@
 ---
 layout: default
 ---
-<div style="min-height: 100vh;" id="overview">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, nobis veritatis maiores dolore quidem incidunt voluptates consequatur laudantium facere deleniti quod quia labore aut minima assumenda veniam fugit illum eius.
-</div>
+<section class="" id="overview">
+    <div class="uk-height-viewport uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200"
+        style="background-image: url('images/chl.jpg');">
+        <div class="uk-overlay-primary uk-light uk-position-cover">
+            <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-height-viewport uk-padding-small">
+                <img src="/images/logo.svg" alt="" style="width: 272px;">
+                <div class="hidden-sm-up uk-text-center">
+                    <p class="vcard uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
+                        <a class="" href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address"
+                            itemscope="" itemtype="http://schema.org/PostalAddress" target="_blank">
+                            <span itemprop="streetAddress">{{ site.vcard.street }}</span><span class="separator">,</span>
+                            <span itemprop="addressLocality">{{ site.vcard.city }}</span>
+                            <meta itemprop="addressRegion" content="CA">
+                            <meta itemprop="postalCode" content="94609">
+                        </a>
+                        <br>
+                        <a class=" scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
+                            {{ site.vcard.hours }}
+                        </a>
+                        <br>
+                        <a class="" href="mailto:{{ site.vcard.email }}" itemprop="email">{{ site.vcard.email }}</a>
+                        <br>
+                        <a class="" href="tel:{{ site.vcard.phone }}" itemprop="telephone">{{ site.vcard.phone }}</a>
+                    </p>
+                    <p class="social-links uk-padding uk-padding-remove-horizontal uk-margin-remove-bottom">
+                        <a class="social-links__link prefix--wider" href="//twitter.com/{{ site.social.twitter }}" target="_blank">
+                            <ion-icon class="medium" name="logo-twitter"></ion-icon>
+                        </a>
+                        <a class="social-links__link prefix--wider" href="//facebook.com/{{ site.social.facebook }}" target="_blank">
+                            <ion-icon class="medium" name="logo-facebook"></ion-icon>
+                        </a>
+                        <a class="social-links__link" href="//instagram.com/{{ site.social.instagram }}" target="_blank">
+                            <ion-icon class="medium" name="logo-instagram"></ion-icon>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <div style="min-height: 100vh;" id="menu">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, nobis veritatis maiores dolore quidem incidunt voluptates consequatur laudantium facere deleniti quod quia labore aut minima assumenda veniam fugit illum eius.
 </div>

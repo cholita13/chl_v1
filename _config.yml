@@ -8,10 +8,10 @@ cloudinary:
   origin_url: 'https://res.cloudinary.com/cholita/image/upload/'
   presets:
     default:
-      min_width: 480
-      max_width: 1440
-      fallback_max_width: 768
-      steps: 3
+      min_width: 768
+      max_width: 1920
+      fallback_max_width: 1280
+      steps: 4
 image: /images/logo.png
 url: 'https://chl.surge.sh'
 vcard:
@@ -61,7 +61,7 @@ include:
 # Handling Sass
 sass:
   sass_dir: _sass
-  style: compressed
+  style: expanded
 
 # Files to exclude on build
 exclude:

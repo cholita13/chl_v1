@@ -1,15 +1,6 @@
-// 
+//
     // Visibility
     // @package chl_v1
-
-.o-hidden
-    overflow:           hidden
-.o-x-hidden
-    overflow-x:         hidden
-.o-x-auto
-    overflow-x:         auto
-.o-y-auto
-    overflow-y:         auto
 
 .visible-sm-up
     display:            none
@@ -23,6 +14,10 @@
     display:            none
     +mq(tb)
         display:        inherit
+.hidden-sm-up
+    display:            block
+    +mq(sm)
+        display:        none
 .hidden-md-up
     display:            block
     +mq(md)

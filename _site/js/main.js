@@ -7,6 +7,6 @@ function qq(selector, parent) { return Array.from((parent ? parent : document).q
 
 
 // Hide nav after scrolled to section completes
-UIkit.util.on('.scroll-trigger', 'scrolled', () => {
-	UIkit.offcanvas("#offcanvas-reveal").hide();
-});
+UIkit.util.on(".scroll-trigger", "scrolled", () =>
+    UIkit.offcanvas("#offcanvas-reveal").hide()
+);
