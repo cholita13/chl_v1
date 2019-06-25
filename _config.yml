@@ -46,6 +46,9 @@ collections:
   services:
     title: Our Services
     output: false
+  recognitions:
+    title: Recognitions
+    output: false
 
 # Defaults
 defaults:
