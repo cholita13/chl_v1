@@ -2,11 +2,10 @@
 layout: default
 ---
 <section class="" id="overview">
-    <div class="uk-height-viewport uk-background-cover" uk-parallax="bgy: 100"
-        style="background-image: url('images/chl.jpg');">
+    <div class="uk-height-viewport uk-background-cover" uk-parallax="bgy: 100" data-src="{{ page.image_768_s }}" data-srcset="{{ page.image_1024_m }} 1024w, {{ page.image_1440_l }} 1440w" data-sizes="(min-width: 768px) 768px, 100vw" uk-img>
         <div class="uk-light uk-position-cover">
             <div class="hero-content uk-flex uk-flex-column uk-flex-center uk-height-viewport uk-padding-small">
-                <img class="logo" src="/images/logo.svg" alt="">
+                <img class="logo" src="/images/logo.svg" alt="{{ site.title }}">
                 <div class="visible-sm-up">
                     <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
                         {% for item in site.menus.header %}

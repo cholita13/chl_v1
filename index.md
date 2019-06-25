@@ -1,10 +1,11 @@
 ---
 layout: home
-title: Home
-headline: Get efficient energy. Get peace of mind.
+title: Cholita Linda
 description: |-
-    We help owners and managers of homes and offices harness, store, and utilize power from the grid and renewable sources. Komponents is about peace of mind from efficient energy management.
-image_path: '/images/chl.jpg'
+    Cholita Linda is a chain of street-food restaurants serving fresh foods from exotic ingredients with vibrant colors and the unforgettable taste of Latin America.
+image_768_s: /images/chl_768_s.jpg
+image_1024_m: /images/chl_1024_m.jpg
+image_1440_l: /images/chl_1440_l.jpg
 image_description: What's in this image you uploaded?
 color:
 ---
