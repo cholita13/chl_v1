@@ -16,8 +16,9 @@ $defaultlh:         1.6555;
 $headinglh:         1.2775;
 $headingls:         0.57px;
 
-$headingfont:       'cabin', sans-serif;
-$bodyfont:          'cabin', sans-serif;
+$headingfont:       'Montserrat', sans-serif;
+$bodyfont:          'Cabin', sans-serif;
+$xbold:             900;
 $bold:              700;
 $medium:            500;
 $normal:            400;
@@ -133,12 +134,12 @@ $coord-xxxl:        156px;
 $space-xxxs:        0.25rem;
 $space-xxs:         0.42rem;
 $space-xs:          0.88rem;
-$space-sm:          1.72rem;
-$space-md:          3.08rem;
-$space-lg:          3.72rem;
-$space-xl:          4.96rem;
-$space-xxl:         5.08rem;
-$space:             1.08rem;
+$space:             1.15rem;
+$space-sm:          1.75rem;
+$space-md:          3.15rem;
+$space-lg:          3.85rem;
+$space-xl:          5.15rem;
+$space-xxl:         5.85rem;
 $gap:               $space * 2;
 
 

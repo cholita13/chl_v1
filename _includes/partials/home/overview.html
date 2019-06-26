@@ -69,7 +69,7 @@
                 {%- for recognition in recognitions limit 5 -%}
                     <li>
                         <span class="sr">{{ recognition.title }}</span>
-                        <img src="{{ recognition.image }}" alt="{{ recognition.title }}">
+                        <img class="uk-box-shadow-medium" src="{{ recognition.image }}" alt="{{ recognition.title }}">
                     </li>
                 {%- endfor -%}
             </ul>

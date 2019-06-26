@@ -28,7 +28,7 @@ social:
   instagram: 'cholita_linda'
 
 # Data in
-font_url: 'https://fonts.googleapis.com/css?family=Cabin:400,500,700'
+font_url: 'https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700,900'
 
 # Build settings
 markdown: kramdown
@@ -48,6 +48,14 @@ collections:
     output: false
   recognitions:
     title: Recognitions
+    output: false
+  our_menus:
+    title: Our menu
+    description:
+    image:
+    output: false
+  meals:
+    title: Cholita Linda Meals
     output: false
 
 # Defaults
