@@ -2,39 +2,92 @@
 <section class="uk-position-relative uk-overflow-hidden" id="menu">
     <div class="wrapper-x maxwidth-fluid mx-auto section-padding">
         <h2 class="uk-margin-remove uk-text-center big-headline fw-xbold uk-text-primary section-padding-bottom">
-            <span>{{ our_menu.title }}</span>
+            <span>{{ our_menu.title | capitalize_initial_letters }}</span>
         </h2>
         <div uk-grid>
             {%- assign our_menus = site.our_menus | sort: 'order' -%}
-            <div class="uk-width-1-1 uk-width-2-3@m uk-description-list uk-description-list-divider">
+            <div class="uk-width-1-1 uk-width-2-3@l">
                 {%- for item in our_menus limit: 5 -%}
-                    <div class="d-flx al-i-c j-c-sb">
-                        <div class="menu__title media-object">
-                            <img class="media-object__figure avatar--md uk-box-shadow-small" src="{{ item.image }}" alt="{{ item.title }}">
-                            <h3 class="media-object__body mt-0 mb-0 fw-bold fs-sm co-default">
-                                {{ item.title }}
-                            </h3>
-                        </div>
-                        {%- if item.price -%}
-                            <div class="menu__price fw-bold fs-sm co-black">
+                    <div class="menu-block p-space border">
+                        <div class="d-flx al-i-c j-c-sb pb-space b-border">
+                            <div class="media-object">
+                                <img class="media-object__figure avatar--sm" src="{{ item.image }}" alt="{{ item.title }}">
+                                <h3 class="media-object__body mt-0 mb-0 fw-bold fs-sm co-default">
+                                    {{ item.title | capitalize_initial_letters }}
+                                </h3>
+                            </div>
+                            {%- if item.price -%}
+                            <div class="menu__price fw-bold fs-mi co-black">
                                 &#36; {{ item.price }}
                             </div>
-                        {%- endif -%}
-                    </div>
-                    <div>
-                        {%- assign current_menu = item.menu | downcase -%}
-                        {%- assign menu_meals = site.meals | where: 'menu', current_menu -%}
-                        {%- for meal in menu_meals -%}
-                            <div>{{ meal.title }}</div>
-                        {%- endfor -%}
+                            {%- endif -%}
+                        </div>
+                        <div class="meal-block pt-space">
+                            {%- assign current_menu = item.menu | downcase -%}
+                            {%- assign menu_meals = site.meals | where: 'menu', current_menu -%}
+                            {%- for meal in menu_meals -%}
+                            <div class="meal" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h4 class="co-black ff-body fs-sm fw-bold m-0">
+                                        {{ meal.title | capitalize_initial_letters }}
+                                    </h4>
+                                    {%- if meal.description -%}
+                                        <p class="mb-0 co-gray--thin uk-width-large">
+                                            {{ meal.description | capitalize }}
+                                        </p>
+                                    {%- endif -%}
+                                </div>
+                                {%- if meal.price -%}
+                                <p class="uk-width-auto mb-0 co-black fs-mi">
+                                    &#36; {{ meal.price }}
+                                </p>
+                                {%- endif -%}
+                            </div>
+                            {%- endfor -%}
+                        </div>
                     </div>
                 {%- endfor -%}
             </div>
-            <div class="uk-width-1-1 uk-width-1-3@m">
-                {%- for menu in our_menus offset: 5 -%}
-                    <h3 class="media-object__body mt-0 mb-0 fw-bold fs-sm co-default">
-                        {{ menu.title }}
-                    </h3>
+            <div class="uk-width-1-1 uk-width-1-3@l">
+                {%- for item in our_menus offset: 5 -%}
+                    <div class="menu-block p-space border">
+                        <div class="d-flx al-i-c j-c-sb pb-space b-border">
+                            <div class="media-object">
+                                <img class="media-object__figure avatar--sm" src="{{ item.image }}" alt="{{ item.title }}">
+                                <h3 class="media-object__body mt-0 mb-0 fw-bold fs-sm co-default">
+                                    {{ item.title | capitalize_initial_letters }}
+                                </h3>
+                            </div>
+                            {%- if item.price -%}
+                            <div class="menu__price fs-mi co-black">
+                                &#36; {{ item.price }}
+                            </div>
+                            {%- endif -%}
+                        </div>
+                        <div class="meal-block pt-space">
+                            {%- assign current_menu = item.menu | downcase -%}
+                            {%- assign menu_meals = site.meals | where: 'menu', current_menu -%}
+                            {%- for meal in menu_meals -%}
+                            <div class="meal" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h4 class="co-black ff-body fs-sm fw-bold m-0">
+                                        {{ meal.title | capitalize_initial_letters }}
+                                    </h4>
+                                    {%- if meal.description -%}
+                                    <p class="mb-0 co-gray--thin uk-width-large">
+                                        {{ meal.description | capitalize }}
+                                    </p>
+                                    {%- endif -%}
+                                </div>
+                                {%- if meal.price -%}
+                                <p class="uk-width-auto mb-0 co-black fs-mi">
+                                    &#36; {{ meal.price }}
+                                </p>
+                                {%- endif -%}
+                            </div>
+                            {%- endfor -%}
+                        </div>
+                    </div>
                 {%- endfor -%}
             </div>
         </dl>

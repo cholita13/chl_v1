@@ -3,16 +3,16 @@
     // @package chl_v1
 
 // Typography
-$base:              16.999px;
+$base:              15.992px;
 $pico:              0.695rem;
 $nano:              0.895rem;
 $micro:             1.005rem;
-$small:             1.195rem;
-$md:                1.325rem;
-$large:             1.475rem;
-$xlarge:            1.895rem;
+$small:             1.175rem;
+$md:                1.295rem;
+$large:             1.395rem;
+$xlarge:            1.795rem;
 
-$defaultlh:         1.6555;
+$defaultlh:         1.4555;
 $headinglh:         1.2775;
 $headingls:         0.57px;
 
@@ -124,7 +124,7 @@ $headerheight:      64px;
 $top-offset:        24px;
 $coord-xxs:         15px;
 $coord-xs:          35px;
-$coord-sm:          45px;
+$coord-sm:          50px;
 $coord-md:          65px;
 $coord-lg:          80px;
 $coord-xl:          92px;
@@ -135,11 +135,11 @@ $space-xxxs:        0.25rem;
 $space-xxs:         0.42rem;
 $space-xs:          0.88rem;
 $space:             1.15rem;
-$space-sm:          1.75rem;
-$space-md:          3.15rem;
-$space-lg:          3.85rem;
-$space-xl:          5.15rem;
-$space-xxl:         5.85rem;
+$space-sm:          1.68rem;
+$space-md:          3.12rem;
+$space-lg:          3.84rem;
+$space-xl:          5.12rem;
+$space-xxl:         5.84rem;
 $gap:               $space * 2;
 
 

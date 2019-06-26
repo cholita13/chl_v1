@@ -16,3 +16,23 @@
         background-color:   #fff
         border-radius:      50%
         margin-right:       $space-sm
+
+.menu-block
+    margin-bottom:          $space
+    border-radius:          8px
+    background:             #fff
+    &:last-of-type
+        margin-bottom:      0
+    .meal
+        position:           relative
+        padding-top:        $space
+        &::after
+            +pos($bottom: -$space, $left: $space)
+            content:        ''
+            width:          calc(100% - #{$space})
+            margin-top:     $space
+            border-top:     $borderline
+        &:first-of-type
+            padding-top:    0
+        &:last-of-type::after
+            content:        unset
