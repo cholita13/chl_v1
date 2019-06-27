@@ -1,20 +1,20 @@
 {%- assign gallery = site.gallery -%}
-<section class="uk-position-relative uk-overflow-hidden gallery wrapper-y bg-black" id="gallery">
-    <div class="section-padding">
-        <div class="gallery uk-child-width-1-2 uk-child-width-1-3@s" uk-grid="masonry: true"
-            uk-lightbox="animation: scale; video-autoplay: true;">
-            {%- for item in gallery limit: 9 -%}
+{%- assign gallery_meta = site.collections | where: 'label', 'gallery' | first -%}
+<section class="uk-position-relative uk-overflow-hidden gallery wrapper bg-black" id="gallery">
+    <h2 class="sr">{{ gallery_meta.title }}</h2>
+    <div class="gallery uk-child-width-1-2 uk-child-width-1-3@s" uk-grid="masonry: true"
+        uk-lightbox="animation: scale; video-autoplay: true;">
+        {%- for item in gallery limit: 9 -%}
             {%- if item.is_video == true -%}
             <a class="uk-inline gallery__item gallery__item--video" href="{{ item.video_link }}" data-poster="{{ item.image }}">
                 <img class="gallery__image" src="{{ item.image }}" alt="{{ item.title }}">
                 {%- include icons.html icon="movie-player-button" -%}
             </a>
             {%- else -%}
-            <a class="uk-inline gallery__item gallery__item--image" href="{{ item.image }}">
-                <img class="gallery__image" src="{{ item.image }}" alt="{{ item.title }}">
-            </a>
+                <a class="uk-inline gallery__item gallery__item--image" href="{{ item.image }}">
+                    <img class="gallery__image" src="{{ item.image }}" alt="{{ item.title }}">
+                </a>
             {%- endif -%}
-            {%- endfor -%}
-        </div>
+        {%- endfor -%}
     </div>
 </section>

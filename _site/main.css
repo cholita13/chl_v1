@@ -14,7 +14,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.42rem 1.68rem;
+  padding: 0.42rem calc(1.68rem - 8px);
   cursor: pointer;
   min-width: 92px;
 }
@@ -43,13 +43,13 @@ html {
 body {
   margin: 0;
   font-family: "Cabin", sans-serif;
-  line-height: 1.4555;
+  line-height: 1.5555;
   background: url("/images/mesh.png");
 }
 
 p {
   margin: 0;
-  margin-bottom: 2.3rem;
+  margin-bottom: 1.68rem;
   color: inherit;
   font-size: 1.1568284142rem;
 }
@@ -750,8 +750,6 @@ button:active, button:focus, button:hover {
 }
 
 .btn--branded {
-  width: 2rem;
-  height: 2rem;
   box-sizing: content-box;
   position: relative;
   background-color: #f66b34;
@@ -763,8 +761,8 @@ button:active, button:focus, button:hover {
 }
 .btn--branded::before {
   position: absolute;
-  right: -0.382rem;
-  left: -0.382rem;
+  right: -0.3rem;
+  left: -0.3rem;
   content: "";
   height: 100%;
   background-color: #f66b34;
@@ -1399,6 +1397,10 @@ button:active, button:focus, button:hover {
 
 .h-100-pc {
   height: 100%;
+}
+
+html {
+  color: rgba(9, 9, 9, 0.75);
 }
 
 .uk-offcanvas-overlay::before {

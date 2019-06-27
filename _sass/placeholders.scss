@@ -25,7 +25,7 @@
     display:            inline-flex;
     align-items:        center;
     justify-content:    center;
-    padding:            $space-xxs $space-sm;
+    padding:            $space-xxs calc(#{$space-sm} - #{$bit});
     cursor:             pointer;
     min-width:          $coord-xl;
 }
