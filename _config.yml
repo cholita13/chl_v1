@@ -57,6 +57,9 @@ collections:
   meals:
     title: Cholita Linda Meals
     output: false
+  gallery:
+    title: Gallery
+    output: false
 
 # Defaults
 defaults:

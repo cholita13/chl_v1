@@ -96,8 +96,18 @@ fieldset {
   border: 0;
 }
 
+.wrapper {
+  padding: 1.15rem;
+}
+
+.wrapper-y {
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
+}
+
 .wrapper-x {
-  padding: 0 1.15rem;
+  padding-right: 1.15rem;
+  padding-left: 1.15rem;
 }
 
 .sticky-footer {

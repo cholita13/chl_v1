@@ -12,7 +12,7 @@
                 {{ order.call_to_action.text }}
             </h3>
             <p class="mb-0 section-padding-top d-flx al-i-c j-c-c">
-                <a class="btn--branded chownow-order-online" target="_blank">
+                <a class="btn--branded chownow-order-online" href="{{ order.call_to_action.link_1 }}" target="_blank">
                     {{ order.call_to_action.button_1 }}
                 </a>
                 <span class="m-space">or</span>
@@ -21,4 +21,5 @@
                 </a>
             </p>
         </div>
+    </div>
 </section>
