@@ -1,41 +1,4 @@
-// 
+//
     // Tabs
     // @package chl_v1
 
-.tabs
-    position:               relative
-    overflow:               hidden
-    &::after // gradient - truncate text
-        +pos($top: 0, $right: -1px)
-        +wh(2rem, calc(100% - 1.5px))
-        content:            ''
-        pointer-events:     none
-        z-index:            1
-    &-list
-        display:            flex
-        overflow:           auto
-        &::after // border bottom
-            +pos($bottom: 0, $left: 0)
-            +wh(100%, 1px)
-            content:        ''
-            background:     rgba($black, 0.1)
-        a
-            display:        block
-            padding:        $space-xs $space-sm
-            font-size:      rem(17px)
-            line-height:    1
-            color:          rgba($black, 60%)
-            white-space:    nowrap
-            border-bottom:  1.5px solid rgba($black, 0.1)
-            text-transform: capitalize
-            z-index:        1
-            &:active, &:focus, &:hover, &.active
-                color:      palette(primary)
-            &.active, .uk-active &
-                position:   relative
-                border-bottom-color:    palette(primary)
-        li.uk-active a
-            color:          palette(primary)
-            border-color:   palette(primary)
-.uk-switcher li
-    padding:                $space $space-sm

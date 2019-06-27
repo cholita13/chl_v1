@@ -10,3 +10,12 @@ function qq(selector, parent) { return Array.from((parent ? parent : document).q
 UIkit.util.on(".scroll-trigger", "scrolled", () =>
     UIkit.offcanvas("#offcanvas-reveal").hide()
 );
+
+
+// ChowNow Call
+(function() {
+    'use strict';
+
+    // ChowNow code here when available
+
+})();

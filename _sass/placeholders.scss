@@ -1,4 +1,4 @@
-// 
+//
     // Placeholders
     // @package chl_v1
 
@@ -21,33 +21,11 @@
     }
 }
 
-%fix {
-    position:       fixed;
-    width:          100%;
-    background:     #fff;
-}
-
-%grid {
-    display:        flex;
-    flex-wrap:      wrap;
-    margin:         -$gap / 2;
-}
-
-%brandradius {
-    border-top-right-radius:        $halfradius;
-    border-bottom-left-radius:      $halfradius;
-}
-%brandradius-x2 {
-    border-top-right-radius:        $radius;
-    border-bottom-left-radius:      $radius;
-}
-
 %btn {
-    @extend %brandradius;
-    display:            flex;
+    display:            inline-flex;
     align-items:        center;
     justify-content:    center;
-    padding:            $space-xxxs $space;
+    padding:            $space-xxs $space-sm;
     cursor:             pointer;
     min-width:          $coord-xl;
 }
@@ -64,22 +42,6 @@
 %caps {
     text-transform:     uppercase;
     letter-spacing:     0.99px;
-}
-
-%badge {
-    font-size:          rem(14px);
-    display:            inline-block;
-    padding:            1px $halfbit;
-    // transform:          translateY(-$halfbit);
-    border-radius:      $halfbit;
-    font-weight:        $normal;
-}
-
-%animated {
-    opacity:                    1;
-    animation-duration:         0.32s;
-    animation-fill-mode:        both;
-    animation-timing-function:  cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 %sr {
