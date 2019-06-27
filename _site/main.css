@@ -641,6 +641,11 @@ h3, .h3 {
   color: #090909;
 }
 
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
 .prefix {
   margin-right: 8px;
 }
@@ -876,6 +881,32 @@ button:active, button:focus, button:hover {
 
 .order-online {
   background: #d8d6d0 url("/images/shopping_bag.svg") no-repeat center top/cover;
+}
+
+.gallery__item {
+  position: relative;
+  transition: all 0.32s ease;
+}
+.gallery svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  fill: rgba(255, 255, 255, 0.8);
+  transition: all 0.32s ease;
+}
+.gallery__image {
+  transition: all 0.32s ease;
+}
+.gallery__image:active, .gallery__image:focus, .gallery__image:hover {
+  cursor: zoom-in;
+  transform: scale(0.96);
+}
+.gallery__image:active + svg, .gallery__image:focus + svg, .gallery__image:hover + svg {
+  fill: #f66b34;
 }
 
 .visible-sm-up {
