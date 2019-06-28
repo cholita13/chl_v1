@@ -19,7 +19,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   min-width: 92px;
 }
 
-.maxwidth-xs, .maxwidth-sm, .maxwidth-md, .maxwidth-tb, .maxwidth-lg, .maxwidth-xl, .maxwidth--readable {
+.maxwidth-xs, .maxwidth-sm, .maxwidth-md, .maxwidth-tb, .maxwidth-lg, .maxwidth-xl {
   width: 100%;
 }
 
@@ -161,6 +161,12 @@ fieldset {
   justify-content: flex-end;
 }
 
+@media (min-width: 640px) {
+  .j-c-fe\@s {
+    justify-content: flex-end;
+  }
+}
+
 .j-s-fe {
   justify-self: flex-end;
 }
@@ -248,7 +254,7 @@ fieldset {
 .uk-nav .uk-nav-link {
   font-size: 1.295rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .uk-nav .uk-nav-link {
     font-size: 1.395rem;
   }
@@ -274,7 +280,7 @@ fieldset {
 .logo {
   width: 280px;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .logo {
     width: 372px;
   }
@@ -284,7 +290,7 @@ fieldset {
   max-width: 375px;
 }
 .maxwidth-sm {
-  max-width: 576px;
+  max-width: 640px;
 }
 .maxwidth-md {
   max-width: 768px;
@@ -298,16 +304,13 @@ fieldset {
 .maxwidth-xl {
   max-width: 1200px;
 }
-.maxwidth--readable {
-  max-width: 656px;
-}
 
 .maxwidth-fluid {
   max-width: 100%;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .maxwidth-fluid {
-    max-width: 576px;
+    max-width: 640px;
   }
 }
 @media (min-width: 768px) {
@@ -335,7 +338,7 @@ fieldset {
   padding-top: 3.12rem;
   padding-bottom: 3.12rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .section-padding {
     padding-top: 3.84rem;
     padding-bottom: 3.84rem;
@@ -351,7 +354,7 @@ fieldset {
 .section-padding-top {
   padding-top: 3.12rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .section-padding-top {
     padding-top: 3.84rem;
   }
@@ -365,7 +368,7 @@ fieldset {
 .section-padding-bottom {
   padding-bottom: 3.12rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .section-padding-bottom {
     padding-bottom: 3.84rem;
   }
@@ -548,7 +551,7 @@ fieldset {
 h1, .h1 {
   font-size: 1.88rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   h1, .h1 {
     font-size: 1.96rem;
   }
@@ -557,7 +560,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.72rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   h2, .h2 {
     font-size: 1.88rem;
   }
@@ -651,7 +654,7 @@ h3, .h3 {
 .big-headline {
   font-size: 2.56rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .big-headline {
     font-size: 3.68rem;
   }
@@ -681,15 +684,15 @@ h3, .h3 {
   color: #090909;
 }
 
-.default-link {
-  color: rgba(9, 9, 9, 0.75);
+.light-link {
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.primary-link, .alt-link, .grey-link, .gray-link, .default-link, .black-link, .uk-nav .uk-nav-link {
+.primary-link, .alt-link, .grey-link, .gray-link, .black-link, .uk-nav .uk-nav-link {
   transition: all 0.32s ease;
 }
 
-.alt-link:active, .alt-link:focus, .alt-link:hover, .grey-link:active, .grey-link:focus, .grey-link:hover, .gray-link:active, .gray-link:focus, .gray-link:hover, .default-link:active, .default-link:focus, .default-link:hover, .primary-link:active, .primary-link:focus, .primary-link:hover {
+.alt-link:active, .alt-link:focus, .alt-link:hover, .grey-link:active, .grey-link:focus, .grey-link:hover, .gray-link:active, .gray-link:focus, .gray-link:hover, .default-link:active, .default-link:focus, .default-link:hover, .primary-link:active, .primary-link:focus, .primary-link:hover, .light-link:active, .light-link:focus, .light-link:hover {
   color: #f66b34;
 }
 
@@ -733,10 +736,10 @@ ion-icon {
   font-size: 24px;
 }
 ion-icon.small {
-  font-size: 40px;
+  font-size: 36px;
 }
 ion-icon.medium {
-  font-size: 56px;
+  font-size: 48px;
 }
 
 .avatar--sm {
@@ -838,7 +841,7 @@ button:active, button:focus, button:hover {
   color: #fff;
   transform: rotate(-4deg);
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .btn--branded {
     font-size: 1.6883441721rem;
   }
@@ -910,7 +913,7 @@ button:active, button:focus, button:hover {
   text-align: center;
   background: rgba(0, 0, 0, 0.25);
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .hero-content {
     align-items: flex-start;
     text-align: left;
@@ -1000,7 +1003,7 @@ button:active, button:focus, button:hover {
 .visible-sm-up {
   display: none;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .visible-sm-up {
     display: inherit;
   }
@@ -1027,7 +1030,7 @@ button:active, button:focus, button:hover {
 .hidden-sm-up {
   display: block;
 }
-@media (min-width: 576px) {
+@media (min-width: 640px) {
   .hidden-sm-up {
     display: none;
   }

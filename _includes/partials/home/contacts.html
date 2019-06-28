@@ -1,21 +1,23 @@
 {%- assign outlets = site.outlets | sort: 'order' -%}
 {%- assign outlets_meta = site.collections | where: 'label', 'outlets' | first -%}
 <section class="uk-position-relative uk-overflow-hidden bg-brand--platinum" id="contacts">
-    <div class="wrapper-x maxwidth-fluid mx-auto section-padding">
+    <div class="maxwidth-fluid mx-auto section-padding">
         <div uk-grid>
             <div class="uk-width-1-1 uk-width-1-2@m">
-                <h2 class="mt-0 big-headline fw-xbold uk-text-primary">
-                    <span>{{ outlets_meta.title | capitalize_initial_letters }}</span>
-                </h2>
-                <div class="m-0 fs-lg fw-bold co-black">
-                    {{ outlets_meta.description | markdownify }}
-                </div>
-                <div class="m-0 fs-sm co-gray--thin">
-                    {{ outlets_meta.call_to_action | markdownify }}
-                </div>
-                <div uk-grid>
-                    {%- for outlet in outlets limit: 1 -%}
-                        <a class="uk-width-1-1 bg-brand--cloud tx-c mb-space-sm ml-space wrapper" href="{{ outlet.map_link }}" target="_blank">
+                <div class="wrapper-x">
+                    <h2 class="mt-0 big-headline fw-xbold uk-text-primary">
+                        <span>{{ outlets_meta.title | capitalize_initial_letters }}</span>
+                    </h2>
+                    <div class="m-0 fs-lg fw-bold co-black">
+                        {{ outlets_meta.description | markdownify }}
+                    </div>
+                    <div class="m-0 fs-sm co-gray--thin">
+                        {{ outlets_meta.call_to_action | markdownify }}
+                    </div>
+                    <div uk-grid>
+                        {%- for outlet in outlets limit: 1 -%}
+                        <a class="uk-width-1-1 bg-brand--cloud tx-c mb-space-sm ml-space wrapper" href="{{ outlet.map_link }}"
+                            target="_blank">
                             <h3 class="mt-0 fw-bold fs-md">
                                 {{ outlet.title }}
                             </h3>
@@ -25,8 +27,8 @@
                                 <span>{{ outlet.operating_hours }}</span>
                             </p>
                         </a>
-                    {%- endfor -%}
-                    {%- for outlet in outlets offset: 1 -%}
+                        {%- endfor -%}
+                        {%- for outlet in outlets offset: 1 -%}
                         <a class="uk-width-1-1 uk-width-1-2@s" href="{{ outlet.map_link }}" target="_blank">
                             <h3 class="m-0 ff-body fw-bold fs-sm co-black">
                                 {{ outlet.title }}
@@ -37,7 +39,8 @@
                                 <span>{{ outlet.operating_hours }}</span>
                             </p>
                         </a>
-                    {%- endfor -%}
+                        {%- endfor -%}
+                    </div>
                 </div>
             </div>
             <div class="uk-width-1-1 uk-width-1-2@m">
