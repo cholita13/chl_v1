@@ -1,0 +1,22 @@
+{%- assign outlets = site.outlets -%}
+{%- assign outlets_meta = site.collections | where: 'label', 'outlets' | first -%}
+<section class="uk-position-relative uk-overflow-hidden bg-white" id="contacts">
+    <div class="wrapper-x maxwidth-fluid mx-auto section-padding">
+        <div uk-grid>
+            <div class="uk-width-1-1 uk-width-1-2@m">
+                <h2 class="mt-0 tx-c big-headline fw-xbold uk-text-primary">
+                    <span>{{ outlets_meta.title | capitalize_initial_letters }}</span>
+                </h2>
+                <div class="m-0 fs-lg fw-bold co-black">
+                    {{ outlets_meta.description | markdownify }}
+                </div>
+                <div class="m-0 fs-sm co-gray--thin">
+                    {{ outlets_meta.call_to_action | markdownify }}
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-1-2@m">
+                <div class="uk-card uk-card-default uk-card-body">1-2</div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -23,32 +23,6 @@
 .minwidth-0
     min-width:      0
 
-.maxwidth
-    &-xs, &-sm, &-md, &-tb, &-lg, &-xl, &--readable
-        @extend %maxwidth
-    &-xs
-        max-width:  $breakpoint-xs
-    &-sm
-        max-width:  $breakpoint-sm
-    &-md
-        max-width:  $breakpoint-md
-    &-tb
-        max-width:  $breakpoint-tb
-    &-lg
-        max-width:  $breakpoint-lg
-    &-xl
-        max-width:  $breakpoint-xl
-    &--readable
-        max-width:  656px
-.maxwidth-fluid
-    max-width:      100%
-    +mq(sm)
-        max-width:  $breakpoint-sm
-    +mq(md)
-        max-width:  $breakpoint-md
-    +mq(lg)
-        max-width:  $breakpoint-lg
-
 .h-xs
     height:         $coord-xs
 .h-xxxl

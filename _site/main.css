@@ -280,6 +280,28 @@ fieldset {
   }
 }
 
+.maxwidth-xs {
+  max-width: 375px;
+}
+.maxwidth-sm {
+  max-width: 576px;
+}
+.maxwidth-md {
+  max-width: 768px;
+}
+.maxwidth-tb {
+  max-width: 768px;
+}
+.maxwidth-lg {
+  max-width: 992px;
+}
+.maxwidth-xl {
+  max-width: 1200px;
+}
+.maxwidth--readable {
+  max-width: 656px;
+}
+
 .maxwidth-fluid {
   max-width: 100%;
 }
@@ -296,6 +318,11 @@ fieldset {
 @media (min-width: 992px) {
   .maxwidth-fluid {
     max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .maxwidth-fluid {
+    max-width: 1200px;
   }
 }
 
@@ -575,12 +602,21 @@ h3, .h3 {
 .fs-md {
   font-size: 1.295rem;
 }
+.fs-md p {
+  font-size: 1.295rem;
+}
 
 .fs-lg {
   font-size: 1.395rem;
 }
+.fs-lg p {
+  font-size: 1.395rem;
+}
 
 .fs-xl {
+  font-size: 1.795rem;
+}
+.fs-xl p {
   font-size: 1.795rem;
 }
 
@@ -1399,47 +1435,6 @@ button:active, button:focus, button:hover {
   min-width: 0;
 }
 
-.maxwidth-xs {
-  max-width: 375px;
-}
-.maxwidth-sm {
-  max-width: 576px;
-}
-.maxwidth-md {
-  max-width: 768px;
-}
-.maxwidth-tb {
-  max-width: 768px;
-}
-.maxwidth-lg {
-  max-width: 992px;
-}
-.maxwidth-xl {
-  max-width: 1200px;
-}
-.maxwidth--readable {
-  max-width: 656px;
-}
-
-.maxwidth-fluid {
-  max-width: 100%;
-}
-@media (min-width: 576px) {
-  .maxwidth-fluid {
-    max-width: 576px;
-  }
-}
-@media (min-width: 768px) {
-  .maxwidth-fluid {
-    max-width: 768px;
-  }
-}
-@media (min-width: 992px) {
-  .maxwidth-fluid {
-    max-width: 992px;
-  }
-}
-
 .h-xs {
   height: 35px;
 }
@@ -1523,6 +1518,10 @@ html {
   .uk-width-1-3\@l {
     width: calc(100% * 1 / 3.001);
   }
+}
+
+.uk-card {
+  border-radius: 4px;
 }
 
 .uk-card-body {
