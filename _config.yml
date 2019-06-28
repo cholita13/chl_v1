@@ -60,6 +60,9 @@ collections:
   gallery:
     title: Gallery
     output: false
+  mentions:
+    title: mentions
+    output: false
 
 # Defaults
 defaults:

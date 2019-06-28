@@ -33,12 +33,10 @@ UIkit.util.on(".scroll-trigger", "scrolled", () =>
 
     paraWrap.setAttribute('class', 'show-more-less');
     button.setAttribute('type', 'button');
-    button.classList.add('btn--branded');
-    button.textContent = 'Read more';
+    button.classList.add('btn--branded', 'is-medium');
+    button.textContent = 'More...';
 
-    paragraphs.forEach(paragraph => {
-        paraWrap.appendChild(paragraph);
-    });
+    paragraphs.forEach(paragraph => paraWrap.appendChild(paragraph));
 
     fullContent.appendChild(paraWrap);
     fullContent.appendChild(button);
@@ -46,13 +44,7 @@ UIkit.util.on(".scroll-trigger", "scrolled", () =>
     collapse();
     paraWrap.style.transition = 'height 0.32s ease-in';
 
-    button.addEventListener('click', () => {
-        if ((paraWrap.style.height === '0px')) {
-            expand();
-        } else {
-            collapse();
-        }
-    })
+    button.addEventListener('click', () => paraWrap.style.height === "0px" ? expand() : collapse());
 
     function getHeight(el) {
         var height = `${el.scrollHeight}px`;
@@ -62,12 +54,11 @@ UIkit.util.on(".scroll-trigger", "scrolled", () =>
     function collapse() {
         paraWrap.style.height   = '0px';
         paraWrap.style.overflow = 'hidden';
-        button.textContent      = 'Read more';
     }
 
     function expand() {
         paraWrap.style.height   = getHeight(paraWrap);
         paraWrap.style.overflow = 'auto';
-        button.textContent      = 'Read less';
+        paraWrap.addEventListener('transitionend', () => button.remove(),false);
     }
 })();

@@ -59,3 +59,17 @@ html
 .uk-width-1-3\@l
     +mq(lg)
         width:          calc(100% * 1 / 3.001)
+
+
+// Cards
+.uk-card-body
+    padding:            calc(#{$space} + #{$bit})
+
+
+// Sliders
+.uk-dotnav
+    +pos($left: 50%)
+    transform:          translateX(-50%)
+    margin-top:         $space-sm
+    > * > *
+        +wh(12.5px)

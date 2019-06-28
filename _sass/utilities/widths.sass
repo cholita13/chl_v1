@@ -24,7 +24,7 @@
     min-width:      0
 
 .maxwidth
-    &-xs, &-sm, &-md, &-tb, &-lg, &-xl
+    &-xs, &-sm, &-md, &-tb, &-lg, &-xl, &--readable
         @extend %maxwidth
     &-xs
         max-width:  $breakpoint-xs
@@ -38,6 +38,8 @@
         max-width:  $breakpoint-lg
     &-xl
         max-width:  $breakpoint-xl
+    &--readable
+        max-width:  656px
 .maxwidth-fluid
     max-width:      100%
     +mq(sm)
