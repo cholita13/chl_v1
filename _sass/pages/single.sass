@@ -49,15 +49,14 @@
 .gallery
     &__item
         position:           relative
-        transition:         $tr-default
-
     svg
         +pos($top: 50%, $left: 50%)
-        +wh(72px)
+        +wh(56px)
         transform:      translate(-50%, -50%)
         background:     transparent
-        fill:           rgba(#fff, 0.8)
+        fill:           rgba(#fff, 0.9)
         transition:     $tr-default
+        z-index:        1
     &__image
         transition:     $tr-default
         &:active, &:focus, &:hover

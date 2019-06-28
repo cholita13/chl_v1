@@ -883,18 +883,18 @@ button:active, button:focus, button:hover {
 
 .gallery__item {
   position: relative;
-  transition: all 0.32s ease;
 }
 .gallery svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 72px;
-  height: 72px;
+  width: 56px;
+  height: 56px;
   transform: translate(-50%, -50%);
   background: transparent;
-  fill: rgba(255, 255, 255, 0.8);
+  fill: rgba(255, 255, 255, 0.9);
   transition: all 0.32s ease;
+  z-index: 1;
 }
 .gallery__image {
   transition: all 0.32s ease;
