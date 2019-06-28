@@ -1,10 +1,17 @@
-// 
+//
     // Animations
     // @package chl_v1
 
 .js-loading *, .js-loading *:before, .js-loading *:after
     animation-play-state:   paused
-    
+
+.icon-move-on-hover
+    svg
+        transition:         $tr-default
+    &:active, &:focus, &:hover
+        svg:not(.logo)
+            transform:      translateX(4px)
+
 @keyframes slide-in-top
     0%
         transform:      translateY(-15px)

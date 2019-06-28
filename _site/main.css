@@ -653,6 +653,17 @@ h3, .h3 {
   color: #f66b34;
 }
 
+.is-external-link {
+  position: relative;
+}
+.is-external-link svg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -3px;
+  fill: transparent;
+}
+
 .icon {
   width: 22px;
   height: 22px;
@@ -668,7 +679,7 @@ h3, .h3 {
   margin-right: 24px;
 }
 
-.suffix {
+.suffix, .is-external-link svg {
   margin-left: 8px;
 }
 .suffix--wider {
@@ -817,6 +828,13 @@ button:active, button:focus, button:hover {
 
 .js-loading *, .js-loading *:before, .js-loading *:after {
   animation-play-state: paused;
+}
+
+.icon-move-on-hover svg {
+  transition: all 0.32s ease;
+}
+.icon-move-on-hover:active svg:not(.logo), .icon-move-on-hover:focus svg:not(.logo), .icon-move-on-hover:hover svg:not(.logo) {
+  transform: translateX(4px);
 }
 
 @keyframes slide-in-top {
@@ -1513,9 +1531,9 @@ html {
 
 .uk-dotnav {
   position: absolute;
+  bottom: calc(1.68rem + 8px);
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 1.68rem;
 }
 .uk-dotnav > * > * {
   width: 12.5px;

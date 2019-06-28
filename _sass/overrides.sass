@@ -68,8 +68,7 @@ html
 
 // Sliders
 .uk-dotnav
-    +pos($left: 50%)
+    +pos($left: 50%, $bottom: calc(#{$space-sm} + #{$bit}))
     transform:          translateX(-50%)
-    margin-top:         $space-sm
     > * > *
         +wh(12.5px)

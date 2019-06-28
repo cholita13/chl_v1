@@ -19,3 +19,12 @@
 .alt-link, .grey-link, .gray-link, .default-link
     &:active, &:focus, &:hover
         color:              rgba($primarycolor, 100%)
+
+
+.is-external-link
+    position:               relative
+    svg
+        +wh(16px)
+        +pos($top: -3px)
+        @extend .suffix
+        fill:               transparent
