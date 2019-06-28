@@ -62,3 +62,41 @@ UIkit.util.on(".scroll-trigger", "scrolled", () =>
         paraWrap.addEventListener('transitionend', () => button.remove(),false);
     }
 })();
+
+
+// Google Maps
+(function() {
+    'use strict';
+
+    var position    = [],
+        wrapper     = q('.contact-map'),
+        coordinates = wrapper.getAttribute('data-coordinates').split(',');
+
+    position.push(coordinates);
+    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+
+    function showGoogleMaps() {
+        var
+            latLng      = new google.maps.LatLng(position[0], position[1]),
+            mapOptions  = {
+                zoom:               16,
+                zoomControl:        false,
+                mapTypeControl:     false,
+                streetViewControl:  false,
+                scaleControl:       false,
+                fullscreenControl:  false,
+                mapTypeId:          google.maps.MapTypeId.ROADMAP,
+                center:             latLng
+            },
+
+            map = new google.maps.Map(wrapper, mapOptions);
+
+        // Show the default red marker at the location
+        var marker = new google.maps.Marker({
+            position:   latLng,
+            map:        map,
+            draggable:  true,
+            animation:  google.maps.Animation.DROP
+        });
+    }
+})();
