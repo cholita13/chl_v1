@@ -433,14 +433,14 @@ fieldset {
   color: inherit;
 }
 
-.state-delivered {
-  color: #119822;
+.state-brand--cloud {
+  color: #edebe4;
 }
-.state-done {
-  color: #119822;
+.state-brand--platinum {
+  color: #f7f6f3;
 }
-.state-in-progress {
-  color: #004385;
+.state-brand--charcoal {
+  color: #2c2e30;
 }
 .state-canceled {
   color: grey;
@@ -464,14 +464,14 @@ fieldset {
   color: rgba(227, 23, 10, 0.1);
 }
 
-.bg-delivered {
-  background: #119822;
+.bg-brand--cloud {
+  background: #edebe4;
 }
-.bg-done {
-  background: #119822;
+.bg-brand--platinum {
+  background: #f7f6f3;
 }
-.bg-in-progress {
-  background: #004385;
+.bg-brand--charcoal {
+  background: #2c2e30;
 }
 .bg-canceled {
   background: grey;
@@ -495,14 +495,14 @@ fieldset {
   background: rgba(227, 23, 10, 0.1);
 }
 
-.co-delivered {
-  color: #119822;
+.co-brand--cloud {
+  color: #edebe4;
 }
-.co-done {
-  color: #119822;
+.co-brand--platinum {
+  color: #f7f6f3;
 }
-.co-in-progress {
-  color: #004385;
+.co-brand--charcoal {
+  color: #2c2e30;
 }
 .co-canceled {
   color: grey;
@@ -636,6 +636,10 @@ h3, .h3 {
   text-transform: uppercase;
 }
 
+.tx-c {
+  text-align: center;
+}
+
 .ls-1 {
   letter-spacing: 1px;
 }
@@ -685,7 +689,7 @@ h3, .h3 {
   transition: all 0.32s ease;
 }
 
-.alt-link:active, .alt-link:focus, .alt-link:hover, .grey-link:active, .grey-link:focus, .grey-link:hover, .gray-link:active, .gray-link:focus, .gray-link:hover, .default-link:active, .default-link:focus, .default-link:hover {
+.alt-link:active, .alt-link:focus, .alt-link:hover, .grey-link:active, .grey-link:focus, .grey-link:hover, .gray-link:active, .gray-link:focus, .gray-link:hover, .default-link:active, .default-link:focus, .default-link:hover, .primary-link:active, .primary-link:focus, .primary-link:hover {
   color: #f66b34;
 }
 
@@ -977,6 +981,10 @@ button:active, button:focus, button:hover {
 }
 .gallery__image:active + svg, .gallery__image:focus + svg, .gallery__image:hover + svg {
   fill: #f66b34;
+}
+
+.show-more-less p:last-child {
+  margin-bottom: 0;
 }
 
 .mentions .uk-card {
@@ -1357,6 +1365,10 @@ button:active, button:focus, button:hover {
   margin-bottom: 1.24rem;
 }
 
+.mb-space-sm {
+  margin-bottom: 1.68rem;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -1383,6 +1395,10 @@ button:active, button:focus, button:hover {
 
 .ml-1 {
   margin-left: 1rem;
+}
+
+.ml-space {
+  margin-left: 1.24rem;
 }
 
 .m-auto {
@@ -1449,6 +1465,10 @@ button:active, button:focus, button:hover {
 
 html {
   color: rgba(9, 9, 9, 0.75);
+}
+
+.uk-link:hover, a:hover {
+  color: #a33307;
 }
 
 .uk-offcanvas-overlay::before {
