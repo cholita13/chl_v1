@@ -48,5 +48,6 @@ fields:
   name: order
   label: order
 pages:
+- _outlets/02.md
 - _outlets/05.md
 - _outlets/03.md
