@@ -44,3 +44,5 @@ fields:
 - type: number
   name: order
   label: order
+pages:
+- _outlets/03.md
