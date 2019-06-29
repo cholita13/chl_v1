@@ -1,6 +1,7 @@
 order_online:
   title: Order Online
-  description: Pick up your order at our restaurant or get it delivered right to your doorstep. East Bay delivery with real-time GPS tracking now available via the good folks at [Caviar](https://www.trycaviar.com/t/sf-east-bay/cholita-linda-3652?groups=f_online__d_clink2__p_marketing__c_merchant-links&utm_medium=clink2&utm_source=marketing&utm_campaign=merchant-links&utm_term=sf-east-bay&utm_content=cholita-linda-3652){:target="_blank"}.
+  description: |-
+    Pick up your order at our restaurant or get it delivered right to your doorstep. East Bay delivery with real-time GPS tracking now available via the good folks at [Caviar](https://www.trycaviar.com/t/sf-east-bay/cholita-linda-3652?groups=f_online__d_clink2__p_marketing__c_merchant-links&utm_medium=clink2&utm_source=marketing&utm_campaign=merchant-links&utm_term=sf-east-bay&utm_content=cholita-linda-3652){:target="_blank"}.
   call_to_action:
     text: How would you like to receive your order?
     button_1: Pickup
