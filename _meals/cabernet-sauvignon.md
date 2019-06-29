@@ -1,8 +1,10 @@
 ---
-image:
+image: ''
 title: Cabernet Sauvignon (Chile)
-description:
+description: ''
 price: '6.00'
 available: true
-menu: wines
+menu:
+  wines: {}
+
 ---
