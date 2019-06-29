@@ -53,6 +53,9 @@ sections:
 - type: document
   label: Business Info
   path: _data/business_info.yml
+- type: document
+  label: About (Our Story)
+  path: _pages/about.md
 upload_dir: _images
 public_path: "/images"
 front_matter_path: ''
