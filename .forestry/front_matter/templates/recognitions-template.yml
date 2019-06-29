@@ -17,3 +17,5 @@ fields:
     schema:
       format: markdown
   label: Description
+pages:
+- _recognitions/2014-best-of-the-bay-area.md
