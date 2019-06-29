@@ -5,9 +5,15 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: description
-  label: description
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
 - type: text
   name: image
   label: image
