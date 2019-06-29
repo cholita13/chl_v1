@@ -12,7 +12,7 @@ cloudinary:
       max_width: 1920
       fallback_max_width: 1280
       steps: 4
-image: /images/logo.png
+image: /images/logomark.svg
 url: 'https://chl.surge.sh'
 vcard:
   hours: 'Mon–Sun: 11AM–10PM '
