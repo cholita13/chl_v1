@@ -20,6 +20,7 @@ fields:
   name: available
   label: available
 pages:
+- _meals/carnitas.md
 - _meals/baja-fish.md
 - _meals/asado.md
 - _meals/ensalada-plus-steak.md
