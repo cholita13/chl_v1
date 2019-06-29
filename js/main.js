@@ -65,38 +65,20 @@ UIkit.util.on(".scroll-trigger", "scrolled", () =>
 
 
 // Google Maps
-(function() {
-    'use strict';
+function initMap() {
+    let wrapper = qq('.map');
+    wrapper.forEach(el => initContactMap(el));
+}
 
-    var position    = [],
-        wrapper     = q('.contact-map'),
-        coordinates = wrapper.getAttribute('data-coordinates').split(',');
-
-    position.push(coordinates);
-    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-
-    function showGoogleMaps() {
-        var
-            latLng      = new google.maps.LatLng(position[0], position[1]),
-            mapOptions  = {
-                zoom:               16,
-                zoomControl:        false,
-                mapTypeControl:     false,
-                streetViewControl:  false,
-                scaleControl:       false,
-                fullscreenControl:  false,
-                mapTypeId:          google.maps.MapTypeId.ROADMAP,
-                center:             latLng
-            },
-
-            map = new google.maps.Map(wrapper, mapOptions);
-
-        // Show the default red marker at the location
-        var marker = new google.maps.Marker({
-            position:   latLng,
-            map:        map,
-            draggable:  true,
-            animation:  google.maps.Animation.DROP
+function initContactMap(el) {
+    let
+        coords  = el.getAttribute('data-coords').split(','),
+        map     = new google.maps.Map(el, {
+            zoom: 10,
+            center: { lat: Number(coords[0]), lng:  Number(coords[1]) }
+        }),
+        marker  = new google.maps.Marker({
+            position: { lat: Number(coords[0]), lng:  Number(coords[1]) },
+            map: map
         });
-    }
-})();
+};
