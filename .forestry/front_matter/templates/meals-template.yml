@@ -20,4 +20,5 @@ fields:
   name: available
   label: available
 pages:
+- _meals/carne-asada.md
 - _meals/cabernet-sauvignon.md
