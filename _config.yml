@@ -2,16 +2,6 @@
 title: Cholita Linda
 description: |-
   Cholita Linda is a chain of street-food restaurants serving fresh foods from exotic ingredients with vibrant colors and the unforgettable taste of Latin America.
-cloudinary:
-  cloud_name: cholita
-  verbose: false
-  origin_url: 'https://res.cloudinary.com/cholita/image/upload/'
-  presets:
-    default:
-      min_width: 768
-      max_width: 1920
-      fallback_max_width: 1280
-      steps: 4
 image: /images/logomark.svg
 url: 'https://chl.surge.sh'
 
@@ -19,13 +9,16 @@ url: 'https://chl.surge.sh'
 # Data in
 font_url: 'https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700,900'
 
+
 # Build settings
 markdown: kramdown
 kramdown:
   entity_output: as_char
 
+
 # Handling Reading
 charset: "utf-8"
+
 
 # Collections
 collections:
@@ -55,21 +48,26 @@ collections:
     call_to_action: Follow us on [Twitter](https://twitter.com/EatCholitaLinda){:target="_blank"} or join us on [Facebook](https://www.facebook.com/pages/Cholita-Linda/147237876153){:target="_blank"} for regular updates.
     output: false
 
+
 # Defaults
 defaults:
+
 
 # Plugins
 plugins:
   - jekyll-menus
 
+
 # Extraneous folders to include
 include:
   - _pages
+
 
 # Handling Sass
 sass:
   sass_dir: _sass
   style: expanded
+
 
 # Files to exclude on build
 exclude:
