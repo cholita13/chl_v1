@@ -1,5 +1,5 @@
 ---
-label: Mentions Template Defaults
+label: Mentions Template
 hide_body: true
 fields:
 - type: text
