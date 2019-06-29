@@ -18,4 +18,5 @@ fields:
       format: markdown
   label: Description
 pages:
+- _recognitions/2015-east-bay-express.md
 - _recognitions/2014-best-of-the-bay-area.md
