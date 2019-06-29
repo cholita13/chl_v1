@@ -2,8 +2,10 @@
 label: Meals Template
 hide_body: true
 fields:
-- type: text
-  name: image
+- name: image
+  type: file
+  config:
+    maxSize: 250
   label: image
 - type: text
   name: title
