@@ -1,0 +1,40 @@
+---
+label: Outlets Template
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: image
+  label: image
+- type: text
+  name: suite_number
+  label: suite_number
+- type: text
+  name: street
+  label: street
+- type: text
+  name: county
+  label: county
+- type: text
+  name: city
+  label: city
+- type: text
+  name: state
+  label: state
+- type: text
+  name: country
+  label: country
+- type: text
+  name: map_link
+  label: map_link
+- type: text
+  name: operating_hours
+  label: operating_hours
+- type: number
+  name: order
+  label: order
