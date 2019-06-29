@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url:
+webhook_url: 
 sections:
 - type: jekyll-pages
   label: Pages
@@ -48,18 +48,18 @@ sections:
   create: all
   match: "**/*"
 - type: document
-  label: Home Data
   path: _data/home.yml
+  label: Home Data
 - type: document
-  label: Business Info
   path: _data/business_info.yml
+  label: Business Info
 - type: document
-  label: About (Our Story)
   path: _pages/about.md
+  label: About (Our Story)
 upload_dir: _images
 public_path: "/images"
 front_matter_path: ''
-use_front_matter_path:
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
