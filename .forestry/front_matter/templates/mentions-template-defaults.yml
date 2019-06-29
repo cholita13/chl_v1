@@ -15,4 +15,5 @@ fields:
   name: date
   label: date
 pages:
+- _mentions/06.md
 - _mentions/12.md
