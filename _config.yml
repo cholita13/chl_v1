@@ -32,9 +32,6 @@ collections:
   images:
     title:  Images
     output: false
-  services:
-    title: Our Services
-    output: false
   recognitions:
     title: Recognitions
     output: false
