@@ -37,11 +37,6 @@ sections:
   label: Recognitions
   create: all
   match: "**/*"
-- type: directory
-  path: _images
-  label: Images
-  create: all
-  match: "**/*"
 - type: document
   path: _data/home.yml
   label: Home Data
