@@ -3,26 +3,26 @@
         <div uk-grid>
             <div class="uk-width-1-1 uk-width-1-2@s" uk-grid>
                 <p class="mb-0 fs-mi uk-width-1-1 uk-width-1-2@m d-flx al-i-c">
-                    <a class="primary-link" href="tel:{{ site.vcard.phone }}">
+                    <a class="primary-link" href="tel:{{ site.data.business_info.vcard.phone }}">
                         <span class="uk-light">Call us: </span>
-                        {{ site.vcard.phone }}
+                        {{ site.data.business_info.vcard.phone }}
                     </a>
                 </p>
                 <p class="mb-0 fs-mi uk-width-1-1 uk-width-1-2@m d-flx al-i-c">
-                    <a class="primary-link" href="mailto:{{ site.vcard.email }}">
+                    <a class="primary-link" href="mailto:{{ site.data.business_info.vcard.email }}">
                         <span class="uk-light">Email us: </span>
-                        {{ site.vcard.email }}
+                        {{ site.data.business_info.vcard.email }}
                     </a>
                 </p>
             </div>
             <div class="uk-width-1-1 uk-width-1-2@s d-flx al-i-c j-c-fe@s">
-                <a class="light-link d-flx al-i-c prefix--wider" href="//twitter.com/{{ site.social.twitter }}" target="_blank">
+                <a class="light-link d-flx al-i-c prefix--wider" href="//twitter.com/{{ site.data.business_info.social.twitter }}" target="_blank">
                     <ion-icon class="small" name="logo-twitter"></ion-icon>
                 </a>
-                <a class="light-link d-flx al-i-c prefix--wider" href="//facebook.com/{{ site.social.facebook }}" target="_blank">
+                <a class="light-link d-flx al-i-c prefix--wider" href="//facebook.com/{{ site.data.business_info.social.facebook }}" target="_blank">
                     <ion-icon class="small" name="logo-facebook"></ion-icon>
                 </a>
-                <a class="light-link d-flx al-i-c" href="//instagram.com/{{ site.social.instagram }}" target="_blank">
+                <a class="light-link d-flx al-i-c" href="//instagram.com/{{ site.data.business_info.social.instagram }}" target="_blank">
                     <ion-icon class="small" name="logo-instagram"></ion-icon>
                 </a>
             </div>

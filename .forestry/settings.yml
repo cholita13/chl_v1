@@ -50,6 +50,9 @@ sections:
 - type: document
   label: Home Data
   path: _data/home.yml
+- type: document
+  label: Business Info
+  path: _data/business_info.yml
 upload_dir: _images
 public_path: "/images"
 front_matter_path: ''

@@ -14,22 +14,7 @@ cloudinary:
       steps: 4
 image: /images/logomark.svg
 url: 'https://chl.surge.sh'
-vcard:
-  hours: 'Mon–Sun: 11AM–10PM '
-  street: 4923 Telegraph Ave
-  phone: '+1 (510) 594-7610'
-  email: 'info@cholitalinda.com'
-  city: Oakland
-  state: CA
-  country: Nigeria
-social:
-  twitter: 'EatCholitaLinda'
-  facebook: 'Cholita-Linda-147237876153'
-  instagram: 'cholita_linda'
-google_maps:
-  lat: '6.5991353'
-  lng: '3.3449045'
-  api_key:
+
 
 # Data in
 font_url: 'https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700,900'

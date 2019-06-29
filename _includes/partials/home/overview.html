@@ -29,28 +29,28 @@
                         <p class="vcard uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
                             <a class="" href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address" itemscope=""
                                 itemtype="http://schema.org/PostalAddress" target="_blank">
-                                <span itemprop="streetAddress">{{ site.vcard.street }}</span><span class="separator">,</span>
-                                <span itemprop="addressLocality">{{ site.vcard.city }}</span>
+                                <span itemprop="streetAddress">{{ site.data.business_info.vcard.street }}</span><span class="separator">,</span>
+                                <span itemprop="addressLocality">{{ site.data.business_info.vcard.city }}</span>
                                 <meta itemprop="addressRegion" content="CA">
                                 <meta itemprop="postalCode" content="94609">
                             </a>
                             <br>
                             <a class=" scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
-                                {{ site.vcard.hours }}
+                                {{ site.data.business_info.vcard.hours }}
                             </a>
                             <br>
-                            <a class="" href="mailto:{{ site.vcard.email }}" itemprop="email">{{ site.vcard.email }}</a>
+                            <a class="" href="mailto:{{ site.data.business_info.vcard.email }}" itemprop="email">{{ site.data.business_info.vcard.email }}</a>
                             <br>
-                            <a class="" href="tel:{{ site.vcard.phone }}" itemprop="telephone">{{ site.vcard.phone }}</a>
+                            <a class="" href="tel:{{ site.data.business_info.vcard.phone }}" itemprop="telephone">{{ site.data.business_info.vcard.phone }}</a>
                         </p>
                         <p class="social-links uk-padding uk-padding-remove-horizontal uk-margin-remove-bottom">
-                            <a class="prefix--wider" href="//twitter.com/{{ site.social.twitter }}" target="_blank">
+                            <a class="prefix--wider" href="//twitter.com/{{ site.data.business_info.social.twitter }}" target="_blank">
                                 <ion-icon class="small" name="logo-twitter"></ion-icon>
                             </a>
-                            <a class="prefix--wider" href="//facebook.com/{{ site.social.facebook }}" target="_blank">
+                            <a class="prefix--wider" href="//facebook.com/{{ site.data.business_info.social.facebook }}" target="_blank">
                                 <ion-icon class="small" name="logo-facebook"></ion-icon>
                             </a>
-                            <a class="" href="//instagram.com/{{ site.social.instagram }}" target="_blank">
+                            <a class="" href="//instagram.com/{{ site.data.business_info.social.instagram }}" target="_blank">
                                 <ion-icon class="small" name="logo-instagram"></ion-icon>
                             </a>
                         </p>
