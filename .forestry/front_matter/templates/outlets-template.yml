@@ -5,12 +5,6 @@ fields:
 - type: text
   name: title
   label: title
-- name: image
-  type: file
-  config:
-    maxSize: '0.2'
-  label: Image
-  description: Is there an image associated with this outlet, like the building itself?
 - name: description
   type: textarea
   default: ''
@@ -20,6 +14,12 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: image
+  type: file
+  config:
+    maxSize: '0.2'
+  label: Image
+  description: Is there an image associated with this outlet, like the building itself?
 - type: text
   name: suite_number
   label: suite_number
