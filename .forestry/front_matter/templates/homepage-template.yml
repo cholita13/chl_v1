@@ -20,16 +20,5 @@ fields:
 - type: file
   name: image_1440_l
   label: image_1440_l
-- type: text
-  name: image_description
-  label: image_description
-- name: color
-  type: color
-  label: Color
-  config:
-    required: false
-    color_format: Hex
-  description: This color is used to set a theme for the homepage.
-  default: "#F66B34"
 pages:
 - index.md
