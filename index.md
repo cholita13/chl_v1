@@ -6,7 +6,7 @@ description: Cholita Linda is a chain of street-food restaurants serving fresh f
   America.
 image_768_s: "/images/chl_768_s.jpg"
 image_1024_m: "/images/chl_1024_m.jpg"
-image_1440_l: "/images/chl_1440_l.jpg"
+image_1440_l: "/images/gallery_06.jpg"
 image_description: What's in this image you uploaded?
 color: ''
 
