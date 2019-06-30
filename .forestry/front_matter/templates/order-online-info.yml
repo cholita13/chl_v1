@@ -8,6 +8,10 @@ fields:
 - type: textarea
   name: description
   label: description
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: text
   name: cta_text
   label: cta_text
