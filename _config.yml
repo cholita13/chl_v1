@@ -20,6 +20,12 @@ kramdown:
 charset: "utf-8"
 
 
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
 # Collections
 collections:
   images:
@@ -61,12 +67,6 @@ plugins:
 # Extraneous folders to include
 include:
   - _pages
-
-
-# Handling Sass
-sass:
-  sass_dir: _sass
-  style: expanded
 
 
 # Files to exclude on build
