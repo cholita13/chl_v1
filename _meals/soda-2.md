@@ -1,8 +1,10 @@
 ---
-image:
+image: ''
 title: Diet Coke
-description:
+description: ''
 price: '1.50'
 available: true
-menu: sodas
+menu:
+  sodas: {}
+
 ---
