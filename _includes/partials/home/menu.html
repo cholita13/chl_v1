@@ -29,6 +29,7 @@
                             <div class="meal" uk-grid>
                                 <div class="uk-width-expand">
                                     <h4 class="co-black ff-body fs-sm fw-bold m-0">
+                                        <!-- {{ menu_meals | jsonify }} -->
                                         {{ meal.title | capitalize_initial_letters }}
                                     </h4>
                                     {%- if meal.description -%}

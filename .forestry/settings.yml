@@ -2,14 +2,14 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: jekyll-pages
   label: Pages
   create: all
 - type: directory
   path: _outlets
-  label: Outlets
+  label: Outlets (Locations)
   create: all
   match: "**/*"
 - type: directory
@@ -49,7 +49,7 @@ sections:
 upload_dir: _images
 public_path: "/images"
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path:
 file_template: ":filename:"
 build:
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
