@@ -33,6 +33,7 @@ fields:
   label: Menu
   description: Select the menu type that this meal belongs to
 pages:
+- _meals/asado.md
 - _meals/yuca-fries.md
 - _meals/tofu.md
 - _meals/soda-2.md
@@ -60,7 +61,6 @@ pages:
 - _meals/beer-1.md
 - _meals/carnitas.md
 - _meals/baja-fish.md
-- _meals/asado.md
 - _meals/ensalada-plus-steak.md
 - _meals/carne-asada.md
 - _meals/cabernet-sauvignon.md
