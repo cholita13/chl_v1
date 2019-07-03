@@ -1,6 +1,6 @@
 ---
 image: ''
-title: add Steak / Tofu / Chicken / Carnitas / Fish for
+title: with Steak / Tofu / Chicken / Carnitas / Fish
 description: ''
 price: "2.95"
 available: true
