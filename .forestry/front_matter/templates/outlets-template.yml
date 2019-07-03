@@ -50,10 +50,15 @@ fields:
     source:
       type: simple
   label: Operating Hours
+- name: available
+  type: boolean
+  label: Available
+  default: true
 - type: number
   name: order
   label: order
 pages:
+- _outlets/06.md
 - _outlets/04.md
 - _outlets/01.md
 - _outlets/02.md
