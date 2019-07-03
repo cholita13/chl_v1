@@ -24,8 +24,9 @@ fields:
   config:
     required: true
   label: Menu
-  description: 'Type only one menu name from an example list of all your menus: aguas-frescas,
-    beers, desserts, ensalada, platos, sangria, sanguches, sides, sodas, tacos, wines'
+  description: 'Type only one menu name from an example list of all your menus. You
+    can just copy and paste from these: aguas-frescas, beers, desserts, ensalada,
+    platos, sangria, sanguches, sides, sodas, tacos, wines.'
 pages:
 - _meals/asado.md
 - _meals/yuca-fries.md
