@@ -14,9 +14,6 @@ fields:
 - type: text
   name: price
   label: price
-- type: number
-  name: order
-  label: order
 - name: menu
   type: text
   config:
@@ -26,6 +23,9 @@ fields:
     Aguas Frescas should be aguas-frescas and Sanguches/Sandwiches should be sanguches
     and Tacos should be tacos.
   default: tacos
+- type: number
+  name: order
+  label: Order
 pages:
 - _our_menus/wines.md
 - _our_menus/tacos.md
