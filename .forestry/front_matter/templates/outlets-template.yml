@@ -41,9 +41,15 @@ fields:
 - type: text
   name: map_link
   label: map_link
-- type: text
-  name: operating_hours
-  label: operating_hours
+- name: operating_hours
+  type: list
+  config:
+    use_select: false
+    min: '1'
+    max: '3'
+    source:
+      type: simple
+  label: Operating Hours
 - type: number
   name: order
   label: order
