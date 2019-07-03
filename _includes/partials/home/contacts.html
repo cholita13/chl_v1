@@ -25,7 +25,9 @@
                                 <span>{{ outlet.street }}, </span><span>{{ outlet.city }}</span>,
                                 <span> {{ outlet.state }}</span>
                                 {%- if outlet.zipcode -%}<span> {{ outlet.zipcode }}</span>{%- endif -%}<br />
-                                <span>{{ outlet.operating_hours }}</span>
+                                {%- for hours in outlet.operating_hours -%}
+                                    <span>{{ hours }}</span></br>
+                                {%- endfor -%}
                             </p>
                         </a>
                         {%- endfor -%}
