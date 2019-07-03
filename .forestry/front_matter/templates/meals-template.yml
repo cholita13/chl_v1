@@ -22,7 +22,7 @@ fields:
 - name: menu
   type: text
   config:
-    required: true
+    required: false
   label: Menu
   description: 'Type only one menu name from an example list of all your menus. You
     can just copy and paste from these: aguas-frescas, beers, desserts, ensalada,
