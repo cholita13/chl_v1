@@ -50,6 +50,10 @@ fields:
     source:
       type: simple
   label: Operating Hours
+- name: available
+  type: boolean
+  label: Available
+  default: true
 - type: number
   name: order
   label: order
