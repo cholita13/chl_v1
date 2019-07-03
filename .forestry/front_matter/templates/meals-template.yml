@@ -19,19 +19,6 @@ fields:
 - type: boolean
   name: available
   label: available
-- name: menu
-  type: select
-  default: _our_menus/tacos.md
-  config:
-    required: true
-    options: []
-    source:
-      type: pages
-      section: our-menus
-      file: 
-      path: 
-  label: Menu
-  description: Select the menu type that this meal belongs to
 pages:
 - _meals/asado.md
 - _meals/yuca-fries.md
