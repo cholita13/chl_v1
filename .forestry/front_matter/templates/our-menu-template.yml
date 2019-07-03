@@ -22,8 +22,9 @@ fields:
   config:
     required: true
   label: Menu
-  description: Type the name of this menu which will be selected when a new meal item
-    is to be added.
+  description: Type the name you want meals to be associated with this menu. For example,
+    Aguas Frescas should be aguas-frescas and Sanguches/Sandwiches should be sanguches
+    and Tacos should be tacos.
   default: tacos
 pages:
 - _our_menus/wines.md
