@@ -4,16 +4,20 @@ hide_body: true
 fields:
 - type: file
   name: image
-  label: image
+  label: Image
 - type: text
   name: title
-  label: title
+  label: Title (or Name of Menu)
+  config:
+    required: true
 - type: text
   name: description
-  label: description
+  label: Description
 - type: text
   name: price
-  label: price
+  label: Price
+  description: This an optional field. Only use it if the menu itself sets the price,
+    meaning that all the meals under this menu is priced the same.
 - name: menu
   type: text
   config:
