@@ -8,7 +8,7 @@
             <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
                 {% for item in site.menus.header %}
                     <li class="{% if condition %}uk-active{% endif %}">
-                        <a class="scroll-trigger fw-medium uk-nav-link lh-1hh" href="{{ item.url }}" title="Go to {{ item.title }}" uk-scroll>
+                        <a class="scroll-trigger fw-bold uk-nav-link lh-1hh" href="{{ item.url }}" title="Go to {{ item.title }}" uk-scroll>
                             {{ item.title }}
                         </a>
                     </li>

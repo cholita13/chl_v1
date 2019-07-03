@@ -17,7 +17,7 @@
                             {%- continue -%}
                             {%- endif -%}
                             <li class="{% if condition %}uk-active{% endif %}">
-                                <a class="scroll-trigger uk-text-large fw-medium lh-1hh" href="{{ item.url }}"
+                                <a class="scroll-trigger uk-text-large fw-bold lh-1hh" href="{{ item.url | prepend: site.url }}"
                                     title="Go to {{ item.title }}" uk-scroll>
                                     {{ title | capitalize_initial_letters }}
                                 </a>
