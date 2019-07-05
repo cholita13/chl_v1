@@ -1,8 +1,10 @@
 ---
-image:
+image: ''
 title: Carne Asada
 description: steak, salsa roja, cabbage slaw, baja crema
-price:
+price: ''
 available: true
-menu: tacos
+menu:
+  tacos: {}
+
 ---
