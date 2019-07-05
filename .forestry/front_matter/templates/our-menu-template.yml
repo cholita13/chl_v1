@@ -18,15 +18,19 @@ fields:
   label: Price
   description: This an optional field. Only use it if the menu itself sets the price,
     meaning that all the meals under this menu is priced the same.
-- name: menu
-  type: text
+- name: meal_menu
+  type: select
+  default: _our_menus/tacos.md
   config:
     required: true
+    options: []
+    source:
+      type: pages
+      section: our-menus
+      file: 
+      path: 
   label: Menu
-  description: Type the name you want meals to be associated with this menu. For example,
-    Aguas Frescas should be aguas-frescas and Sanguches/Sandwiches should be sanguches
-    and Tacos should be tacos.
-  default: tacos
+  description: Select one menu that this meal/dish belongs to.
 - type: number
   name: order
   label: Order
