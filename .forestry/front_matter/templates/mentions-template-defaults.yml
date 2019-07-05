@@ -15,15 +15,15 @@ fields:
   name: date
   label: date
 pages:
-- _mentions/08.md
-- _mentions/01.md
-- _mentions/11.md
-- _mentions/03.md
-- _mentions/07.md
-- _mentions/10.md
-- _mentions/04.md
-- _mentions/05.md
-- _mentions/02.md
-- _mentions/09.md
-- _mentions/06.md
 - _mentions/12.md
+- _mentions/06.md
+- _mentions/09.md
+- _mentions/02.md
+- _mentions/05.md
+- _mentions/04.md
+- _mentions/10.md
+- _mentions/07.md
+- _mentions/03.md
+- _mentions/11.md
+- _mentions/01.md
+- _mentions/08.md
