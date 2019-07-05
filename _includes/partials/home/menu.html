@@ -23,8 +23,8 @@
                             {%- endif -%}
                         </div>
                         <div class="meal-block pt-space">
-                            {%- assign current_menu = item.meal_menu | downcase -%}
-                            {%- assign menu_meals = site.meals | where: 'meal_menu', current_menu -%}
+                            {%- assign current_menu = item.menu_name | downcase -%}
+                            {%- assign menu_meals = site.meals | where: 'menu_name', current_menu -%}
                             {%- for meal in menu_meals -%}
                             <div class="meal" uk-grid>
                                 <div class="uk-width-expand">

@@ -5,5 +5,4 @@ description: slow braised pork, chipotle-tomatillo salsa, cabbage slaw, baja cre
 price: ''
 available: true
 menu_name: _our_menus/tacos.md
-
 ---
