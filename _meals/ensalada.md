@@ -4,5 +4,4 @@ title: Organic mixed greens, black beans, crispy tortilla strips, salsa, crema, 
 description:
 price: '7.95'
 available: true
-menu: ensalada
 ---
