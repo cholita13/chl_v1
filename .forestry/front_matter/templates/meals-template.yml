@@ -19,14 +19,19 @@ fields:
 - type: boolean
   name: available
   label: available
-- name: menu
-  type: text
+- name: menu_name
+  type: select
+  default: _our_menus/tacos.md
   config:
-    required: false
-  label: Menu
-  description: 'Type only one menu name from an example list of all your menus. You
-    can just copy and paste from these: aguas-frescas, beers, desserts, ensalada,
-    platos, sangria, sanguches, sides, sodas, tacos, wines.'
+    required: true
+    options: []
+    source:
+      type: pages
+      section: our-menus
+      file: 
+      path: 
+  label: Menu Name
+  description: Select one menu from the list that this meal/dish belongs to.
 pages:
 - _meals/asado.md
 - _meals/yuca-fries.md
