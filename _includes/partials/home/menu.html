@@ -24,7 +24,7 @@
                         </div>
                         <div class="meal-block pt-space">
                             {%- assign current_menu = item.menu_name | downcase -%}
-                            {%- assign menu_meals = site.meals | where: 'menu_name', current_menu -%}
+                            {%- assign menu_meals = site.meals | where_exp: 'meal', 'meal.menu_name contains current_menu' | sort: 'order' -%}
                             {%- for meal in menu_meals -%}
                             <div class="meal" uk-grid>
                                 <div class="uk-width-expand">
@@ -37,10 +37,10 @@
                                         </p>
                                     {%- endif -%}
                                 </div>
-                                {%- if meal.price -%}
-                                <p class="uk-width-auto mb-0 co-black fs-mi">
-                                    &#36; {{ meal.price }}
-                                </p>
+                                {%- if meal.price.size > 0 -%}
+                                    <p class="uk-width-auto mb-0 co-black fs-mi">
+                                        &#36; {{ meal.price }}
+                                    </p>
                                 {%- endif -%}
                             </div>
                             {%- endfor -%}
@@ -65,8 +65,8 @@
                             {%- endif -%}
                         </div>
                         <div class="meal-block pt-space">
-                            {%- assign current_menu = item.menu | downcase -%}
-                            {%- assign menu_meals = site.meals | where: 'menu', current_menu -%}
+                            {%- assign current_menu = item.menu_name | downcase -%}
+                            {%- assign menu_meals = site.meals | where_exp: 'meal', 'meal.menu_name contains current_menu' -%}
                             {%- for meal in menu_meals -%}
                             <div class="meal" uk-grid>
                                 <div class="uk-width-expand">
