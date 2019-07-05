@@ -18,26 +18,20 @@ fields:
   label: Price
   description: This an optional field. Only use it if the menu itself sets the price,
     meaning that all the meals under this menu is priced the same.
-- name: meal_menu
-  type: select
-  default: _our_menus/tacos.md
+- name: menu_name
+  type: text
   config:
     required: true
-    options: []
-    source:
-      type: pages
-      section: our-menus
-      file: 
-      path: 
-  label: Menu
-  description: Select one menu that this meal/dish belongs to.
+  label: Menu Name
+  description: It's best to type one name or a hyphenated name for this field..
+  default: tacos
 - type: number
   name: order
   label: Order
 pages:
+- _our_menus/sodas.md
 - _our_menus/wines.md
 - _our_menus/tacos.md
-- _our_menus/sodas.md
 - _our_menus/sides.md
 - _our_menus/sanguches.md
 - _our_menus/sangria.md
