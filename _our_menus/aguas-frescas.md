@@ -4,6 +4,6 @@ title: Aguas Frescas
 description: |-
     Fresh citrus and fruit juices made daily.
 price: '3.50'
-menu: aguas-frescas
+meal_menu: aguas-frescas
 order: 7
 ---
