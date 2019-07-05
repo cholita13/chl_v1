@@ -33,13 +33,13 @@ fields:
   label: Menu Name
   description: Select one menu from the list that this meal/dish belongs to.
 pages:
+- _meals/salad-small.md
 - _meals/asado.md
 - _meals/yuca-fries.md
 - _meals/tofu.md
 - _meals/soda-2.md
 - _meals/soda-1.md
 - _meals/sauvignon-blanc.md
-- _meals/salad-small.md
 - _meals/rose.md
 - _meals/rice-beans.md
 - _meals/pollo-al-pastor.md
