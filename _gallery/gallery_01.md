@@ -1,7 +1,7 @@
 ---
-title: Gallery 1
+title: Agua Frescas
 description: Gallery 1
-image: "/images/gallery_01.jpg"
+image: "/images/Background_web_03.jpg"
 is_video: false
 video_link: ''
 
