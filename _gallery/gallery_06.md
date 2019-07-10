@@ -1,7 +1,7 @@
 ---
-title: Gallery 6
+title: Lechon
 description: Gallery 6
-image: "/images/gallery_06.jpg"
+image: "/images/Web_Lechon_DSC_7208.jpg"
 is_video: false
 video_link: ''
 
