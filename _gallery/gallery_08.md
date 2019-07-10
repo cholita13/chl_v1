@@ -1,7 +1,7 @@
 ---
-title: Gallery 8
+title: Carnitas Taco
 description: Gallery 8
-image: "/images/gallery_08.jpg"
+image: "/images/Web_carnitas_6882.jpg"
 is_video: false
 video_link: ''
 
