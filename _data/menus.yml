@@ -1,15 +1,23 @@
+---
 header:
-  - url: /#overview
-    title: Overview
-  - url: /#menu
-    title: Our Menu
-  - url: /#order
-    title: Order Online
-  - url: /#gallery
-    title: Gallery
-  - url: /#about
-    title: Our Story
-  - url: /#mentions
-    title: Mentions
-  - url: /#contacts
-    title: Come Visit
+- url: "/#contacts"
+  title: Come Visit
+  weight: 1
+- url: "/#mentions"
+  title: Mentions
+  weight: 2
+- url: "/#about"
+  title: Our Story
+  weight: 3
+- url: "/#gallery"
+  title: Gallery
+  weight: 4
+- url: "/#order"
+  title: Order Online
+  weight: 5
+- url: "/#menu"
+  title: Our Menu
+  weight: 6
+- url: "/#overview"
+  title: Overview
+  weight: 7
