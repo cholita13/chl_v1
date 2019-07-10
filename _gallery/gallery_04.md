@@ -1,7 +1,7 @@
 ---
-title: Gallery 4
+title: Papito
 description: Gallery 4
-image: "/images/gallery_04.jpg"
+image: "/images/146021 Papito.jpg"
 is_video: false
 video_link: ''
 
