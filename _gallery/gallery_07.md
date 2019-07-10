@@ -1,7 +1,7 @@
 ---
-title: Gallery 7
+title: Steak Taco
 description: Gallery 7
-image: "/images/gallery_07.jpg"
+image: "/images/146026 steak taco.jpg"
 is_video: false
 video_link: ''
 
