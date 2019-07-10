@@ -20,6 +20,7 @@ fields:
   name: video_link
   label: video_link
 pages:
+- _gallery/birdview.md
 - _gallery/gallery_04.md
 - _gallery/gallery_10.md
 - _gallery/gallery_02.md
