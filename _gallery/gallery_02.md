@@ -1,7 +1,7 @@
 ---
-title: Gallery 2
+title: Restaurant
 description: Gallery 2
-image: "/images/gallery_02.jpg"
+image: "/images/web_bar_03_DSC_7460.jpg"
 is_video: false
 video_link: ''
 
