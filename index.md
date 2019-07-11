@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Cholita Linda
-description: Cholita Linda is a chain of street food restaurants serving fresh foods
+description: Cholita Linda is a chain of street-food restaurants serving fresh foods
   from exotic ingredients with vibrant colors and the unforgettable taste of Latin
   America.
 image_768_s: "/images/chl_768_s.jpg"
