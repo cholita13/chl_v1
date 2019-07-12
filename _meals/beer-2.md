@@ -1,8 +1,9 @@
 ---
-image:
+image: ''
 title: Tecate
-description:
+description: ''
 price: '3.50'
-available: true
+available: false
 menu_name: _our_menus/beers.md
+
 ---
