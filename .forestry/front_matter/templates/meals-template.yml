@@ -33,6 +33,7 @@ fields:
   label: Menu Name
   description: Select one menu from the list that this meal/dish belongs to.
 pages:
+- _meals/platanitos-with-aji-amarillo.md
 - _meals/tostones-con-picadillo.md
 - _meals/cabernet-sauvignon.md
 - _meals/carne-asada.md
