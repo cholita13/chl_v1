@@ -5,6 +5,5 @@ title: Margarita
 description: ''
 price: "7.99"
 order: 11
-published: false
 
 ---
