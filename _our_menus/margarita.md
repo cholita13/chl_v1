@@ -1,10 +1,10 @@
 ---
-menu_name: tacos
+menu_name: Margarita
 image: ''
 title: Margarita
 description: ''
 price: "7.99"
-order: 
+order: 11
 published: false
 
 ---
