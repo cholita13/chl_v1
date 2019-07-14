@@ -29,6 +29,7 @@ fields:
   name: order
   label: Order
 pages:
+- _our_menus/margarita.md
 - _our_menus/aguas-frescas.md
 - _our_menus/beers.md
 - _our_menus/desserts.md
