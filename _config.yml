@@ -67,6 +67,7 @@ plugins:
 # Extraneous folders to include
 include:
   - _pages
+  - _redirects
 
 
 # Files to exclude on build
