@@ -1,0 +1,31 @@
+---
+label: Homepage
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: file
+  name: image_768_s
+  label: image_768_s
+- type: file
+  name: image_1024_m
+  label: image_1024_m
+- type: file
+  name: image_1440_l
+  label: image_1440_l
+- type: text
+  name: image_description
+  label: image_description
+- type: file
+  name: storefront_image
+  label: storefront_image
+- type: text
+  name: storefront_image_description
+  label: storefront_image_description
