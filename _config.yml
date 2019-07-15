@@ -3,7 +3,7 @@ title: Cholita Linda
 description: |-
   Cholita Linda is a chain of street-food restaurants serving fresh foods from exotic ingredients with vibrant colors and the unforgettable taste of Latin America.
 image: /images/logomark.svg
-url: 'https://chl.surge.sh'
+url: 'https://cholitalinda.com'
 
 
 # Data in
@@ -23,7 +23,7 @@ charset: "utf-8"
 # Handling Sass
 sass:
   sass_dir: _sass
-  # style: compressed
+  style: compressed
 
 
 # Collections
