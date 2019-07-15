@@ -23,7 +23,7 @@ charset: "utf-8"
 # Handling Sass
 sass:
   sass_dir: _sass
-  style: compressed
+  # style: compressed
 
 
 # Collections
