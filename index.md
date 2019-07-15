@@ -10,4 +10,5 @@ image_1440_l: "/images/chl_1440_l.jpg"
 image_description: What's in this image you uploaded?
 storefront_image: "/images/web_alley2_DSC_7421.jpg"
 storefront_image_description: Cholita Linda Outlet
+
 ---
