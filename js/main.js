@@ -7,18 +7,7 @@ function qq(selector, parent) { return Array.from((parent ? parent : document).q
 
 
 // Hide nav after scrolled to section completes
-UIkit.util.on(".scroll-trigger", "scrolled", () =>
-    UIkit.offcanvas("#offcanvas-reveal").hide()
-);
-
-
-// ChowNow Call
-(function() {
-    'use strict';
-
-    // ChowNow code here when available
-
-})();
+UIkit.util.on('.scroll-trigger', 'scrolled', () => UIkit.offcanvas('#offcanvas-reveal').hide());
 
 
 // Show more text on click
@@ -62,23 +51,3 @@ UIkit.util.on(".scroll-trigger", "scrolled", () =>
         paraWrap.addEventListener('transitionend', () => button.remove(),false);
     }
 })();
-
-
-// Google Maps
-function initMap() {
-    let wrapper = qq('.map');
-    wrapper.forEach(el => initContactMap(el));
-}
-
-function initContactMap(el) {
-    let
-        coords  = el.getAttribute('data-coords').split(','),
-        map     = new google.maps.Map(el, {
-            zoom: 10,
-            center: { lat: Number(coords[0]), lng:  Number(coords[1]) }
-        }),
-        marker  = new google.maps.Marker({
-            position: { lat: Number(coords[0]), lng:  Number(coords[1]) },
-            map: map
-        });
-};

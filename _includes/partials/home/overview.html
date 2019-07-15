@@ -27,7 +27,7 @@
                     </div>
                     <div class="">
                         <p class="vcard uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
-                            <a class="" href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address" itemscope=""
+                            <a href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address"
                                 itemtype="http://schema.org/PostalAddress" target="_blank">
                                 <span itemprop="streetAddress">{{ site.data.business_info.vcard.street }}</span><span class="separator">,</span>
                                 <span itemprop="addressLocality">{{ site.data.business_info.vcard.city }}</span>
@@ -44,14 +44,14 @@
                             <a class="" href="tel:{{ site.data.business_info.vcard.phone }}" itemprop="telephone">{{ site.data.business_info.vcard.phone }}</a>
                         </p>
                         <p class="social-links uk-padding uk-padding-remove-horizontal uk-margin-remove-bottom">
-                            <a class="prefix--wider" href="//twitter.com/{{ site.data.business_info.social.twitter }}" target="_blank">
-                                <ion-icon class="small" name="logo-twitter"></ion-icon>
+                            <a class="light-link prefix--wider" href="//twitter.com/{{ site.data.business_info.social.twitter }}" target="_blank">
+                                {%- include icons.html icon="logo-twitter" -%}
                             </a>
-                            <a class="prefix--wider" href="//facebook.com/{{ site.data.business_info.social.facebook }}" target="_blank">
-                                <ion-icon class="small" name="logo-facebook"></ion-icon>
+                            <a class="light-link prefix--wider" href="//facebook.com/{{ site.data.business_info.social.facebook }}" target="_blank">
+                                {%- include icons.html icon="logo-facebook" -%}
                             </a>
-                            <a class="" href="//instagram.com/{{ site.data.business_info.social.instagram }}" target="_blank">
-                                <ion-icon class="small" name="logo-instagram"></ion-icon>
+                            <a class="light-link " href="//instagram.com/{{ site.data.business_info.social.instagram }}" target="_blank">
+                                {%- include icons.html icon="logo-instagram" -%}
                             </a>
                         </p>
                         <p class="uk-margin-top uk-margin-medium-bottom hidden-sm-up">

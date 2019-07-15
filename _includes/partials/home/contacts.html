@@ -1,44 +1,40 @@
 {%- assign outlets = site.outlets | where: 'available', 'true' | sort: 'order' -%}
 {%- assign outlets_meta = site.collections | where: 'label', 'outlets' | first -%}
 <section class="uk-position-relative uk-overflow-hidden bg-brand--platinum" id="contacts">
-    <div class="maxwidth-fluid mx-auto">
-        <div uk-grid>
-            <div class="uk-width-1-1 uk-width-1-2@l">
-                <div class="wrapper-x section-padding">
-                    <h2 class="mt-0 big-headline fw-xbold uk-text-primary">
-                        <span>{{ outlets_meta.title | capitalize_initial_letters }}</span>
-                    </h2>
-                    <div class="m-0 fs-lg fw-bold co-black">
-                        {{ outlets_meta.description | markdownify }}
-                    </div>
-                    <div class="m-0 fs-sm co-gray--thin">
-                        {{ outlets_meta.call_to_action | markdownify }}
-                    </div>
-                    <div uk-grid>
-                        {%- for outlet in outlets -%}
-                        <a class="uk-width-1-1 uk-width-1-2@s" href="{{ outlet.map_link }}" target="_blank">
-                            <h3 class="m-0 ff-body fw-bold fs-sm co-black">
-                                {{ outlet.title }}
-                            </h3>
-                            <p class="mb-0 co-gray--thin fs-mi">
-                                {%- if outlet.suite_number.size > 2 -%}<span>{{ outlet.suite_number }}, </span>{%- endif -%}
-                                <span>{{ outlet.street }}, </span><span>{{ outlet.city }}</span>,
-                                <span> {{ outlet.state }}</span>
-                                {%- if outlet.zipcode -%}<span> {{ outlet.zipcode }}</span>{%- endif -%}<br />
-                                {%- for hours in outlet.operating_hours -%}
-                                    <span>{{ hours }}</span></br>
-                                {%- endfor -%}
-                            </p>
-                        </a>
-                        {%- endfor -%}
-                    </div>
+    <div uk-grid>
+        <div class="uk-width-1-1 uk-width-1-2@l maxwidth-fluid mx-auto">
+            <div class="wrapper-x section-padding">
+                <h2 class="mt-0 big-headline fw-xbold uk-text-primary">
+                    <span>{{ outlets_meta.title | capitalize_initial_letters }}</span>
+                </h2>
+                <div class="m-0 fs-lg fw-bold co-black">
+                    {{ outlets_meta.description | markdownify }}
+                </div>
+                <div class="m-0 fs-sm co-gray--thin">
+                    {{ outlets_meta.call_to_action | markdownify }}
+                </div>
+                <div uk-grid>
+                    {%- for outlet in outlets -%}
+                    <a class="uk-width-1-1 uk-width-1-2@s" href="{{ outlet.map_link }}" target="_blank">
+                        <h3 class="m-0 ff-body fw-bold fs-sm co-black">
+                            {{ outlet.title }}
+                        </h3>
+                        <p class="mb-0 co-gray--thin fs-mi">
+                            {%- if outlet.suite_number.size > 2 -%}<span>{{ outlet.suite_number }}, </span>{%- endif -%}
+                            <span>{{ outlet.street }}, </span><span>{{ outlet.city }}</span>,
+                            <span> {{ outlet.state }}</span>
+                            {%- if outlet.zipcode -%}<span> {{ outlet.zipcode }}</span>{%- endif -%}<br />
+                            {%- for hours in outlet.operating_hours -%}
+                                <span>{{ hours }}</span></br>
+                            {%- endfor -%}
+                        </p>
+                    </a>
+                    {%- endfor -%}
                 </div>
             </div>
-            <div class="uk-width-1-1 uk-width-1-2@l uk-position-relative">
-                <div class="map" data-coords="{{ site.google_maps.lat }}, {{ site.google_maps.lng }}">
-                    <!-- Google Map -->
-                </div>
-            </div>
+        </div>
+        <div class="uk-width-1-1 uk-width-1-2@l uk-position-relative">
+            <img src="{{ page.storefront_image }}" alt="{{ storefront_image_description }}" style="height: 100%; min-height: 456px;">
         </div>
     </div>
 </section>
