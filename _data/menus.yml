@@ -2,15 +2,18 @@
 header:
 - url: "/#contacts"
   title: Come Visit
-  weight: 7
+  weight: 8
 - url: "/#mentions"
   title: Mentions
-  weight: 6
+  weight: 7
 - url: "/#about"
   title: Our Story
-  weight: 5
+  weight: 6
 - url: "/#gallery"
   title: Gallery
+  weight: 5
+- url: "/#catering"
+  title: Catering
   weight: 4
 - url: "/#order"
   title: Order Online
