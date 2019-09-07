@@ -1,5 +1,9 @@
 ---
 title: Catering
-headline: Fresh. Exotic. Unforgettable. Hand off your next catering to us.
-description: Cholita Linda Catering brings you everything on our menu to your home, events, or conferences. Catering is fully customizable (per your request) so that everyone at your table finds something suitable to their taste or diet. Use the form to the right or below the page to get started.
-submit_button_text: Request Catering
+headline: Fresh. Exotic. Unforgettable.
+blurb: Cholita Linda Catering brings you everything on our menu to your events and conferences. Catering is so customizable everyone at your table will find something suitable to their taste or diet.
+form:
+  title: Get started with your request
+  submit_button_text: Request Catering
+carousel:
+  title: People love Cholita Linda Catering

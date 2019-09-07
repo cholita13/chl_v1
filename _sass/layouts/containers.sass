@@ -32,6 +32,20 @@
     margin-right:           auto
     margin-left:            auto
 
+.section-margin
+    &-top
+        margin-top:         $space-md!important
+        +mq(sm)
+            margin-top:     $space-lg!important
+        +mq(md)
+            margin-top:     $space-xl!important
+    &-bottom
+        margin-bottom:      $space-md
+        +mq(sm)
+            margin-bottom:  $space-lg
+        +mq(md)
+            margin-bottom:  $space-xl
+
 .section-padding
     padding-top:            $space-md
     padding-bottom:         $space-md

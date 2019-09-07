@@ -4,6 +4,27 @@
         <h2 class="uk-margin-remove uk-text-center big-headline fw-xbold uk-text-primary section-padding-bottom">
             <span>{{ catering.title | capitalize_initial_letters }}</span>
         </h2>
-
+        <div class="maxwidth-sm mx-auto tx-c">
+            <h3 class="mt-0 fw-bold fs-lg co-black">
+                {{ catering.headline | capitalize_initial_letters }}
+            </h3>
+            <p class="mb-0">
+                {{ catering.blurb }}
+            </p>
+        </div>
+        <div class="section-margin-top" uk-grid>
+            <div class="uk-width-1-1 uk-width-1-2@l maxwidth-fluid mx-auto">
+                <h3 class="mt-0 fw-bold fs-lg co-black">
+                    {{ catering.form.title | capitalize_initial_letters }}
+                </h3>
+                Form here...
+            </div>
+            <div class="uk-width-1-1 uk-width-1-2@l uk-position-relative">
+                <h3 class="mt-0 fw-bold fs-lg co-black">
+                    {{ catering.carousel.title | capitalize_initial_letters }}
+                </h3>
+                Carousel here...
+            </div>
+        </div>
     </div>
 </section>
