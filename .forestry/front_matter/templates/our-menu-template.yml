@@ -29,13 +29,13 @@ fields:
   name: order
   label: Order
 pages:
-- _our_menus/margarita.md
-- _our_menus/aguas-frescas.md
 - _our_menus/beers.md
-- _our_menus/desserts.md
+- _our_menus/margarita.md
 - _our_menus/ensalada.md
 - _our_menus/platos.md
 - _our_menus/sangria.md
+- _our_menus/aguas-frescas.md
+- _our_menus/desserts.md
 - _our_menus/sanguches.md
 - _our_menus/sides.md
 - _our_menus/tacos.md
