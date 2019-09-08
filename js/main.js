@@ -78,3 +78,36 @@ if (q('textarea')) {
         qq('textarea').map(el => el.addEventListener('input', () => q('.counter').textContent = Number(el.value.length), false));
     }());
 }
+
+
+// Form actions
+(function(){
+    'use strict'
+
+    const reqForm = q('.request-form')
+    const processForm = form => {
+        const data = new FormData(form)
+        data.append('form-name', 'Catering Request Form');
+        fetch('/', {
+            method: 'POST',
+            body: data,
+        })
+        .then(() => {
+            form.innerHTML = `
+                <p class="form-success mb-0">
+                    ${reqForm.getAttribute('data-success-message')}
+                </p>
+            `;
+        })
+        .catch(error => {
+            form.innerHTML = `<p class="form-error">Error: ${error}</p>`;
+        })
+    }
+
+    if (reqForm) {
+        reqForm.addEventListener('submit', e => {
+            e.preventDefault();
+            processForm(reqForm);
+        })
+    }
+})();

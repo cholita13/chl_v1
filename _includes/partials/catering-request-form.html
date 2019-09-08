@@ -1,8 +1,17 @@
 <form
-    class="card p-space-sm"
-    action=""
+    class="request-form card p-space-sm"
     name="Catering Request Form"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    data-success-message="{{ catering.form.success_message }}"
 >
+    <p hidden aria-hidden="true">
+        <label>
+            Don’t fill this out if you're human:
+            <input name="bot-field"/>
+        </label>
+    </p>
     <div class="mb-space" uk-grid>
         <p class="form-control uk-width-1-1 uk-width-1-2@l">
             <label for="fname">First Name</label>
@@ -24,7 +33,6 @@
             type="email"
             name="email"
             placeholder="jane.friedman@example.com"
-            pattern=".+@globex.com"
             size="56"
             required
         >
