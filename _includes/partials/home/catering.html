@@ -1,5 +1,4 @@
 {%- assign catering = site.data.catering -%}
-{%- assign gallery = site.catering -%}
 <section class="uk-position-relative uk-overflow-hidden min-h-100vh" id="catering">
     <div class="wrapper-x maxwidth-fluid mx-auto section-padding add-bottom-padding@lg">
         <h2 class="uk-margin-remove uk-text-center big-headline fw-xbold uk-text-primary section-padding-bottom">
@@ -18,29 +17,13 @@
                 <h3 class="mt-0 fw-bold fs-lg co-black">
                     {{ catering.form.title | capitalize_initial_letters }}
                 </h3>
-                Form here...
+                {%- include partials/catering-request-form.html -%}
             </div>
             <div class="uk-width-1-1 uk-width-1-2@l uk-position-relative">
                 <h3 class="mt-0 fw-bold fs-lg co-black">
                     {{ catering.carousel.title | capitalize_initial_letters }}
                 </h3>
-                <div class="fullbleed@lg-down">
-                    <div class="carousel"
-                        data-flickity='
-                            {
-                                "fullscreen":   true,
-                                "pageDots":     false,
-                                "imagesLoaded": true
-                            }
-                        '
-                    >
-                        {%- for item in gallery limit: 5 -%}
-                            <div class="carousel-cell">
-                                <img class="carousel-cell-image" src="{{ item.image }}"/>
-                            </div>
-                        {%- endfor -%}
-                    </div>
-                </div>
+                {%- include partials/catering-carousel.html -%}
             </div>
         </div>
     </div>

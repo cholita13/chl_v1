@@ -51,3 +51,30 @@ UIkit.util.on('.scroll-trigger', 'scrolled', () => UIkit.offcanvas('#offcanvas-r
         paraWrap.addEventListener('transitionend', () => button.remove(),false);
     }
 })();
+
+
+// Star required attribute
+(function () {
+    'use strict'
+
+    var inputs = qq('.form-control input:not([type="submit"]), .form-control textarea');
+
+    inputs.map(input => {
+        var span   = document.createElement('span');
+
+        span.className = 'required';
+        span.textContent = `*`;
+
+        if (input.hasAttribute('required')) input.previousElementSibling.append(span);
+    });
+})();
+
+
+// Character Count for Textareas
+if (q('textarea')) {
+    (function() {
+        'use strict';
+
+        qq('textarea').map(el => el.addEventListener('input', () => q('.counter').textContent = Number(el.value.length), false));
+    }());
+}

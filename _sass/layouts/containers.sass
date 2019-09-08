@@ -76,3 +76,32 @@
     margin:                 0 calc(-50vw + 50%)
     +mq(lg)
         margin:             unset
+
+
+.form-control
+    margin:                 0
+    label
+        display:            block
+        @extend .fs-mi
+    input, textarea
+        display:            block
+        width:              100%
+        border:             2px solid #d3d3d4
+        border-radius:      $radius
+        background:         $snow
+        padding:            .48em
+        @extend .fs-mi
+        &:focus
+            outline:        none
+            background:     #fff
+            border-color:   #2a6df4
+            box-shadow:     0 0 0 3px rgba(#2a6df4,.2)
+    textarea
+        resize:             vertical
+        height:             $coord-xxl
+        vertical-align:     top
+    .required
+        display:                    inline-block
+        transform:                  translate(2px, -2px)
+        color:                      palette(accent)
+    &:last-of-type

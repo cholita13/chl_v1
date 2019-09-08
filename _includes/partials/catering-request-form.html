@@ -1,0 +1,54 @@
+<form
+    class="card p-space-sm"
+    action=""
+    name="Catering Request Form"
+>
+    <div class="mb-space" uk-grid>
+        <p class="form-control uk-width-1-1 uk-width-1-2@l">
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" name="fname" placeholder="Jane" required>
+        </p>
+        <p class="form-control uk-width-1-1 uk-width-1-2@l">
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" placeholder="Friedman" name="lname">
+        </p>
+    </div>
+    <p class="form-control mb-space-xs">
+        <label for="org_name">Company</label>
+        <input id="org_name" type="text" name="org_name">
+    </p>
+    <p class="form-control mb-space-xs">
+        <label for="email">Email</label>
+        <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="jane.friedman@example.com"
+            pattern=".+@globex.com"
+            size="56"
+            required
+        >
+    </p>
+    <p class="form-control mb-space-xs">
+        <label for="phone">Phone</label>
+        <input
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="+1 (510) 594-7610"
+            minlength="7"
+            maxlength="25"
+            required
+        >
+    </p>
+    <p class="form-control mb-space-xs">
+        <label for="message">Any Message?</label>
+        <textarea name="message" id="message" maxlength="500" placeholder="Start typing here..."></textarea>
+        <span class="d-blk tx-r mt-hh" aria-live="polite" aria-atomic="true">
+            <span class="co-gray--thinner fs-mi"><span class="counter">0</span>/500 characters.</span>
+        </span>
+    </p>
+    <button class="btn--branded is-small" type="submit">
+        {{ catering.form.submit_button_text }}
+    </button>
+</form>

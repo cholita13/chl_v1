@@ -1,0 +1,18 @@
+{%- assign c_gallery = site.catering -%}
+<div class="fullbleed@lg-down">
+    <div class="carousel"
+        data-flickity='
+            {
+                "fullscreen":   true,
+                "pageDots":     false,
+                "imagesLoaded": true
+            }
+        '
+    >
+        {%- for item in c_gallery limit: 5 -%}
+            <div class="carousel-cell">
+                <img class="carousel-cell-image" src="{{ item.image }}"/>
+            </div>
+        {%- endfor -%}
+    </div>
+</div>
