@@ -55,6 +55,10 @@
     +mq(md)
         padding-top:        $space-xl
         padding-bottom:     $space-xl
+    &.add-bottom-padding\@lg
+        padding-bottom:     0
+        +mq(lg)
+            padding-bottom: $space-xl
 .section-padding-top
     padding-top:            $space-md
     +mq(sm)
@@ -67,3 +71,8 @@
         padding-bottom:     $space-lg
     +mq(md)
         padding-bottom:     $space-xl
+
+.fullbleed\@lg-down
+    margin:                 0 calc(-50vw + 50%)
+    +mq(lg)
+        margin:             unset

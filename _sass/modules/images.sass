@@ -22,3 +22,17 @@
         margin-right:       $space-xs
     &__body
         flex:               1
+
+.carousel
+    background:             $black
+.carousel-cell
+    width:              100%
+    height:         392px
+    +flex(flex, center, center)
+    .is-fullscreen &
+        height:             100%
+.carousel-cell-image
+    display:            block
+    max-height:         100%
+    .is-fullscreen &
+        max-width:      100%
