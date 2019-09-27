@@ -15,21 +15,35 @@
                 </div>
                 <div uk-grid>
                     {%- for outlet in outlets -%}
-                    <a class="uk-width-1-1 uk-width-1-2@s" href="{{ outlet.map_link }}" target="_blank">
-                        <h3 class="m-0 ff-body fw-bold fs-sm co-black">
-                            {{ outlet.title }}
-                        </h3>
-                        <p class="mb-0 co-gray--thin fs-mi">
-                            {%- if outlet.suite_number.size > 2 -%}<span>{{ outlet.suite_number }}, </span>{%- endif -%}
-                            <span>{{ outlet.street }}, </span><span>{{ outlet.city }}</span>,
-                            <span> {{ outlet.state }}</span>
-                            {%- if outlet.zipcode -%}<span> {{ outlet.zipcode }}</span>{%- endif -%}<br />
-                            {%- for hours in outlet.operating_hours -%}
-                                <span>{{ hours }}</span></br>
-                            {%- endfor -%}
-                        </p>
-                    </a>
+                        <a class="uk-width-1-1 uk-width-1-2@s" href="{{ outlet.map_link }}" target="_blank">
+                            <h3 class="m-0 ff-body fw-bold fs-sm co-black">
+                                {{ outlet.title }}
+                            </h3>
+                            <p class="mb-0 co-gray--thin fs-mi">
+                                {%- if outlet.suite_number.size > 2 -%}<span>{{ outlet.suite_number }}, </span>{%- endif -%}
+                                <span>{{ outlet.street }}, </span><span>{{ outlet.city }}</span>,
+                                <span> {{ outlet.state }}</span>
+                                {%- if outlet.zipcode -%}<span> {{ outlet.zipcode }}</span>{%- endif -%}<br />
+                                {%- for hours in outlet.operating_hours -%}
+                                    <span>{{ hours }}</span></br>
+                                {%- endfor -%}
+                            </p>
+                        </a>
                     {%- endfor -%}
+                    <div class="pt-2 pb-1h">
+                        <ul class="none m-0 d-flx al-i-c j-c-c">
+                            <li>
+                                <a class="op-1 p-0" href="https://apps.apple.com/us/app/cholita-linda/id1090199824" target="_blank">
+                                    <img class="app-store-badge" src="{{ site.url }}/images/app-store-badge.png" alt="iOS app store badge">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="op-1 p-0" href="https://play.google.com/store/apps/details?id=com.chownow.cholitalinda&hl=en_US" target="_blank">
+                                    <img class="app-store-badge suffix--wider" src="{{ site.url }}/images/google-play-badge.png" alt="Google Play badge">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

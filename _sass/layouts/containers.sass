@@ -32,6 +32,20 @@
     margin-right:           auto
     margin-left:            auto
 
+.section-margin
+    &-top
+        margin-top:         $space-md!important
+        +mq(sm)
+            margin-top:     $space-lg!important
+        +mq(md)
+            margin-top:     $space-xl!important
+    &-bottom
+        margin-bottom:      $space-md
+        +mq(sm)
+            margin-bottom:  $space-lg
+        +mq(md)
+            margin-bottom:  $space-xl
+
 .section-padding
     padding-top:            $space-md
     padding-bottom:         $space-md
@@ -41,6 +55,10 @@
     +mq(md)
         padding-top:        $space-xl
         padding-bottom:     $space-xl
+    &.add-bottom-padding\@lg
+        padding-bottom:     0
+        +mq(lg)
+            padding-bottom: $space-xl
 .section-padding-top
     padding-top:            $space-md
     +mq(sm)
@@ -53,3 +71,36 @@
         padding-bottom:     $space-lg
     +mq(md)
         padding-bottom:     $space-xl
+
+.fullbleed\@lg-down
+    margin:                 0 calc(-50vw + 50%)
+    +mq(lg)
+        margin:             unset
+
+
+.form-control
+    margin:                 0
+    label
+        display:            block
+        @extend .fs-mi
+    input, textarea
+        display:            block
+        width:              100%
+        border:             2px solid #d3d3d4
+        border-radius:      $radius
+        background:         $snow
+        padding:            .56em
+        @extend .fs-mi
+        &:focus
+            outline:        none
+            background:     #fff
+            border-color:   #2a6df4
+            box-shadow:     0 0 0 3px rgba(#2a6df4,.2)
+    textarea
+        resize:             vertical
+        height:             $coord-xxl
+        vertical-align:     top
+    .required
+        display:                    inline-block
+        transform:                  translate(2px, -2px)
+        color:                      palette(accent)

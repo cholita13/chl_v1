@@ -38,6 +38,9 @@ button
             transform:      rotate(-4deg)
         +mq(sm)
             font-size:      rem(27px)
+        &.is-small
+            @extend .fs-sm
+            font-weight:    normal
         &.is-medium
             font-size:      rem(25px)
             font-weight:    $medium

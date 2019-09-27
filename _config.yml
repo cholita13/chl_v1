@@ -45,6 +45,9 @@ collections:
   gallery:
     title: Gallery
     output: false
+  catering:
+    title: Catering
+    output: false
   mentions:
     title: mentions
     output: false
