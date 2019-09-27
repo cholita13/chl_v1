@@ -12,9 +12,9 @@ header:
 - url: "/#gallery"
   title: Gallery
   weight: 5
-- url: "/#catering"
-  title: Catering
-  weight: 4
+# - url: "/#catering"
+#   title: Catering
+#   weight: 4
 - url: "/#order"
   title: Order Online
   weight: 3
