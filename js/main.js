@@ -80,6 +80,18 @@ if (q('textarea')) {
 }
 
 
+// Flatpickr
+(function(){
+    'use strict'
+
+    flatpickr('#datetime', {
+        enableTime: true,
+        minTime: '10:00',
+        maxTime: '17:00'
+    })
+})();
+
+
 // Form actions
 (function(){
     'use strict'
