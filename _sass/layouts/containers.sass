@@ -83,7 +83,7 @@
     label
         display:            block
         @extend .fs-mi
-    input, textarea
+    input, textarea, select
         display:            block
         width:              100%
         border:             2px solid #d3d3d4
@@ -104,3 +104,17 @@
         display:                    inline-block
         transform:                  translate(2px, -2px)
         color:                      palette(accent)
+    .icon
+        fill:               none
+    &.select
+        position:           relative
+        display:            inline-block
+        select
+            -webkit-appearance: none
+            appearance:         none
+        .icon
+            position:           absolute
+            top:                50%
+            right:              7px
+            transform:          translateY(15%)
+            pointer-events:     none

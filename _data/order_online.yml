@@ -2,9 +2,13 @@
 title: Order Online
 description: Pick up your order at our restaurant or get it delivered right to your
   doorstep. East Bay delivery with real-time GPS tracking now available via the good
-  folks at [Caviar](https://www.trycaviar.com/t/sf-east-bay/cholita-linda-3652?groups=f_online__d_clink2__p_marketing__c_merchant-links&utm_medium=clink2&utm_source=marketing&utm_campaign=merchant-links&utm_term=sf-east-bay&utm_content=cholita-linda-3652).
+  folks at Caviar.
 cta_text: How would you like to receive your order?
-chownow_button: Pickup
-chownow_link: "https://ordering.chownow.com/order/4410/locations"
-caviar_button: Delivery
-caviar_link: https://www.trycaviar.com/t/sf-east-bay/cholita-linda-3652
+pickup:
+  button: Pickup
+  oakland: https://trycaviar.app.link/Sl9KuE1SQZ
+  alameda: https://trycaviar.app.link/iNyGUYPSQZ
+delivery:
+  button: Delivery
+  oakland: https://trycaviar.app.link/Q68IngMclX
+  alameda: https://trycaviar.app.link/1kyceCrtoX

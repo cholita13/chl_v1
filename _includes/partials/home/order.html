@@ -11,15 +11,33 @@
             <h3 class="co-black fw-bold ff-body mb-0">
                 {{ order.cta_text }}
             </h3>
-            <p class="mb-0 pt-2 d-flx al-i-c j-c-c">
-                <a class="btn--branded chownow-order-online" href="{{ order.chownow_link }}">
-                    {{ order.chownow_button }}
-                </a>
+            <div class="pt-2 d-flx al-i-c j-c-c maxwidth-xs mx-auto">
+                <button type="button" class="btn--branded">
+                    {{ order.pickup.button }}
+                </button>
+                <div class="p-space" uk-dropdown="mode: click; animation: uk-animation-slide-top-small; duration: 320; boundary: .maxwidth-xs">
+                    <a class="op-1 p-0 btn--branded" href="{{ order.pickup.oakland }}" target="_blank">
+                        Oakland
+                    </a>
+                    <span class="m-space">or</span>
+                    <a class="op-1 p-0 btn--branded suffix" href="{{ order.pickup.alameda }}" target="_blank">
+                        Alameda
+                    </a>
+                </div>
                 <span class="m-space">or</span>
-                <a class="btn--branded" href="{{ order.caviar_link }}" target="_blank">
-                    {{ order.caviar_button }}
-                </a>
-            </p>
+                <button type="button" class="btn--branded">
+                    {{ order.delivery.button }}
+                </button>
+                <div class="p-space" uk-dropdown="mode: click; animation: uk-animation-slide-top-small; duration: 320; boundary: .maxwidth-xs">
+                    <a class="op-1 p-0 btn--branded" href="{{ order.delivery.oakland }}" target="_blank">
+                        Oakland
+                    </a>
+                    <span class="m-space">or</span>
+                    <a class="op-1 p-0 btn--branded suffix" href="{{ order.delivery.alameda }}" target="_blank">
+                        Alameda
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="pt-2 pb-1h">
             <ul class="none m-0 d-flx al-i-c j-c-c">
