@@ -663,6 +663,19 @@
             required
         >
     </p>
+    <div class="mb-space" uk-grid>
+        <p class="form-control uk-width-1-1 uk-width-1-2@l">
+            <label for="head-count">Head Count</label>
+            <input id="head-count" type="number" name="head-count" placeholder="Around how many guests?">
+        </p>
+        <p class="form-control select uk-width-1-1 uk-width-1-2@l">
+            <label for="delivery-pickup">Delivery / Pickup / Onsite</label>
+            <select name="delivery-pickup" id="delivery-pickup" required>
+                <option value="delivery">Delivery</option>
+                <option value="pickup">Pickup</option>
+                <option value="onsite">Onsite</option>
+            </select><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></p>
+    </div>
     <button class="btn--branded is-small mt-space-sm" type="submit">
         Request Catering
     </button>

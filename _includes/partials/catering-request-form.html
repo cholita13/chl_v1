@@ -55,6 +55,21 @@
             required
         >
     </p>
+    <div class="mb-space" uk-grid>
+        <p class="form-control uk-width-1-1 uk-width-1-2@l">
+            <label for="head-count">Head Count</label>
+            <input id="head-count" type="number" name="head-count" placeholder="Around how many guests?">
+        </p>
+        <p class="form-control select uk-width-1-1 uk-width-1-2@l">
+            <label for="delivery-pickup">Delivery / Pickup / Onsite</label>
+            <select name="delivery-pickup" id="delivery-pickup" required>
+                <option value="delivery">Delivery</option>
+                <option value="pickup">Pickup</option>
+                <option value="onsite">Onsite</option>
+            </select>
+            {%- include icons.html icon="arrow-down" -%}
+        </p>
+    </div>
     <button class="btn--branded is-small mt-space-sm" type="submit">
         {{ catering.form.submit_button_text }}
     </button>
