@@ -1,4 +1,20 @@
 ---
 label: Catering Slideshow
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: description
+  type: text
+  config:
+    required: false
+  label: Short Description
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
+  default: "/images/platos.jpg"
