@@ -22,7 +22,7 @@ sections:
   label: Catering Slideshow
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - catering-slideshow
 - type: directory
