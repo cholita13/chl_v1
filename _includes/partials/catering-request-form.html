@@ -58,7 +58,14 @@
     <div class="mb-space" uk-grid>
         <p class="form-control uk-width-1-1 uk-width-1-2@l">
             <label for="head-count">Head Count</label>
-            <input id="head-count" type="number" name="head-count" placeholder="Around how many guests?">
+            <input
+                id="head-count"
+                type="number"
+                name="head-count"
+                placeholder="Around how many guests?"
+                min="10"
+                max="500"
+            >
         </p>
         <p class="form-control select uk-width-1-1 uk-width-1-2@l">
             <label for="delivery-pickup">Delivery / Pickup / Onsite</label>
