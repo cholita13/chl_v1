@@ -1,9 +1,10 @@
 ---
-image: /images/tacos.jpg
+image: "/images/146026 steak taco.jpg"
 title: Tacos
-description: |-
-    A taco is a traditional Mexican dish consisting of a corn or wheat tortilla folded or rolled around a filling.
+description: A taco is a traditional Mexican dish consisting of a corn or wheat tortilla
+  folded or rolled around a filling.
 price: '3.50'
 menu_name: tacos
 order: 1
+
 ---
