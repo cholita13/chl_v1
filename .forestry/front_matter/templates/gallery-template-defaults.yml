@@ -20,15 +20,15 @@ fields:
   name: video_link
   label: video_link
 pages:
-- _gallery/palms.md
+- _gallery/birdview.md
+- _gallery/gallery_01.md
+- _gallery/gallery_02.md
+- _gallery/gallery_03.md
+- _gallery/gallery_04.md
+- _gallery/gallery_05.md
 - _gallery/gallery_06.md
+- _gallery/gallery_07.md
 - _gallery/gallery_08.md
 - _gallery/gallery_09.md
-- _gallery/gallery_07.md
-- _gallery/gallery_01.md
-- _gallery/gallery_05.md
-- _gallery/gallery_03.md
-- _gallery/gallery_02.md
 - _gallery/gallery_10.md
-- _gallery/gallery_04.md
-- _gallery/birdview.md
+- _gallery/palms.md
