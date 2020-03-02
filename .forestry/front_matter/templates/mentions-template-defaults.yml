@@ -14,6 +14,16 @@ fields:
 - type: datetime
   name: date
   label: Date
+- name: order
+  type: number
+  label: Order
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - _mentions/01.md
 - _mentions/02.md
