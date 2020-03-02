@@ -40,8 +40,10 @@ sections:
 - type: directory
   path: _our_menus
   label: Our menus
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - our-menu-template
 - type: directory
   path: _recognitions
   label: Recognitions
