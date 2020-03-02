@@ -49,6 +49,10 @@ sections:
   path: _data/order_online.yml
   label: Order Online Data
 - type: document
+  path: _data/catering.yml
+  label: Catering Data
+  match: "**/*"
+- type: document
   path: _data/business_info.yml
   label: Business Info
 - type: document
