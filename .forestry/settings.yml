@@ -51,7 +51,6 @@ sections:
 - type: document
   path: _data/catering.yml
   label: Catering Data
-  match: "**/*"
 - type: document
   path: _data/business_info.yml
   label: Business Info
