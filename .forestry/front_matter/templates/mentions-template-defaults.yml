@@ -4,16 +4,16 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: source
-  label: source
+  label: Source
 - type: textarea
   name: link
-  label: link
+  label: Link
 - type: datetime
   name: date
-  label: date
+  label: Date
 pages:
 - _mentions/01.md
 - _mentions/02.md

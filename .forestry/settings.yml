@@ -47,8 +47,10 @@ sections:
 - type: directory
   path: _recognitions
   label: Recognitions
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - recognitions-template
 - type: document
   path: _data/order_online.yml
   label: Order Online Data
