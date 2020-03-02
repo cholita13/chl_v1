@@ -10,8 +10,10 @@ sections:
 - type: directory
   path: _outlets
   label: Outlets (Locations)
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - outlets-template
 - type: directory
   path: _mentions
   label: Mentions
