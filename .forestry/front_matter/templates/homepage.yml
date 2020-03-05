@@ -12,12 +12,6 @@ fields:
   name: description
   label: description
 - type: file
-  name: image_768_s
-  label: image_768_s
-- type: file
-  name: image_1024_m
-  label: image_1024_m
-- type: file
   name: image_1440_l
   label: image_1440_l
 - type: text
