@@ -6,12 +6,14 @@ webhook_url:
 sections:
 - type: jekyll-pages
   label: Pages
-  create: all
+  create: documents
 - type: directory
   path: _outlets
   label: Outlets (Locations)
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - outlets-template
 - type: directory
   path: _mentions
   label: Mentions
@@ -38,16 +40,23 @@ sections:
 - type: directory
   path: _our_menus
   label: Our menus
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - our-menu-template
 - type: directory
   path: _recognitions
   label: Recognitions
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - recognitions-template
 - type: document
   path: _data/order_online.yml
   label: Order Online Data
+- type: document
+  path: _data/catering.yml
+  label: Catering Data
 - type: document
   path: _data/business_info.yml
   label: Business Info
