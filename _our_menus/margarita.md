@@ -1,9 +1,9 @@
 ---
 menu_name: Margarita
-image: ''
+image: "/images/IMG_4761.jpg"
 title: Margarita
 description: ''
 price: "7.99"
 order: 11
-image: /images/margarita.jpg
+
 ---
