@@ -25,41 +25,6 @@
                             {% endfor %}
                         </ul>
                     </div>
-                    <div class="">
-                        <p class="vcard uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
-                            <a href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address"
-                                itemtype="http://schema.org/PostalAddress" target="_blank">
-                                <span itemprop="streetAddress">{{ site.data.business_info.vcard.street }}</span><span class="separator">,</span>
-                                <span itemprop="addressLocality">{{ site.data.business_info.vcard.city }}</span>
-                                <meta itemprop="addressRegion" content="CA">
-                                <meta itemprop="postalCode" content="94609">
-                            </a>
-                            <br>
-                            <a class=" scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
-                                {{ site.data.business_info.vcard.hours }}
-                            </a>
-                            <br>
-                            <a class="" href="mailto:{{ site.data.business_info.vcard.email }}" itemprop="email">{{ site.data.business_info.vcard.email }}</a>
-                            <br>
-                            <a class="" href="tel:{{ site.data.business_info.vcard.phone }}" itemprop="telephone">{{ site.data.business_info.vcard.phone }}</a>
-                        </p>
-                        <p class="social-links uk-padding uk-padding-remove-horizontal uk-margin-remove-bottom">
-                            <a class="light-link prefix--wider" href="//twitter.com/{{ site.data.business_info.social.twitter }}" target="_blank">
-                                {%- include icons.html icon="logo-twitter" -%}
-                            </a>
-                            <a class="light-link prefix--wider" href="//facebook.com/{{ site.data.business_info.social.facebook }}" target="_blank">
-                                {%- include icons.html icon="logo-facebook" -%}
-                            </a>
-                            <a class="light-link " href="//instagram.com/{{ site.data.business_info.social.instagram }}" target="_blank">
-                                {%- include icons.html icon="logo-instagram" -%}
-                            </a>
-                        </p>
-                        <p class="uk-margin-top uk-margin-medium-bottom hidden-sm-up">
-                            <a class="uk-button uk-button-default scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
-                                Order Online
-                            </a>
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
