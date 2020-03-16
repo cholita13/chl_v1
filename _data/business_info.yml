@@ -15,3 +15,6 @@ google_maps:
   lat: "6.5991353"
   lng: "3.3449045"
   api_key: AIzaSyBcMgZEzHo1r68EBV4YmYndp0dN1pwTwCI
+app_stores:
+  apple: https://apps.apple.com/us/app/toast-takeout/id1362180579
+  google: https://play.google.com/store/apps/details?id=com.toasttab.consumer&utm_source=landingpage&utm_campaign=landingpage&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1
