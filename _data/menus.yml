@@ -2,6 +2,9 @@
 header:
 - url: "/#contacts"
   title: Come Visit
+  weight: 9
+- url: "/#gift-cards"
+  title: Get Gift Cards
   weight: 8
 - url: "/#mentions"
   title: Mentions
@@ -22,5 +25,5 @@ header:
   title: Our Menu
   weight: 2
 - url: "/#overview"
-  title: Overview
+  title: Home
   weight: 1

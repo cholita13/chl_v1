@@ -1,0 +1,32 @@
+{%- assign gift = site.data.gift_cards -%}
+<section class="gift-cards uk-position-relative uk-overflow-hidden order-online" id="gift-cards">
+    <div class="wrapper-x maxwidth-fluid mx-auto section-padding-top">
+        <h2 class="uk-margin-remove uk-text-center big-headline fw-xbold uk-text-primary section-padding-bottom">
+            <span>{{ gift.title | capitalize_initial_letters }}</span>
+        </h2>
+        <div class="maxwidth-sm mx-auto uk-text-center">
+            <div class="m-0 co-gray--thin">
+                {{ gift.description | markdownify }}
+            </div>
+        </div>
+        <div class="maxwidth-lg mx-auto uk-text-center">
+            <div uk-grid>
+                {%- for giftcard in gift.gift_cards -%}
+                    {%- assign num = forloop.index | divided_by: 2 | modulo: 2 -%}
+                    <div class="gift-card uk-width-1-1 uk-width-1-2@l section-padding {% if num == 0 %}{% else %}add-top-padding@lg{% endif %}">
+                        <img class="" src="{{ site.url }}{{ giftcard.card.image }}" alt="{{ giftcard.card.headline }}">
+                        <h3 class="fw-bold fs-md co-black">
+                            {{ giftcard.card.headline }}
+                        </h3>
+                        <p class="co-gray--thin maxwidth-xs mx-auto">
+                            {{ giftcard.card.blurb }}
+                        </p>
+                        <a class="op-1 btn--branded" href="{{ giftcard.card.link.link }}" target="_blank" rel="noopener">
+                            {{ giftcard.card.link.text }}
+                        </a>
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</section>

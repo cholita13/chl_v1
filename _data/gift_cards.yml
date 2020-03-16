@@ -1,0 +1,19 @@
+---
+title: Get Gift Cards
+description: |-
+  You can now buy customized gift cards for all the fresh and vibrant foods from Cholita Linda. Use the links below to purchase a new card or look up one you might have purchased before.
+gift_cards:
+  - card:
+      image: "/images/gift_card_front.png"
+      headline: Card Purchase
+      blurb: Customize and send a gift card even with a personal message.
+      link:
+        text: Get Card
+        link: https://www.toasttab.com/cholita-linda-temescal-4923-telegraph-ave/giftcards
+  - card:
+      image: "/images/gift_card_back.png"
+      headline: Card Lookup
+      blurb: Look up an existing card, add a value, and do more with it.
+      link:
+        text: Find Card
+        link: https://www.toasttab.com/cholita-linda-temescal-4923-telegraph-ave/findcard

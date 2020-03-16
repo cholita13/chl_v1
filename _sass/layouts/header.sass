@@ -3,15 +3,21 @@
     // @package chl_v1
 
 .nav-toggler
-    +pos(fixed, $top: $space-xxxs, $right: $space-xxxs)
-    display:                block
-    padding:                $space
-    cursor:                 pointer
-    z-index:                10000
-    transition:             $tr-default
+    +pos(fixed, $top: $space-xxxs, $left: 0)
+    display: block
+    padding: $space
+    cursor: pointer
+    z-index: 1024
+    transition: $tr-default
+.sticky-cta
+    top: $space-xs
+    +pos(fixed, $right: $space-sm)
+    z-index: 10
+    +mq(sm)
+        top: $space-sm
 .hamburger, .hamburger:before, .hamburger:after
     +wh(20px, 2px)
-    background-color:       $black
+    background-color:       $primarycolor
     transition:             all 320ms ease
 .hamburger
     position:               relative

@@ -25,17 +25,31 @@
 </head><body>
         <a class="sr" href="#main">Skip to content</a>
         <h1 class="sr">Cholita Linda</h1><header class="site-header">
-    <button class="nav-toggler ml-auto" aria-label="Toggle Navigation" uk-toggle="target: #offcanvas-reveal">
+    <button class="nav-toggler mr-auto" aria-label="Toggle Navigation" uk-toggle="target: #offcanvas-reveal">
         <span class="hamburger d-blk"></span>
     </button>
-    <nav id="offcanvas-reveal" uk-offcanvas="mode: reveal; flip: true; overlay: true">
+    <div class="sticky-cta">
+        <button type="button" class="btn--branded">
+            Order Now
+        </button>
+        <div class="p-space uk-width-medium" uk-dropdown="animation: uk-animation-slide-top-small; duration: 320;">
+            <a class="op-1 p-0 btn--branded" href="http://toasttab.com/cholita-linda-temescal-4923-telegraph-ave" target="_blank" rel="noopener">
+                Oakland
+            </a>
+            <span class="m-space">or</span>
+            <a class="op-1 p-0 btn--branded suffix" href="http://toasttab.com/cholita-linda-alameda-1337-park-st" target="_blank" rel="noopener">
+                Alameda
+            </a>
+        </div>
+    </div>
+    <nav id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
         <h2 class="sr">Main Navigation</h2>
         <div class="uk-offcanvas-bar">
             <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
                 
                     <li class="">
-                        <a class="scroll-trigger fw-bold uk-nav-link lh-1hh" href="/#overview" title="Go to Overview" uk-scroll>
-                            Overview
+                        <a class="scroll-trigger fw-bold uk-nav-link lh-1hh" href="/#overview" title="Go to Home" uk-scroll>
+                            Home
                         </a>
                     </li>
                 
@@ -72,6 +86,12 @@
                     <li class="">
                         <a class="scroll-trigger fw-bold uk-nav-link lh-1hh" href="/#mentions" title="Go to Mentions" uk-scroll>
                             Mentions
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a class="scroll-trigger fw-bold uk-nav-link lh-1hh" href="/#gift-cards" title="Go to Get Gift Cards" uk-scroll>
+                            Get Gift Cards
                         </a>
                     </li>
                 
@@ -119,6 +139,12 @@
                     <div class="visible-sm-up">
                         <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
                             <li class="">
+                                <a class="scroll-trigger uk-text-large fw-bold lh-1hh" href="http://localhost:4000/#overview"
+                                    title="Go to Home" uk-scroll>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="">
                                 <a class="scroll-trigger uk-text-large fw-bold lh-1hh" href="http://localhost:4000/#menu"
                                     title="Go to Our Menu" uk-scroll>
                                     Our Menu
@@ -146,6 +172,12 @@
                                 <a class="scroll-trigger uk-text-large fw-bold lh-1hh" href="http://localhost:4000/#about"
                                     title="Go to Our Story" uk-scroll>
                                     Our Story
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="scroll-trigger uk-text-large fw-bold lh-1hh" href="http://localhost:4000/#gift-cards"
+                                    title="Go to Get Gift Cards" uk-scroll>
+                                    Get Gift Cards
                                 </a>
                             </li>
                             <li class="">
@@ -536,7 +568,7 @@
         </h2>
         <div class="maxwidth-sm mx-auto uk-text-center">
             <div class="m-0 co-gray--thin">
-                <p>Pick up your order at our restaurant or get it delivered right to your doorstep. East Bay delivery with real-time GPS tracking now available from Caviar.</p>
+                <p>Pick up your order at our restaurant or get it delivered right to your doorstep. We use Toast to facilitate ordering online for your pickup. And, delivery with real-time GPS tracking is also available from Caviar.</p>
 
             </div>
             <h3 class="co-black fw-bold ff-body mb-0">
@@ -546,12 +578,12 @@
                 <button type="button" class="btn--branded">
                     Pickup
                 </button>
-                <div class="p-space" uk-dropdown="mode: click; animation: uk-animation-slide-top-small; duration: 320; boundary: .maxwidth-xs">
-                    <a class="op-1 p-0 btn--branded" href="https://trycaviar.app.link/Sl9KuE1SQZ" target="_blank">
+                <div class="p-space" uk-dropdown="animation: uk-animation-slide-top-small; duration: 320; boundary: .maxwidth-xs">
+                    <a class="op-1 p-0 btn--branded" href="http://toasttab.com/cholita-linda-temescal-4923-telegraph-ave" target="_blank">
                         Oakland
                     </a>
                     <span class="m-space">or</span>
-                    <a class="op-1 p-0 btn--branded suffix" href="https://trycaviar.app.link/iNyGUYPSQZ" target="_blank">
+                    <a class="op-1 p-0 btn--branded suffix" href="http://toasttab.com/cholita-linda-alameda-1337-park-st" target="_blank">
                         Alameda
                     </a>
                 </div>
@@ -559,7 +591,7 @@
                 <button type="button" class="btn--branded">
                     Delivery
                 </button>
-                <div class="p-space" uk-dropdown="mode: click; animation: uk-animation-slide-top-small; duration: 320; boundary: .maxwidth-xs">
+                <div class="p-space" uk-dropdown="animation: uk-animation-slide-top-small; duration: 320; boundary: .maxwidth-xs">
                     <a class="op-1 p-0 btn--branded" href="https://trycaviar.app.link/Q68IngMclX" target="_blank">
                         Oakland
                     </a>
@@ -842,6 +874,43 @@
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
                 uk-slider-item="next"></a>
             <div class="visible-sm-up"><ul class="uk-slider-nav uk-dotnav uk-flex-center"></ul></div>
+        </div>
+    </div>
+</section><section class="gift-cards uk-position-relative uk-overflow-hidden order-online" id="gift-cards">
+    <div class="wrapper-x maxwidth-fluid mx-auto section-padding-top">
+        <h2 class="uk-margin-remove uk-text-center big-headline fw-xbold uk-text-primary section-padding-bottom">
+            <span>Get Gift Cards</span>
+        </h2>
+        <div class="maxwidth-sm mx-auto uk-text-center">
+            <div class="m-0 co-gray--thin">
+                <p>You can now buy customized gift cards for all the fresh and vibrant foods from Cholita Linda. Use the links below to purchase a new card or look up one you might have purchased before.</p>
+
+            </div>
+        </div>
+        <div class="maxwidth-lg mx-auto uk-text-center">
+            <div uk-grid><div class="gift-card uk-width-1-1 uk-width-1-2@l section-padding ">
+                        <img class="" src="http://localhost:4000/images/gift_card_front.png" alt="Card Purchase">
+                        <h3 class="fw-bold fs-md co-black">
+                            Card Purchase
+                        </h3>
+                        <p class="co-gray--thin maxwidth-xs mx-auto">
+                            Customize and send a gift card even with a personal message.
+                        </p>
+                        <a class="op-1 btn--branded" href="https://www.toasttab.com/cholita-linda-temescal-4923-telegraph-ave/giftcards" target="_blank" rel="noopener">
+                            Get Card
+                        </a>
+                    </div><div class="gift-card uk-width-1-1 uk-width-1-2@l section-padding add-top-padding@lg">
+                        <img class="" src="http://localhost:4000/images/gift_card_back.png" alt="Card Lookup">
+                        <h3 class="fw-bold fs-md co-black">
+                            Card Lookup
+                        </h3>
+                        <p class="co-gray--thin maxwidth-xs mx-auto">
+                            Look up an existing card, add a value, and do more with it.
+                        </p>
+                        <a class="op-1 btn--branded" href="https://www.toasttab.com/cholita-linda-temescal-4923-telegraph-ave/findcard" target="_blank" rel="noopener">
+                            Find Card
+                        </a>
+                    </div></div>
         </div>
     </div>
 </section><section class="uk-position-relative uk-overflow-hidden bg-brand--platinum" id="contacts">
