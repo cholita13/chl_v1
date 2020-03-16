@@ -11,7 +11,7 @@
                         <ul class="none uk-margin-top uk-nav" uk-scrollspy-nav="closest: li; scroll: true; duration: 100; overflow: true;">
                             {% for item in site.menus.header %}
                             {%- assign title = item.title | downcase -%}
-                            {%- if title == 'overview' or title == 'mentions' -%}
+                            {%- if title == 'home' or title == 'mentions' -%}
                             {%- continue -%}
                             {%- endif -%}
                             <li class="{% if condition %}uk-active{% endif %}">
