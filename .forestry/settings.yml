@@ -55,7 +55,7 @@ sections:
   path: _data/order_online.yml
   label: Order Online Data
 - type: document
-  path: content/gift_cards.yml
+  path: _data/gift_cards.yml
   label: Gift Cards Data
 - type: document
   path: _data/catering.yml
