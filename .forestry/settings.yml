@@ -55,6 +55,10 @@ sections:
   path: _data/order_online.yml
   label: Order Online Data
 - type: document
+  path: content/gift_cards.yml
+  label: Gift Cards Data
+  match: "**/*"
+- type: document
   path: _data/catering.yml
   label: Catering Data
 - type: document
