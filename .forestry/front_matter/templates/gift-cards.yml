@@ -1,0 +1,37 @@
+---
+label: Gift Cards
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: field_group_list
+  name: gift_cards
+  label: gift_cards
+  fields:
+  - type: field_group
+    name: card
+    label: card
+    fields:
+    - type: file
+      name: image
+      label: image
+    - type: text
+      name: headline
+      label: headline
+    - type: text
+      name: blurb
+      label: blurb
+    - type: field_group
+      name: link
+      label: link
+      fields:
+      - type: text
+        name: text
+        label: text
+      - type: text
+        name: link
+        label: link
