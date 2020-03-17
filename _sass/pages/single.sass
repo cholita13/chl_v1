@@ -4,17 +4,26 @@
 
 // Hero/Overview
 .hero-content
-    align-items:            center
-    text-align:             center
-    background:             rgba(#000,.25)
+    align-items: center
+    text-align: center
+    background: rgba(#000,.25)
     +mq(sm)
-        align-items:        flex-start
-        text-align:         left
+        align-items: flex-start
+        text-align: left
     .uk-nav > li > a
-        opacity:            1
-        text-shadow:        0 1px 1px rgba(0,0,0,.4)
+        opacity: 1
+        text-shadow: 0 1px 1px rgba(0,0,0,.4)
         &:active, &:focus, &:hover
-            color:          $alternatecolor!important
+            color: $alternatecolor!important
+.is-oops .hero-content
+    align-items: center
+    text-align: center
+    .description-text p
+        color: rgba(#fff,.9)
+        margin-bottom: 0
+        a
+            color: #fff
+            opacity: 1!important
 
 .recognitions
     img

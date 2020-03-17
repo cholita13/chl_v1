@@ -1,3 +1,17 @@
 ---
 layout: default
 ---
+{%- assign info = site.data.business_info -%}
+<section class="uk-position-relative uk-overflow-hidden">
+    <div class="uk-height-viewport uk-background-cover" data-src="{{ page.image }}" uk-img>
+        <div class="uk-light uk-position-cover">
+            <div class="hero-content uk-flex uk-flex-column uk-flex-center uk-height-viewport uk-padding-small">
+                <a href="/" class="d-blk"><img class="logo" src="/images/logo.svg" alt="{{ site.title }}"></a>
+                <h2 class="big-headline maxwidth-md mx-auto">
+                    <span>{{ page.title }}</span>
+                </h2>
+                <div class="maxwidth-xs mx-auto tx-c description-text">{{ page.description | markdownify }}</div>
+            </div>
+        </div>
+    </div>
+</section>

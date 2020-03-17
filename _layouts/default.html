@@ -8,14 +8,18 @@
     <body>
         <a class="sr" href="#main">Skip to content</a>
         <h1 class="sr">{{ page.title }}</h1>
-        <a href="/covid-19" class="critical-alert h3 m-0 wrapper tx-c icon-move-on-hover">
-            Critical information regarding COVID-19.
-        </a>
+        {%- unless page.layout == 'oops' -%}
+            <a href="/covid-19" class="critical-alert h3 m-0 wrapper tx-c icon-move-on-hover">
+                Critical information regarding COVID-19.
+            </a>
+        {%- endunless -%}
         {%- include shell/header.html -%}
         <main id="main">
             {{ content }}
         </main>
-        {%- include shell/footer.html -%}
+        {%- unless page.layout == 'oops' -%}
+            {%- include shell/footer.html -%}
+        {%- endunless -%}
         {%- include shell/foot.html -%}
     </body>
 </html>
