@@ -4,34 +4,34 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: textarea
   name: description
-  label: description
+  label: Description
 - type: field_group_list
   name: gift_cards
-  label: gift_cards
+  label: Gift Cards
   fields:
   - type: field_group
     name: card
-    label: card
+    label: New Card
     fields:
     - type: file
       name: image
-      label: image
+      label: Image
     - type: text
       name: headline
-      label: headline
+      label: Headline
     - type: text
       name: blurb
-      label: blurb
+      label: Blurb
     - type: field_group
       name: link
-      label: link
+      label: Link
       fields:
       - type: text
         name: text
-        label: text
+        label: Text
       - type: text
         name: link
-        label: link
+        label: Link
