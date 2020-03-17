@@ -57,7 +57,6 @@ sections:
 - type: document
   path: content/gift_cards.yml
   label: Gift Cards Data
-  match: "**/*"
 - type: document
   path: _data/catering.yml
   label: Catering Data
