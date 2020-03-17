@@ -1,22 +1,24 @@
 {%- assign order = site.data.order_online -%}
 <header class="site-header">
-    <button class="nav-toggler mr-auto" aria-label="Toggle Navigation" uk-toggle="target: #offcanvas-reveal">
-        <span class="hamburger d-blk"></span>
-    </button>
-    <div class="sticky-cta">
-        <button type="button" class="btn--branded">
-            {{ order.sticky_button.text }}
+    {% unless page.url != '/' %}
+        <!-- <button class="nav-toggler mr-auto" aria-label="Toggle Navigation" uk-toggle="target: #offcanvas-reveal">
+            <span class="hamburger d-blk"></span>
         </button>
-        <div class="p-space uk-width-medium" uk-dropdown="animation: uk-animation-slide-top-small; duration: 320;">
-            <a class="op-1 p-0 btn--branded" href="{{ order.sticky_button.links.oakland }}" target="_blank" rel="noopener">
-                Oakland
-            </a>
-            <span class="m-space">or</span>
-            <a class="op-1 p-0 btn--branded suffix" href="{{ order.sticky_button.links.alameda }}" target="_blank" rel="noopener">
-                Alameda
-            </a>
-        </div>
-    </div>
+        <div class="sticky-cta">
+            <button type="button" class="btn--branded">
+                {{ order.sticky_button.text }}
+            </button>
+            <div class="p-space uk-width-medium" uk-dropdown="animation: uk-animation-slide-top-small; duration: 320;">
+                <a class="op-1 p-0 btn--branded" href="{{ order.sticky_button.links.oakland }}" target="_blank" rel="noopener">
+                    Oakland
+                </a>
+                <span class="m-space">or</span>
+                <a class="op-1 p-0 btn--branded suffix" href="{{ order.sticky_button.links.alameda }}" target="_blank" rel="noopener">
+                    Alameda
+                </a>
+            </div>
+        </div> -->
+    {% endunless %}
     <nav id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
         <h2 class="sr">Main Navigation</h2>
         <div class="uk-offcanvas-bar">

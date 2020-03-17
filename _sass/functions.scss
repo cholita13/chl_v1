@@ -1,10 +1,15 @@
-// 
+//
     // Functions
     // @package chl_v1
 
 // Calculate rem() values from passed-in px
 @function rem($target, $context: $base) {
     @return ($target / $context) * 1rem;
+}
+
+// Calculate em() values from passed-in px
+@function em($target, $context: $base) {
+    @return ($target / $context) * 1em;
 }
 
 // Convert Pixel to Percentage

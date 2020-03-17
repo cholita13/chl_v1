@@ -1,5 +1,6 @@
 {%- assign outlets = site.outlets | where: 'available', 'true' | sort: 'order' -%}
 {%- assign outlets_meta = site.collections | where: 'label', 'outlets' | first -%}
+{%- assign info = site.data.business_info -%}
 <section class="uk-position-relative uk-overflow-hidden bg-brand--platinum" id="contacts">
     <div uk-grid>
         <div class="uk-width-1-1 uk-width-1-2@l maxwidth-fluid mx-auto">

@@ -11,46 +11,48 @@ UIkit.util.on('.scroll-trigger', 'scrolled', () => UIkit.offcanvas('#offcanvas-r
 
 
 // Show more text on click
-(function() {
-    'use strict';
+if (q('.is-home')) {
+    (function() {
+        'use strict';
 
-    var
-        fullContent = q('.full-content'),
-        paragraphs  = qq('.full-content p:nth-child(2) ~ p'),
-        paraWrap    = document.createElement('div'),
-        button      = document.createElement('button');
+        var
+            fullContent = q('.is-home .full-content'),
+            paragraphs  = qq('.is-home .full-content p:nth-child(2) ~ p'),
+            paraWrap    = document.createElement('div'),
+            button      = document.createElement('button');
 
-    paraWrap.setAttribute('class', 'show-more-less');
-    button.setAttribute('type', 'button');
-    button.classList.add('btn--branded', 'is-medium');
-    button.textContent = 'More...';
+        paraWrap.setAttribute('class', 'show-more-less');
+        button.setAttribute('type', 'button');
+        button.classList.add('btn--branded', 'is-medium');
+        button.textContent = 'More...';
 
-    paragraphs.forEach(paragraph => paraWrap.appendChild(paragraph));
+        paragraphs.forEach(paragraph => paraWrap.appendChild(paragraph));
 
-    fullContent.appendChild(paraWrap);
-    fullContent.appendChild(button);
+        fullContent.appendChild(paraWrap);
+        fullContent.appendChild(button);
 
-    collapse();
-    paraWrap.style.transition = 'height 0.32s ease-in';
+        collapse();
+        paraWrap.style.transition = 'height 0.32s ease-in';
 
-    button.addEventListener('click', () => paraWrap.style.height === "0px" ? expand() : collapse());
+        button.addEventListener('click', () => paraWrap.style.height === "0px" ? expand() : collapse());
 
-    function getHeight(el) {
-        var height = `${el.scrollHeight}px`;
-        return height;
-    }
+        function getHeight(el) {
+            var height = `${el.scrollHeight}px`;
+            return height;
+        }
 
-    function collapse() {
-        paraWrap.style.height   = '0px';
-        paraWrap.style.overflow = 'hidden';
-    }
+        function collapse() {
+            paraWrap.style.height   = '0px';
+            paraWrap.style.overflow = 'hidden';
+        }
 
-    function expand() {
-        paraWrap.style.height   = getHeight(paraWrap);
-        paraWrap.style.overflow = 'auto';
-        paraWrap.addEventListener('transitionend', () => button.remove(),false);
-    }
-})();
+        function expand() {
+            paraWrap.style.height   = getHeight(paraWrap);
+            paraWrap.style.overflow = 'auto';
+            paraWrap.addEventListener('transitionend', () => button.remove(),false);
+        }
+    })();
+};
 
 
 // Star required attribute

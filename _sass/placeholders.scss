@@ -3,11 +3,12 @@
     // @package chl_v1
 
 %h {
-    margin-top:         $space-sm;
-    margin-bottom:      $space-xs;
-    line-height:        $headinglh;
-    font-family:        $headingfont;
-    color:              inherit;
+    margin-top: $space-sm;
+    margin-bottom: $space-xs;
+    line-height: $headinglh;
+    font-family: $headingfont;
+    font-weight: $bold;
+    color: inherit;
 }
 
 %cta {
