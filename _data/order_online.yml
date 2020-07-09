@@ -4,11 +4,11 @@ description: Pick up your order at our restaurant or get it delivered right to y
   doorstep. You can now directly connect and order with our point of sale system bypassing
   any third parties for takeout orders.  If you wish your meal to be delivered use
   any of our partners  with real-time GPS tracking (Caviar, DoorDash, Postmates, UberEats).
-cta_text: How would you like to receive your order?
+cta_text: Please download our app for pickup orders. You'll love the experience.
 pickup:
   button: Pickup
-  oakland: http://toasttab.com/cholita-linda-temescal-4923-telegraph-ave
-  alameda: http://toasttab.com/cholita-linda-alameda-1337-park-st
+  oakland: https://trycaviar.app.link/Sl9KuE1SQZ
+  alameda: https://trycaviar.app.link/iNyGUYPSQZ
 delivery:
   button: Delivery
   oakland: https://trycaviar.app.link/Q68IngMclX

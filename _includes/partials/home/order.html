@@ -12,7 +12,21 @@
             <h3 class="co-black fw-bold ff-body mb-0">
                 {{ order.cta_text }}
             </h3>
-            <div class="pt-2 d-flx al-i-c j-c-c maxwidth-xs mx-auto">
+            <div class="pt-2 pb-1h">
+                <ul class="none m-0 d-flx al-i-c j-c-c">
+                    <li>
+                        <a class="op-1 p-0" href="{{ info.app_stores.apple }}" target="_blank">
+                            <img class="app-store-badge" src="{{ site.url }}/images/app-store-badge.png" alt="iOS app store badge">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="op-1 p-0" href="{{ info.app_stores.google }}" target="_blank">
+                            <img class="app-store-badge suffix--wider" src="{{ site.url }}/images/google-play-badge.png" alt="Google Play badge">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flx al-i-c j-c-c maxwidth-xs mx-auto">
                 <button type="button" class="btn--branded">
                     {{ order.pickup.button }}
                 </button>
@@ -40,22 +54,8 @@
                 </div>
             </div>
         </div>
-        <div class="pt-2 pb-1h">
-            <ul class="none m-0 d-flx al-i-c j-c-c">
-                <li>
-                    <a class="op-1 p-0" href="{{ info.app_stores.apple }}" target="_blank">
-                        <img class="app-store-badge" src="{{ site.url }}/images/app-store-badge.png" alt="iOS app store badge">
-                    </a>
-                </li>
-                <li>
-                    <a class="op-1 p-0" href="{{ info.app_stores.google }}" target="_blank">
-                        <img class="app-store-badge suffix--wider" src="{{ site.url }}/images/google-play-badge.png" alt="Google Play badge">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="maxwidth-sm mx-auto tx-c pt-2">
+        <!-- <div class="maxwidth-sm mx-auto tx-c pt-2">
             {{ order.caviar_statement | markdownify }}
-        </div>
+        </div> -->
     </div>
 </section>
