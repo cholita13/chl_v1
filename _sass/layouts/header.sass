@@ -3,7 +3,7 @@
     // @package chl_v1
 
 .nav-toggler
-    +pos(fixed, $top: $space-xxxs, $left: 0)
+    +pos(fixed, $top: 0.8rem, $left: 0)
     display: block
     padding: $space
     cursor: pointer
@@ -17,36 +17,36 @@
         top: $space-sm
 .hamburger, .hamburger:before, .hamburger:after
     +wh(20px, 2px)
-    background-color:       $primarycolor
-    transition:             all 320ms ease
+    background-color: $primarycolor
+    transition: all 320ms ease
 .hamburger
-    position:               relative
+    position: relative
     &:before, &:after
         +pos($left: 0)
-        content:            ''
+        content: ''
     &:before
-        transform:          translateY(-6px)
+        transform: translateY(-6px)
     &:after
-        transform:          translateY(6px)
+        transform: translateY(6px)
     .uk-offcanvas-page &
-        background-color:   transparent
+        background-color: transparent
         &:before
-            transform:      rotate(-45deg)
-            background-color:       $primarycolor
+            transform: rotate(-45deg)
+            background-color: $primarycolor
         &:after
-            transform:      rotate(45deg)
-            background-color:       $primarycolor
+            transform: rotate(45deg)
+            background-color: $primarycolor
     .nav-toggler:active &, .nav-toggler:focus &, .nav-toggler:hover &
-        background-color:   $primarycolor
+        background-color: $primarycolor
 .nav-toggler
     &:active, &:focus, &:hover
         .hamburger:before, .hamburger:after
-            background-color:       $primarycolor
+            background-color: $primarycolor
 .uk-offcanvas-page
     .nav-toggler
         &:active, &:focus, &:hover
             .hamburger
-                background-color:   transparent
+                background-color: transparent
 
 .uk-offcanvas-bar
     background:             url('/images/mesh.png')
@@ -82,6 +82,23 @@
         +wh(36px)
 
 .logo
-    width:                  280px
+    width: 280px
     +mq(sm)
-        width:              372px
+        width: 372px
+
+.critical-alert
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 1000
+    display: flex
+    justify-content: center
+    align-items: center
+    height: em(56px)
+    background: #A300A3
+    color: white
+    font-weight: bold
+    &:active, &:focus, &:hover
+        color: rgba(white, 0.6)!important
+    svg.icon
+        +wh(30px)

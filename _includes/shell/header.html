@@ -1,10 +1,10 @@
 {%- assign order = site.data.order_online -%}
 <header class="site-header">
     {% unless page.url != '/' %}
-        <!-- <button class="nav-toggler mr-auto" aria-label="Toggle Navigation" uk-toggle="target: #offcanvas-reveal">
+        <button class="nav-toggler mr-auto" aria-label="Toggle Navigation" uk-toggle="target: #offcanvas-reveal">
             <span class="hamburger d-blk"></span>
         </button>
-        <div class="sticky-cta">
+        <!-- <div class="sticky-cta">
             <button type="button" class="btn--branded">
                 {{ order.sticky_button.text }}
             </button>

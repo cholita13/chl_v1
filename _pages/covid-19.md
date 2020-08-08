@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: alert
 permalink: /covid-19/
 title: COVID-19 Alert
 description: |-

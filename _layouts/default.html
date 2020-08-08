@@ -8,7 +8,7 @@
     <body>
         <a class="sr" href="#main">Skip to content</a>
         <h1 class="sr">{{ page.title }}</h1>
-        {%- unless page.layout == 'oops' -%}
+        {%- unless page.layout == 'oops' or page.layout == 'alert' -%}
             <a href="/covid-19" class="critical-alert h3 m-0 wrapper tx-c icon-move-on-hover">
                 Critical information regarding COVID-19.
             </a>

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{%- assign info = site.data.business_info -%}
+<div class="section-padding wrapper maxwidth-md mx-auto">
+    {{ content | mardownify}}
+    <div class="pt-1">
+        <ul class="none m-0 d-flx al-i-c">
+            <li>
+                <a class="op-1 p-0" href="{{ info.app_stores.apple }}" target="_blank">
+                    <img class="app-store-badge" src="{{ site.url }}/images/app-store-badge.png"
+                        alt="iOS app store badge">
+                </a>
+            </li>
+            <li>
+                <a class="op-1 p-0" href="{{ info.app_stores.google }}" target="_blank">
+                    <img class="app-store-badge suffix--wider" src="{{ site.url }}/images/google-play-badge.png"
+                        alt="Google Play badge">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
