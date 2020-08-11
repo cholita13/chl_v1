@@ -15,15 +15,15 @@
             <div class="pt-2 pb-1h">
                 <ul class="none m-0 d-flx al-i-c j-c-c">
                     <li>
-                        <a class="op-1 p-0" href="{{ info.app_stores.apple }}" target="_blank">
-                            <img class="app-store-badge" src="{{ site.url }}/images/app-store-badge.png"
-                                alt="iOS app store badge">
+                        <a class="op-1 p-0" href="{{ info.app_stores.apple.link }}" target="_blank">
+                            <span class="sr">{{ info.app_stores.apple.label }}</span>
+                            <img class="app-store-badge" src="{{ site.url }}/images/app-store-badge.png" alt="iOS app store badge">
                         </a>
                     </li>
                     <li>
-                        <a class="op-1 p-0" href="{{ info.app_stores.google }}" target="_blank">
-                            <img class="app-store-badge suffix--wider" src="{{ site.url }}/images/google-play-badge.png"
-                                alt="Google Play badge">
+                        <a class="op-1 p-0" href="{{ info.app_stores.google.link }}" target="_blank">
+                            <span class="sr">{{ info.app_stores.google.label }}</span>
+                            <img class="app-store-badge suffix--wider" src="{{ site.url }}/images/google-play-badge.png" alt="Google Play badge">
                         </a>
                     </li>
                 </ul>
