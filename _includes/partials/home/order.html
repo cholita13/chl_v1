@@ -29,9 +29,18 @@
                 </ul>
             </div>
             <div class="d-flx al-i-c j-c-c maxwidth-xs mx-auto mt-1">
-                <a class="op-1 btn--branded" href="{{ order.pickup.oakland }}" target="_blank">
+                <button type="button" class="btn--branded">
                     Pickup or Delivery
-                </a>
+                </button>
+                <div class="p-space" uk-dropdown="animation: uk-animation-slide-top-small; duration: 250; boundary: .maxwidth-xs; offset: 0">
+                    <a class="op-1 p-0 btn--branded" href="{{ order.pickup.oakland }}" target="_blank">
+                        Oakland <span class="sr">Toasttab Pickup</span>
+                    </a>
+                    <span class="m-space">or</span>
+                    <a class="op-1 p-0 btn--branded suffix" href="{{ order.pickup.alameda }}" target="_blank">
+                        Alameda <span class="sr">Toasttab Pickup</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
