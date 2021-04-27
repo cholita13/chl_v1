@@ -28,38 +28,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-flx al-i-c j-c-c maxwidth-xs mx-auto">
-                <button type="button" class="btn--branded">
-                    {{ order.pickup.button }}
-                </button>
-                <div class="p-space"
-                    uk-dropdown="animation: uk-animation-slide-top-small; duration: 320; boundary: .maxwidth-xs">
-                    <a class="op-1 p-0 btn--branded" href="{{ order.pickup.oakland }}" target="_blank">
-                        Oakland <span class="sr">Toasttab Pickup</span>
-                    </a>
-                    <span class="m-space">or</span>
-                    <a class="op-1 p-0 btn--branded suffix" href="{{ order.pickup.alameda }}" target="_blank">
-                        Alameda <span class="sr">Toasttab Pickup</span>
-                    </a>
-                </div>
-                <span class="m-space">or</span>
-                <button type="button" class="btn--branded">
-                    {{ order.delivery.button }}
-                </button>
-                <div class="p-space"
-                    uk-dropdown="animation: uk-animation-slide-top-small; duration: 320; boundary: .maxwidth-xs">
-                    <a class="op-1 p-0 btn--branded" href="{{ order.delivery.oakland }}" target="_blank">
-                        Oakland <span class="sr">Caviar Delivery</span>
-                    </a>
-                    <span class="m-space">or</span>
-                    <a class="op-1 p-0 btn--branded suffix" href="{{ order.delivery.alameda }}" target="_blank">
-                        Alameda <span class="sr">Caviar Delivery</span>
-                    </a>
-                </div>
+            <div class="d-flx al-i-c j-c-c maxwidth-xs mx-auto mt-1">
+                <a class="op-1 btn--branded" href="{{ order.pickup.oakland }}" target="_blank">
+                    Pickup or Delivery
+                </a>
             </div>
-        </div>
-        <div class="maxwidth-sm mx-auto tx-c pt-2">
-            {{ order.caviar_statement | markdownify }}
         </div>
     </div>
 </section>
