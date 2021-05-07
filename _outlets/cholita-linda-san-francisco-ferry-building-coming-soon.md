@@ -1,6 +1,6 @@
 ---
 available: true
-title: Cholita Linda - San Francisco Ferry Building (coming soon)
+title: Cholita Linda - SF Ferry Building (coming soon)
 description: ''
 image: ''
 suite_number: "44"
