@@ -1,5 +1,5 @@
 ---
-image: "/images/Web_Pescado_frito_DSC_7262.jpg"
+image: "/images/146017-chicharron.jpg"
 title: Platos/Plates
 description: A plate is a broad, concave, but mainly flat vessel on which food can
   be served.
