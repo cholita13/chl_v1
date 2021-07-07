@@ -18,3 +18,5 @@ fields:
     maxSize: 250
   label: Image
   default: "/images/platos.jpg"
+pages:
+- _catering/drinks.md
