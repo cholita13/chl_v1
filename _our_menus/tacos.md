@@ -1,5 +1,5 @@
 ---
-image: "/images/146026 steak taco.jpg"
+image: "/images/146028-fish-taco.jpg"
 title: Tacos
 description: A taco is a traditional Mexican dish consisting of a corn or wheat tortilla
   folded or rolled around a filling.
