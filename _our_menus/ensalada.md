@@ -1,5 +1,5 @@
 ---
-image: "/images/146019-entree-salad.jpg"
+image: ''
 title: Ensalada/Salads
 description: A salad is a dish consisting of a mixture of small pieces of food, usually
   vegetables.
