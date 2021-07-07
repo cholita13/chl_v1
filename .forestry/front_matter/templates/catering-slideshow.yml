@@ -20,4 +20,5 @@ fields:
   default: "/images/platos.jpg"
 pages:
 - _catering/drinks.md
+- _catering/plates-2.md
 - _catering/tofu-taco.md
