@@ -12,6 +12,6 @@ country: United States
 map_link: https://goo.gl/maps/rT2ehTRcds7Y6KUV7
 operating_hours:
 - 8 am - 10 PM (coming soon)
-order: 
+order: 3
 
 ---
