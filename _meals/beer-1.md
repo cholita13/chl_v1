@@ -1,6 +1,7 @@
 ---
 image: ''
-title: Dos Equis, Negra Modelo, Corona, Baja Brewing IPA, Pacifico, Tecate
+title: 'Negra Modelo, Corona, Modelo Especial, Lagunitas IPA, Pacifico, Tecate, Dos
+  Equis '
 description: ''
 price: '4.50'
 available: true
