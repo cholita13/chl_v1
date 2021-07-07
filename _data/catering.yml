@@ -1,10 +1,13 @@
 ---
 title: Catering
 headline: Fresh. Exotic. Unforgettable.
-blurb: Cholita Linda Catering brings you everything on our menu to your events and conferences. Catering is so customizable everyone at your table will find something suitable to their taste or diet.
+blurb: Cholita Linda Catering brings you everything on our menu to your events and
+  conferences. Catering is so customizable, everyone at your table will find something
+  suitable to their taste or diet.
 form:
   title: Get started with your request
   submit_button_text: Request Catering
-  success_message: "Thanks for requesting Cholita Linda Catering. Expect to hear from us within 24-48 hours."
+  success_message: Thanks for requesting Cholita Linda Catering. Expect to hear from
+    us within 24-48 hours.
 carousel:
   title: People love our Catering
