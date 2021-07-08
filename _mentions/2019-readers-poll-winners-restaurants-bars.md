@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 18
 title: '2019 Readers’ Poll Winners: Restaurants & Bars'
 source: East Bay Express
 link: https://eastbayexpress.com/readers-poll-winners-restaurants-bars-1/
