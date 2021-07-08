@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 2
 title: Best Fried Fish Tacos
 source: East Bay Express
 link: https://eastbayexpress.com/best-fried-fish-tacos-2-1/
