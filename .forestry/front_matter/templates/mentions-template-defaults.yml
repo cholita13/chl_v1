@@ -16,6 +16,7 @@ fields:
   label: Date
   config:
     required: true
+  default: now
 - name: order
   type: number
   label: Order
