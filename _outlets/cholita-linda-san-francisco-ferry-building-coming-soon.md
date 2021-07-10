@@ -1,6 +1,6 @@
 ---
 available: true
-title: Cholita Linda - SF Ferry Building (coming soon)
+title: Cholita Linda - SF Ferry Building (coming soon!)
 description: ''
 image: ''
 suite_number: "44"
@@ -12,6 +12,6 @@ country: United States
 map_link: https://goo.gl/maps/rT2ehTRcds7Y6KUV7
 operating_hours:
 - 8 am - 10 PM (coming soon)
-order: 
+order: 3
 
 ---

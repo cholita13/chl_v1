@@ -15,6 +15,10 @@ fields:
 - name: image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Image
   default: "/images/platos.jpg"
+pages:
+- _catering/drinks.md
+- _catering/plates-2.md
+- _catering/tofu-taco.md
