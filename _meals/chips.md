@@ -1,8 +1,9 @@
 ---
-image:
+image: ''
 title: Chips
-description:
-price: '1.50'
+description: ''
+price: ''
 available: true
 menu_name: _our_menus/sides.md
+
 ---
