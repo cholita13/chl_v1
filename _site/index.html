@@ -125,12 +125,12 @@
                 
             </ul>
             <p class="vcard details-area uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
-                <a class="vcard__link" href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" target="_blank">
+                <span class="vcard__link" itemprop="address" itemscope="">
                     <span itemprop="streetAddress">4923 Telegraph Ave</span><span class="separator">,</span>
                     <span itemprop="addressLocality">Oakland</span>
                     <meta itemprop="addressRegion" content="CA">
                     <meta itemprop="postalCode" content="94609">
-                </a>
+                </span>
                 <br>
                 <a class="vcard__link scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
                     Mon–Sun: 11AM–10PM 
@@ -614,23 +614,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-flx al-i-c j-c-c maxwidth-xs mx-auto mt-1">
-                <button type="button" class="btn--branded">
-                    Pickup or Delivery
-                </button>
-                <div class="p-space" uk-dropdown="animation: uk-animation-slide-top-small; duration: 250; boundary: .maxwidth-xs; offset: 0">
-                    <a class="op-1 p-0 btn--branded" href="http://toasttab.com/cholita-linda-temescal-4923-telegraph-ave" target="_blank">
-                        Oakland <span class="sr">Toasttab Pickup</span>
-                    </a>
-                    <span class="m-space">/</span>
-                    <a class="op-1 p-0 btn--branded suffix" href="http://toasttab.com/cholita-linda-alameda-1337-park-st" target="_blank">
-                        Alameda <span class="sr">Toasttab Pickup</span>
-                    </a>
-                    <span class="m-space">/</span>
-                    <a class="op-1 p-0 btn--branded suffix" href="https://www.toasttab.com/cholita-linda-ferry-building-1-ferry-building" target="_blank">
-                        San Francisco <span class="sr">Toasttab Pickup</span>
-                    </a>
-                </div>
+            <div class="d-flx al-i-c j-c-c maxwidth-xs mx-auto mt-1 uk-flex-wrap">
+                <a class="op-1 p-2 btn--branded mr-1h" href="http://toasttab.com/cholita-linda-temescal-4923-telegraph-ave" target="_blank">
+                    Oakland
+                </a>
+                <a class="op-1 p-2 btn--branded suffix mr-1" href="http://toasttab.com/cholita-linda-alameda-1337-park-st" target="_blank">
+                    Alameda
+                </a>
+                <a class="op-1 p-2 btn--branded suffix mt-1h" href="https://www.toasttab.com/cholita-linda-ferry-building-1-ferry-building" target="_blank">
+                    SF - Ferry Building
+                </a>
             </div>
         </div>
     </div>

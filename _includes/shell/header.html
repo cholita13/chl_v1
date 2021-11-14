@@ -32,12 +32,12 @@
                 {% endfor %}
             </ul>
             <p class="vcard details-area uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom uk-margin-remove-bottom">
-                <a class="vcard__link" href="https://maps.google.com/?q=4923%20Telegraph%20Ave,%20Oakland" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" target="_blank">
+                <span class="vcard__link" itemprop="address" itemscope="">
                     <span itemprop="streetAddress">{{ site.data.business_info.vcard.street }}</span><span class="separator">,</span>
                     <span itemprop="addressLocality">{{ site.data.business_info.vcard.city }}</span>
                     <meta itemprop="addressRegion" content="CA">
                     <meta itemprop="postalCode" content="94609">
-                </a>
+                </span>
                 <br>
                 <a class="vcard__link scroll-trigger" href="/#order" itemprop="openingHours" uk-scroll>
                     {{ site.data.business_info.vcard.hours }}
