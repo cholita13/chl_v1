@@ -2,7 +2,8 @@
 image: ''
 title: Diet Coke
 description: ''
-price: '1.50'
+price: ''
 available: true
 menu_name: _our_menus/sodas.md
+
 ---
