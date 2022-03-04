@@ -46,10 +46,6 @@
         >
     </p>
     <p class="form-control mb-space-xs">
-        <label for="location">Location</label>
-        <input id="location" type="text" name="location" placeholder="Oakland, Alameda, or SF" required>
-    </p>
-    <p class="form-control mb-space-xs">
         <label for="datetime">Pick a Date & Time</label>
         <input
             id="datetime"
@@ -79,6 +75,10 @@
                 <option value="onsite">Onsite</option>
             </select>
             {%- include icons.html icon="arrow-down" -%}
+        </p>
+        <p class="form-control uk-width-1-1">
+            <label for="location">Location</label>
+            <input id="location" type="text" name="location" placeholder="Location for Delivery/Pickup" required>
         </p>
     </div>
     <button class="btn--branded is-small mt-space-sm" type="submit">

@@ -637,10 +637,6 @@
         >
     </p>
     <p class="form-control mb-space-xs">
-        <label for="location">Location</label>
-        <input id="location" type="text" name="location" placeholder="Oakland, Alameda, or SF" required>
-    </p>
-    <p class="form-control mb-space-xs">
         <label for="datetime">Pick a Date & Time</label>
         <input
             id="datetime"
@@ -669,6 +665,10 @@
                 <option value="pickup">Pickup</option>
                 <option value="onsite">Onsite</option>
             </select><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></p>
+        <p class="form-control uk-width-1-1">
+            <label for="location">Location</label>
+            <input id="location" type="text" name="location" placeholder="Location for Delivery/Pickup" required>
+        </p>
     </div>
     <button class="btn--branded is-small mt-space-sm" type="submit">
         Request Catering
